@@ -27,11 +27,11 @@
     opacity: 0;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 36s linear infinite 0s;
-    -moz-animation: imageAnimation 36s linear infinite 0s;
-    -o-animation: imageAnimation 36s linear infinite 0s;
-    -ms-animation: imageAnimation 36s linear infinite 0s;
-    animation: imageAnimation 36s linear infinite 0s; 
+    -webkit-animation: imageAnimation 54s linear infinite 0s;
+    -moz-animation: imageAnimation 54s linear infinite 0s;
+    -o-animation: imageAnimation 54s linear infinite 0s;
+    -ms-animation: imageAnimation 54s linear infinite 0s;
+    animation: imageAnimation 54s linear infinite 0s; 
 }
 
 .cb-slideshow li:nth-child(1) span { 
@@ -77,6 +77,32 @@
     -ms-animation-delay: 30s;
     animation-delay: 30s; 
 }
+.cb-slideshow li:nth-child(7) span {
+    background-image: url(../images/7.jpg);
+    -webkit-animation-delay: 36s;
+    -moz-animation-delay: 36s;
+    -o-animation-delay: 36s;
+    -ms-animation-delay: 36s;
+    animation-delay: 36s;
+}
+.cb-slideshow li:nth-child(8) span {
+    background-image: url(../images/8.jpg);
+    -webkit-animation-delay: 42s;
+    -moz-animation-delay: 42s;
+    -o-animation-delay: 42s;
+    -ms-animation-delay: 42s;
+    animation-delay: 42s;
+}
+.cb-slideshow li:nth-child(9) span {
+    background-image: url(../images/8.jpg);
+    -webkit-animation-delay: 48s;
+    -moz-animation-delay: 48s;
+    -o-animation-delay: 48s;
+    -ms-animation-delay: 48s;
+    animation-delay: 48s;
+}
+
+    
 .cb-slideshow li:nth-child(2) div { 
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
@@ -111,6 +137,27 @@
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
     animation-delay: 30s; 
+}
+.cb-slideshow li:nth-child(7) div { 
+    -webkit-animation-delay: 36s;
+    -moz-animation-delay: 36s;
+    -o-animation-delay: 36s;
+    -ms-animation-delay: 36s;
+    animation-delay: 36s; 
+}
+.cb-slideshow li:nth-child(8) div { 
+    -webkit-animation-delay: 42s;
+    -moz-animation-delay: 42s;
+    -o-animation-delay: 42s;
+    -ms-animation-delay: 42s;
+    animation-delay: 42s; 
+}
+.cb-slideshow li:nth-child(9) div { 
+    -webkit-animation-delay: 48s;
+    -moz-animation-delay: 48s;
+    -o-animation-delay: 48s;
+    -ms-animation-delay: 48s;
+    animation-delay: 48s; 
 }
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation { 
