@@ -1,25 +1,60 @@
 h1{
 	font-family: 'Roboto', sans-serif;
 }
-.row {
-	position: relative;
-	background: transparent;
+
+.nav {
+    display: inline-block;
+    list-style: none;
 }
-div {
-	display: block;
+.nav {
+    float: right ;
+    list-style: none;
 }
-nav nav-tabs {
-    position: fixed;
+
+.logo {
+    float: left;
+    font-size: 40px;
+}
+
+.nav-tabs {
+    float: right;
+    position: relative;
     background:transparent; 
+    border-radius: 0px;
+    padding-left: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;    
+    list-style: none;
+    color: black !important;
+    border-bottom: 1px solid transparent;    
 }
 
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9 !important;
+  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-style: solid;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  color: black;
+}
 
-
-
-
-
-
-
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+ background-color: none !important;
+ border: none;
+ border-bottom-style: solid;
+ border-bottom-width: 1px;
+ border-bottom-color: #a9a9a9 !important;
+ border-bottom-color: rgba(255,255,255,.25);
+   
+}
 
 
 /* Small devices (tablets, 768px and up) */
