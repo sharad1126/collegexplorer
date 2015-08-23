@@ -1,12 +1,10 @@
-h1{
-	font-family: 'Roboto', sans-serif;
+div
+{
+    display: block;
 }
-
 .nav {
     display: inline-block;
     list-style: none;
-}
-.nav {
     float: right ;
     list-style: none;
 }
@@ -56,6 +54,58 @@ h1{
    
 }
 
+
+#contact {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #D8E2DC;
+}
+#contact .form-group {
+    margin-bottom: 25px;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    padding: 20px;
+}
+
+#contact .form-group input.form-control {
+    height: auto;
+}
+
+#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+
+#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+}
+
+#contact:-moz-placeholder {
+    font-weight: 700;
+    color: #bbb;
+}
+
+#contact::-moz-placeholder {
+    font-weight: 700;
+    color: #bbb;
+}
+
+#contact:-ms-input-placeholder {
+    font-weight: 700;
+    color: #bbb;
+}
+
+#contact .text-danger {
+    color: #e74c3c;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { ... }
