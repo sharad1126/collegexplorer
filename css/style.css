@@ -7,12 +7,16 @@ div
     list-style: none;
     float: right ;
     list-style: none;
+    position: fixed;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 40px;
+    line-height: 20px;
 }
 
-.logo {
-    float: left;
-    font-size: 40px;
-}
 
 .nav-tabs {
     float: right;
@@ -58,7 +62,7 @@ div
 #contact {
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #D8E2DC;
+    background-color: #613F75;
 }
 #contact .form-group {
     margin-bottom: 25px;
