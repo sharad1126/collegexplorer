@@ -19,8 +19,8 @@
 		
 		<script src="js/modernizr.custom1.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		
-		
+		<!-- footer -->
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<!-- Search Bar-->
 		<link rel="stylesheet" type="text/css" href="css/component4.css" />
 		
@@ -28,22 +28,7 @@
 <body class="loading">
 	        <!--menu bar-->
 
-        <div class="container">
-            <div class="row">
-              <div class="col-md-8">
-                  <div class="logo">CollegExplorer</div>
-              </div>
-               <div class="col-md-4">
-                   <div class="nav">
-                       <ul class="nav nav-tabs" >
-                       <li><a href="index.html">Home</a></li>
-                       <li class="active"><a href="#">Colleges</a></li>
-                       <li><a href="#">Food Joints</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+      
 
 
   <div id="container" class="cf">
@@ -182,5 +167,60 @@
 				viewportFactor : 0.4
 			} );
 		</script>
+		<footer id="footer">
+        <nav id="footerNav" class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="footerLogoCol">
+                        <img src="logo.gif">
+                        <ul class="copyrightBlock hidden-xs hidden-sm hidden-md">
+                            </li>&copy;2015 CollegExplorer</li>
+                        </ul>
+                    </div>
+                    <div id="learnMoreCol">
+                        <h3 class="footerTitle">Learn More</h3>
+                        <div id="learnMoreLinksBlock">
+                            <a href="#">Contact</a>
+                            <a href="#">About</a>
+                            <a href="#">Opportunities</a>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-xs hidden-lg"></div>
+                    <div id="joinRevolCol">
+                        <h3 class="footerTitle">Subscribe </h3>
+                        <form id="footerSignupForm">
+                            <div class="form-group">
+                                <label class="sr-only" for="footerEmailInput"></label>
+                                <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
+                            </div>
+                            <button type="submit">Get all important updates</button>
+                        </form>
+                    </div>
+                    <div id="connectCol">
+                        <h3 class="footerTitle">Connect</h3>
+                        <ul id="footerSocialBtns">
+                            <li><a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/collegexplorer" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegexplorer" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                             <li><a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                              <li><a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                        <div id="footerAddress">
+                            <span id="addressTitle">CollegExplorer</span>
+                            <br> Ballupur Chowk,
+                            <br> Dehradun, UK 248001
+                        </div>
+                        <div id="footerEmail"><a href="mailto:collegexplorer@gmail.com">collegexplorer@gmail.com</a></div>
+                    </div>
+                    <div class="clearfix hidden-xs"></div>
+                    <ul class="copyrightBlock hidden-xs hidden-lg">
+                        <li id="footerCopyright"><i class="fa fa-copyright"></i>2015 CollegExplorer</li>
+                    </ul>
+                    <ul class="copyrightBlock hidden-sm hidden-md hidden-lg">
+                        <li id="footerCopyright"><i class="fa fa-copyright"></i>2015 CollegExplorer</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
 	</body>
 </html>
