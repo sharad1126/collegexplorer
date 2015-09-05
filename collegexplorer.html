@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/style1.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <!-- CSS and Js for the nav bar and contact us page and easy scrolling -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <script type="text/javascript" href="js/modernizr.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -94,71 +95,65 @@
                                     <textarea class="form-control" placeholder="Enter your message " id="message" required data-validation-required-message="Message"></textarea>
                                 </div>
                             </div>
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Send Message</button>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
                         </div>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
     </section>
-   <!--  <section id="foot">
-        <footer id="footer">
-            <nav id="footerNav" class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div id="footerLogoCol">
-                            <img src="img/logo.gif">
-                            <ul class="copyrightBlock hidden-xs hidden-sm hidden-md">
-                                </li>&copy;2015 CollegExplorer</li>
-                            </ul>
+    <section id="footer">
+        <footer id="footer" style="background-color:#2E3444;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="footerlogo">
+                            <img src="http://www.mantratec.com/images/CE.jpg" alt="responsive-image" style="height:149px; width=149px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; ">
+                            <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
                         </div>
-                        <div id="learnMoreCol">
-                            <h3 class="footerTitle">Learn More</h3>
-                            <div id="learnMoreLinksBlock">
-                                <a href="#">Contact</a>
-                                <a href="#">About</a>
-                                <a href="#">Opportunities</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footertitle" style="color:#ff8f12;">LEARN MORE</h3>
+                        <div class="learnmorelinks">
+                            <ul><a href="#" style="color:white;">CONTACT</a></ul>
+                            <ul><a href="#" style="color:white;">ABOUT</a></ul>
+                            <ul><a href="#" style="color:white;">OPPORTUNITIES</a></ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footerTitle" style="color:#ff8f12;">Subscribe </h3>
+                        <form id="footerSignupForm">
+                            <div class="form-group">
+                                <label class="sr-only" for="footerEmailInput"></label>
+                                <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
                             </div>
-                        </div>
-                        <div class="clearfix hidden-xs hidden-lg"></div>
-                        <div id="joinRevolCol">
-                            <h3 class="footerTitle">Subscribe </h3>
-                            <form id="footerSignupForm">
-                                <div class="form-group">
-                                    <label class="sr-only" for="footerEmailInput"></label>
-                                    <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
-                                </div>
-                                <button type="submit" class="btn btn-xl">Get all important updates</button>
-                            </form>
-                        </div>
+                            <button type="submit" style="background-color:#ff8f12; border-color:#ff8f12;">Get all important updates</button>
+                        </form>
+                    </div>
+                    <div class="col-md-3">
                         <div id="connectCol">
-                            <h3 class="footerTitle">Connect</h3>
+                            <h3 class="footerTitle" style="color:#ff8f12; padding-left:30px; ">Connect</h3>
                             <ul id="footerSocialBtns">
-                                <li><a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/collegexplorer" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegexplorer" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                <a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/collegexplorer" target="_blank"><img src="twitter.png" style="height:33px; width:41px;"></a>
+                                <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="facebook.png" style="height:33px; width:41px;"></a>
+                                <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="linkedin.png" style="height:33px; width:41px;"></a>
+                                <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="googleplus.png" style="height:33px; width:41px;"></a>
+                                <div id="footerAddress" style="color:white;">
+                                    <span id="addressTitle" style="color:white;">CollegExplorer</span>
+                                    <br> Ballupur Chowk,
+                                    <br> Dehradun, UK 248001
+                                </div>
+                                <div id="footerEmail"><a href="mailto:collegexplorer@gmail.com" style="color:white;">collegexplorer@gmail.com</a></div>
                             </ul>
-                            <div id="footerAddress">
-                                <span id="addressTitle">CollegExplorer</span>
-                                <br> Ballupur Chowk,
-                                <br> Dehradun, UK 248001
-                            </div>
-                            <div id="footerEmail"><a href="mailto:collegexplorer@gmail.com">collegexplorer@gmail.com</a></div>
                         </div>
-                        <div class="clearfix hidden-xs"></div>
-                        <ul class="copyrightBlock hidden-xs hidden-lg">
-                            <li id="footerCopyright"><i class="fa fa-copyright"></i>2015 CollegExplorer</li>
-                        </ul>
-                        <ul class="copyrightBlock hidden-sm hidden-md hidden-lg">
-                            <li id="footerCopyright"><i class="fa fa-copyright"></i>2015 CollegExplorer</li>
-                        </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
         </footer>
-    </section> -->
+    </section>
 </body>
 
 </html>
