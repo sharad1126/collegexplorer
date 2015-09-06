@@ -20,29 +20,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Search Bar-->
     <link rel="stylesheet" type="text/css" href="assets/css/component4.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+    <script type="text/javascript" href="assets/js/modernizr.js"></script>
 </head>
 
 <body class="loading">
     <!--menu bar-->
-    <nav class="navbar">
+        <nav class="navbar navbar-default" style="background-color: rgba(51,51,51,0.8);text-align: center;border-radius:0px;height: 80px;top: 0;left: 0;width: 100%;z-index: 100;">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="collegexplorer.html">
-                            <img alt="Brand" src="...">
-                        </a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="width: 130px;height: 25px;">CollegExplorer</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <div class="menu-menu-glowne-en-container">
+                        <ul id="menu-menu-glowne-en" class="menu">
+                            <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="colleges.html"><span data-hover="COLLEGES">COLLEGES</span></a></li>
+                            <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="map5.html"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
+                            <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#"><span data-hover="TEAM">TEAM</span></a></li>
+                            <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="#"><span data-hover="ABOUT US">ABOUT US</span></a></li>
+                            <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="#contact"><span data-hover="CONTACT US">CONTACT US</span></a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav navbar-nav">
-                    	<li><a href="#"><span data-hover="CONTACT US">HOME</span></a></li>
-                        <li><a href="collegexplorer.html"><span data-hover="COLLEGES">COLLEGES</span></a></li>
-                        <li><a href="map5.html"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
-                        <li><a href="#"><span data-hover="TEAM">TEAM</span></a></li>
-                        <li><a href="#"><span data-hover="ABOUT US">ABOUT US</span></a></li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
     </nav>
