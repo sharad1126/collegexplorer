@@ -62,7 +62,7 @@ p {
 }
 
 h1 {
-    padding-left: 440px;
+    padding-left: 420px;
     font-size: 50px;
     font-family: "monotype corsiva";
     text-transform: uppercase;
@@ -71,6 +71,13 @@ h1 {
 
 h2 {
     font-size: 24px;
+    font-family: 'Rock Salt', arial, serif;
+    text-transform: uppercase;
+    color: #FC573A;
+}
+
+h3 {
+    font-size: 20px;
     font-family: 'Rock Salt', arial, serif;
     text-transform: uppercase;
     color: #FC573A;
