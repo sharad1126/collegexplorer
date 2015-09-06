@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,15 +24,28 @@
 
 <body class="loading">
     <!--menu bar-->
-    <div class="menutop">
-        <ul>
-            <li><a href="#"><span data-hover="COLLEGES">COLLEGES</span></a></li>
-            <li><a href="map5.html"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
-            <li><a href="#"><span data-hover="TEAM">TEAM</span></a></li>
-            <li><a href="#"><span data-hover="ABOUT US">ABOUT US</span></a></li>
-            <li><a href="#"><span data-hover="CONTACT US">CONTACT US</span></a></li>
-        </ul>
-    </div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="collegexplorer.html">
+                            <img alt="Brand" src="...">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav navbar-nav">
+                        <li><a href="collegexplorer.html"><span data-hover="COLLEGES">COLLEGES</span></a></li>
+                        <li><a href="map5.html"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
+                        <li><a href="#"><span data-hover="TEAM">TEAM</span></a></li>
+                        <li><a href="#"><span data-hover="ABOUT US">ABOUT US</span></a></li>
+                        <li><a href="#"><span data-hover="CONTACT US">CONTACT US</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div id="container" class="cf">
         <div id="main" role="main">
             <section class="slider">
@@ -283,21 +295,21 @@
         viewportFactor: 0.4
     });
     </script>
-    <footer id="footer" style="background-color:#2E3444;">
-        <div class="container-fluid">
+    <footer id="footer" style="background-color:#2E3444; height:250px;">
+        <div class="container-fluid" style="height:250px;">
             <div class="row">
                 <div class="col-md-3">
                     <div id="footerlogo">
-                        <img src="http://www.mantratec.com/images/CE.jpg" alt="responsive-image" style="height:149px; width=149px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; ">
+                        <img src="http://www.mantratec.com/images/CE.jpg" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; ">
                         <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <h3 class="footertitle" style="color:#ff8f12;">LEARN MORE</h3>
                     <div class="learnmorelinks">
-                        <ul><a href="#" style="color:white;">CONTACT</a></ul>
-                        <ul><a href="#" style="color:white;">ABOUT</a></ul>
-                        <ul><a href="#" style="color:white;">OPPORTUNITIES</a></ul>
+                        <ul><a href="#" style="color:white;text-decoration: none;">CONTACT</a></ul>
+                        <ul><a href="#" style="color:white;text-decoration: none;">ABOUT</a></ul>
+                        <ul><a href="#" style="color:white;text-decoration: none;">OPPORTUNITIES</a></ul>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -314,17 +326,17 @@
                     <div id="connectCol">
                         <h3 class="footerTitle" style="color:#ff8f12; padding-left:30px; ">Connect</h3>
                         <ul id="footerSocialBtns">
-                            <a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:33px; width:41px;"></a>
-                            <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:33px; width:41px;"></a>
-                            <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="assets/images/linkedin.png" style="height:33px; width:41px;"></a>
-                            <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:33px; width:41px;"></a>
-                            <div id="footerAddress" style="color:white;">
-                                <span id="addressTitle" style="color:white;">CollegExplorer</span>
-                                <br> Ballupur Chowk,
-                                <br> Dehradun, UK 248001
-                            </div>
-                            <div id="footerEmail"><a href="mailto:collegexplorer@gmail.com" style="color:white;">collegexplorer@gmail.com</a></div>
+                            <a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:33px; width:34px;padding-top:10px;"></a>
+                            <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:33px; width:34px;padding-top:10px;"></a>
+                            <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="assets/images/linkedin.png" style="height:33px; width:34px;padding-top:10px;"></a>
+                            <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:33px; width:34px;padding-top:10px;"></a>
                         </ul>
+                        <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">
+                            <span id="addressTitle" style="color:white;">CollegExplorer</span>
+                            <br> Ballupur Chowk,
+                            <br> Dehradun, UK 248001
+                        </div>
+                        <div id="footerEmail"><a href="mailto:collegexplorer@gmail.com" style="color:white;text-decoration: none;padding-left:30px;">collegexplorer@gmail.com</a></div>
                     </div>
                 </div>
             </div>
