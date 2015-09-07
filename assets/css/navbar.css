@@ -37,7 +37,7 @@
   display: inline-block;
   height: 37px;
   text-transform: uppercase;
-  color: #E74C3C; 
+  color: #F23E43; 
   -webkit-perspective: 1000px;
   perspective: 1000px;
   font-weight: 700;
@@ -67,9 +67,9 @@
 .menu-menu-glowne-en-container a span:before {
   content: attr(data-hover);
   position: absolute;
-  background-color: #006699;
-  border: 2px solid #006699;
-  border-bottom: 2px solid #006699;
+  background-color: #ff5f54;
+  border: 2px solid #ff5f54;
+  border-bottom: 2px solid #ff5f54;
   display: block;
   width: 100%;
   top: 100%;
@@ -93,7 +93,7 @@
 .menu-menu-glowne-en-container a:hover span {
   -webkit-transform: rotateX(90deg) translateY(-17px);
   transform: rotateX(90deg) translateY(-17px);
-  border: 2px solid #006699;
+  border: 2px solid #ff5f54;
   -webkit-transition: -webkit-transform 0.3s ease 0s, border-color 0.3s ease 0s;
   transition: transform 0.3s ease 0s, border-color 0.3s ease 0s;
 }
@@ -105,7 +105,7 @@
 }
 .menu-menu-glowne-container a.current span,
 .menu-menu-glowne-en-container a.current span {
-  border: 2px solid #006699;
+  border: 2px solid #ff5f54;
 }
 .expanded .menu-menu-glowne-container,
 .expanded .menu-menu-glowne-en-container {
