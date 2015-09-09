@@ -162,53 +162,53 @@
         viewportFactor: 0.4
     });
     </script>
-    <footer id="footer" style="background-color:#2E3444; height:250px;">
-        <div class="container-fluid" style="height:250px;">
-            <div class="row">
-                <div class="col-md-3">
-                    <div id="footerlogo">
-                        <img src="http://www.mantratec.com/images/CE.jpg" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; ">
-                        <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h3 class="footertitle" style="color:#ff8f12;">LEARN MORE</h3>
-                    <div class="learnmorelinks">
-                        <ul><a href="#" style="color:white;text-decoration: none;">CONTACT</a></ul>
-                        <ul><a href="#" style="color:white;text-decoration: none;">ABOUT</a></ul>
-                        <ul><a href="#" style="color:white;text-decoration: none;">OPPORTUNITIES</a></ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h3 class="footerTitle" style="color:#ff8f12;">Subscribe </h3>
-                    <form id="footerSignupForm">
-                        <div class="form-group">
-                            <label class="sr-only" for="footerEmailInput"></label>
-                            <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
+    <footer id="footer" style="background-color:#2E3444; height:300px;">
+            <div class="container-fluid" style="height:300px;">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="footerlogo">
+                            <img src="http://www.mantratec.com/images/CE.jpg" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; ">
+                            <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
                         </div>
-                        <button type="submit" style="background-color:#ff8f12; border-color:#ff8f12;">Get all important updates</button>
-                    </form>
-                </div>
-                <div class="col-md-3">
-                    <div id="connectCol">
-                        <h3 class="footerTitle" style="color:#ff8f12; padding-left:30px; ">Connect</h3>
-                        <ul id="footerSocialBtns">
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footertitle" style="color:#ff8f12;">LEARN MORE</h3>
+                        <div class="learnmorelinks">
+                            <ul><a href="#" style="color:white;text-decoration: none;">CONTACT</a></ul>
+                            <ul><a href="#" style="color:white;text-decoration: none;">ABOUT</a></ul>
+                            <ul><a href="#" style="color:white;text-decoration: none;">OPPORTUNITIES</a></ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footerTitle" style="color:#ff8f12;">Subscribe </h3>
+                        <form id="footerSignupForm">
+                            <div class="form-group">
+                                <label class="sr-only" for="footerEmailInput"></label>
+                                <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
+                            </div>
+                            <button type="submit" style="background-color:#ff8f12; border-color:#ff8f12;">Get all important updates</button>
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="connectCol">
+                            <h3 class="footerTitle" style="color:#ff8f12; padding-left:30px; ">Connect</h3>
+                            <ul id="footerSocialBtns">
                             <a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:33px; width:33px;padding-top:10px;"></a>
                             <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:33px; width:33px;padding-top:10px;"></a>
                             <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="assets/images/linkedin.png" style="height:33px; width:33px;padding-top:10px;"></a>
                             <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:33px; width:33px;padding-top:10px;"></a>
                         </ul>
-                        <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">
-                            <span id="addressTitle" style="color:white;">CollegExplorer</span>
-                            <br> Ballupur Chowk,
-                            <br> Dehradun, UK 248001
+                            <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">
+                                <span id="addressTitle" style="color:white;">CollegExplorer</span>
+                                <br> Ballupur Chowk,
+                                <br> Dehradun, UK 248001
+                            </div>
+                            <div id="footerEmail"><a href="mailto:collegexplorer@gmail.com" style="color:white;text-decoration: none;padding-left:30px;">collegexplorer@gmail.com</a></div>
                         </div>
-                        <div id="footerEmail"><a href="mailto:collegexplorer@gmail.com" style="color:white;text-decoration: none;padding-left:30px;">collegexplorer@gmail.com</a></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    
 </body>

@@ -381,7 +381,7 @@
                 <div class="col-md-9">
                     <div class="form-group">
                         <form action="review.html">
-                            <textarea class="form-control" placeholder="Post a Review/ Ask a Question/ Answer to a Question " id="styled" rows="7" required></textarea>
+                            <textarea class="form-control" placeholder="Post a Review/ Ask a Question" id="styled" required style="font-size:15px; height:80px; background-position: 0% 0%;"></textarea>
                             <br>
                             <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
                         </form>
@@ -389,8 +389,8 @@
                 </div>
             </div>
         </form>
-        <footer id="footer" style="background-color:#2E3444; height:250px;">
-            <div class="container-fluid" style="height:250px;">
+        <footer id="footer" style="background-color:#2E3444; height:300px;">
+            <div class="container-fluid" style="height:300px;">
                 <div class="row">
                     <div class="col-md-3">
                         <div id="footerlogo">
