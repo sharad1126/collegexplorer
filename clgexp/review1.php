@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php require_once "connect.php" ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -371,6 +372,10 @@
         </div>
         <br>
         <br>
+            <?php
+            //session_start();
+            if(!isset($_SESSION['user_id']))
+            {  ?>
         <div class="logintoask">
             <div class="container">
                 <div class="row">
@@ -382,6 +387,11 @@
                 </div>
             </div>
         </div>
+        <?php } ?>
+        <?php
+            //session_start();
+            if(isset($_SESSION['user_id']))
+            {  ?>
         <form name="sent-message" id="contactForm">
             <div class="row">
                 <div class="col-md-1">
@@ -397,6 +407,7 @@
                 </div>
             </div>
         </form>
+            <?php } ?> 
         <footer id="footer" style="background-color:#2E3444; height:250px;">
             <div class="container-fluid" style="height:250px;">
                 <div class="row">
@@ -448,4 +459,11 @@
     </body>
 
     </html>
-<?php 
+
+    <?php 
+    if(isset($_SESSION['user_id']))
+{ ?> 
+    <p><a href="logout.php">Logout</a></p> <?php
+        echo "you are logged in, fuck off bc"; 
+}
+?>
