@@ -1,0 +1,173 @@
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+  .svg .naviHead .logo {
+    background: transparent url('img/logo.png') 0 0 no-repeat;
+    -webkit-background-size: 130px 25px;
+    background-size: 130px 25px;
+  }
+}
+.menu-menu-glowne-container,
+.menu-menu-glowne-en-container {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(24, 24, 29, 0.9);
+  left: 0;
+  top: 80px;
+  padding: 1em 0;
+  opacity: 0;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 0 top 0;
+  -ms-transform-origin: 0 top 0;
+  transform-origin: 0 top 0;
+  -webkit-transition: -webkit-transform 0.35s ease, opacity 0.35s;
+  transition: transform 0.35s ease, opacity 0.35s;
+}
+.menu-menu-glowne-container li,
+.menu-menu-glowne-en-container li {
+  display: block;
+  padding: 0.5em 0;
+}
+.menu-menu-glowne-container li.langSwitcher a,
+.menu-menu-glowne-en-container li.langSwitcher a {
+  color: #939396;
+}
+.menu-menu-glowne-container a,
+.menu-menu-glowne-en-container a {
+  display: inline-block;
+  height: 37px;
+  text-transform: uppercase;
+  color: #F23E43; 
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.menu-menu-glowne-container a span,
+.menu-menu-glowne-en-container a span {
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  padding: 0 0.75em;
+  -webkit-transform-origin: 50% 0 0;
+  -ms-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 33px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 34px;
+  position: relative;
+  border: 2px solid transparent;
+  -webkit-transition: -webkit-transform 0.3s ease 0s, border-color 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+.menu-menu-glowne-container a span:before,
+.menu-menu-glowne-en-container a span:before {
+  content: attr(data-hover);
+  position: absolute;
+  background-color: #ff5f54;
+  border: 2px solid #ff5f54;
+  border-bottom: 2px solid #ff5f54;
+  display: block;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  margin: 0 -2px;
+  -webkit-transform-origin: 50% 0 0;
+  -ms-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transition: -webkit-transform 0.3s ease 0s, opacity 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+}
+.menu-menu-glowne-container a:hover,
+.menu-menu-glowne-en-container a:hover {
+  color: #fff !important;
+}
+.menu-menu-glowne-container a:hover span,
+.menu-menu-glowne-en-container a:hover span {
+  -webkit-transform: rotateX(90deg) translateY(-17px);
+  transform: rotateX(90deg) translateY(-17px);
+  border: 2px solid #ff5f54;
+  -webkit-transition: -webkit-transform 0.3s ease 0s, border-color 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+.menu-menu-glowne-container a:hover span:before,
+.menu-menu-glowne-en-container a:hover span:before {
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  opacity: 1;
+}
+.menu-menu-glowne-container a.current span,
+.menu-menu-glowne-en-container a.current span {
+  border: 2px solid #ff5f54;
+}
+.expanded .menu-menu-glowne-container,
+.expanded .menu-menu-glowne-en-container {
+  opacity: 1;
+  top: 80px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: 0 top 0;
+  -ms-transform-origin: 0 top 0;
+  transform-origin: 0 top 0;
+  -webkit-transition: -webkit-transform 0.35s ease, opacity 0.35s;
+  transition: transform 0.35s ease, opacity 0.35s;
+}
+#navTrigger1 {
+  width: 40px;
+  height: 40px;
+  background: url('img/ico-navTrigger1.png') 0 0 no-repeat;
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+  text-indent: -9999px;
+  display: block;
+  float: right;
+  margin: 20px 20px 0 0;
+}
+/* [MQ] ------------------------------ */
+@media only screen and (min-width: 768px) {
+  #navTrigger1 {
+    display: none;
+  }
+  .menu-menu-glowne-container,
+  .menu-menu-glowne-en-container {
+    position: static;
+    background: none;
+    float: right;
+    width: auto;
+    margin: 23px 20px 0 10px;
+    padding: 0;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .menu-menu-glowne-container li,
+  .menu-menu-glowne-en-container li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+  }
+  .menu-menu-glowne-container a,
+  .menu-menu-glowne-en-container a {
+    display: block;
+  }
+}
+/* [MQ] ------------------------------ */
+@media only screen and (min-width: 1120px) {
+  .menu-menu-glowne-container li,
+  .menu-menu-glowne-en-container li {
+    margin: 0 0 0 15px;
+  }
+  .menu-menu-glowne-container a span,
+  .menu-menu-glowne-en-container a span {
+    padding: 0 1em;
+  }
+}
