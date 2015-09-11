@@ -1,0 +1,57 @@
+
+.img-responsive {
+	height: auto;
+	max-width: 100%;
+}
+.content {
+	text-align: center;
+}
+.content h5 {
+    color: #484846;
+    font-size: 16px;
+    margin: 22px 0 15px 0;
+}
+.content p {
+    color: #555A5C;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 0;
+}
+.text {
+	padding-left: 30px;
+	padding-right: 45px;
+	padding-top: 30px;
+}
+.row {
+    padding-top: 5%;
+}
+.head h1 {
+	color: #262626;
+	font-family: monotype corsiva;
+	font-size: 50px;
+	text-align: center;
+}
+.text h2 {
+	color: #EA573C;
+	font-family: monotype corsiva;
+	font-size: 40px;
+	text-align: center;
+}
+.text p {
+	color: black;
+	font-family: verdana;
+	text-align: center;
+}
+.contain {
+	position:relative; 
+	margin:0 auto; 
+	width:100%;
+	height:auto !important; 
+	height:100%; 
+	min-height:100%; 
+}
+
+.contain {
+	margin:0 auto;
+	padding:0px 0px 58px 0px; 
+}
