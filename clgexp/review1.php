@@ -392,6 +392,17 @@
             //session_start();
             if(isset($_SESSION['user_id']))
             {  ?>
+         <div class="logintoask">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-9">
+                        <a href="logout.php"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Logout</button></a>
+                    </div>  
+                </div>
+            </div>
+        </div>
         <form name="sent-message" id="contactForm">
             <div class="row">
                 <div class="col-md-1">
@@ -460,10 +471,4 @@
 
     </html>
 
-    <?php 
-    if(isset($_SESSION['user_id']))
-{ ?> 
-    <p><a href="logout.php">Logout</a></p> <?php
-        echo "you are logged in, fuck off bc"; 
-}
-?>
+   
