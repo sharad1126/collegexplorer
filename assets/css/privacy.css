@@ -12,11 +12,16 @@ span {
     color: #F2F2F2;
     font-family: "Open Sans";
 }
-
-.container-fluid {
-    margin-top: 80px;
+q {
+    font-family: "monotype corsiva";
+    font-size: 48px;
+    color: #FC4B3F;
 }
-
+.quote {
+    background-color: #E0E0E0;
+    box-shadow: 0px 2px 2px #E0E0E0;
+    height: 220px;
+}
 .display-p {
     background-attachment: fixed;
     background-image: url("../images/overlay.png"), url("../images/hammer.png");
