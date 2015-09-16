@@ -1,0 +1,47 @@
+body {
+    font-family: verdana;
+}
+
+p {
+    color: #ED4F44;
+    margin-top: 10px;
+    font-size: 18px;
+}
+span {
+    font-size: 15px;
+    color: #F2F2F2;
+    font-family: "Open Sans";
+}
+
+.container-fluid {
+    margin-top: 80px;
+}
+
+.display-p {
+    background-attachment: fixed;
+    background-image: url("../images/overlay.png"), url("../images/hammer.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.display-area {
+    background-attachment: fixed;
+        background-image: url("../images/overlay.png"), url("../images/hammer.png");
+    background-position: center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    min-height: 300px;
+    background-repeat: no-repeat;
+}
+
+.display-ce {
+    height: 500px;
+    overflow: hidden;
+    background: url();
+    background-repeat: no-repeat;
+}

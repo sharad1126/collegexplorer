@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php require_once "connect.php" ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -371,6 +372,10 @@
         </div>
         <br>
         <br>
+            <?php
+            //session_start();
+            if(!isset($_SESSION['user_id']))
+            {  ?>
         <div class="logintoask">
             <div class="container">
                 <div class="row">
@@ -378,6 +383,23 @@
                     </div>
                     <div class="col-md-9">
                         <a href="index.php?id=<?php echo urlencode($id);?>"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to ask a question</button></a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <?php } ?>
+        <?php
+            //session_start();
+            if(isset($_SESSION['user_id']))
+            {  ?>
+         <div class="logintoask">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-9">
+                        <a href="logout.php"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Logout</button></a>
                     </div>  
                 </div>
             </div>
@@ -397,6 +419,7 @@
                 </div>
             </div>
         </form>
+            <?php } ?> 
         <footer id="footer" style="background-color:#2E3444; height:250px;">
             <div class="container-fluid" style="height:250px;">
                 <div class="row">
@@ -446,6 +469,4 @@
         </footer>
         <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </body>
-
     </html>
-<?php 
