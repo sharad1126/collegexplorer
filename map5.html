@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>PlaceID finder</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <script type="text/javascript" href="assets/js/modernizr.js"></script>
     <style>
-      html, body, #map-canvas {
+    html,
+    body,
+    #map-canvas {
         height: 600px;
         width: 1080px;
         margin: 0;
         padding: 0;
-      }
-
-      .controls {
+    }
+    
+    .controls {
         background-color: #fff;
         border-radius: 2px;
         border: 1px solid transparent;
@@ -32,79 +35,80 @@
         padding: 0 11px 0 13px;
         text-overflow: ellipsis;
         width: 400px;
-      }
-
-      .controls:focus {
+    }
+    
+    .controls:focus {
         border-color: #4d90fe;
-      }
-
+    }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&signed_in=true"></script>
-
     <script>
-// This sample uses the Place Autocomplete widget to allow the user to search
-// for and select a place. The sample then displays an info window containing
-// the place ID and other information about the place that the user has
-// selected.
+    // This sample uses the Place Autocomplete widget to allow the user to search
+    // for and select a place. The sample then displays an info window containing
+    // the place ID and other information about the place that the user has
+    // selected.
 
-function initialize() {
-  var mapOptions = {
-    center: {lat: 12.8408701, lng: 80.15301249999993},
-    zoom: 13
-  };
-  var map = new google.maps.Map(document.getElementById('map-canvas'),
-    mapOptions);
+    function initialize() {
+        var mapOptions = {
+            center: {
+                lat: 12.8408701,
+                lng: 80.15301249999993
+            },
+            zoom: 13
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
 
-  var input = /** @type {HTMLInputElement} */(
-      document.getElementById('pac-input'));
+        var input = /** @type {HTMLInputElement} */ (
+            document.getElementById('pac-input'));
 
-  var autocomplete = new google.maps.places.Autocomplete(input);
-  autocomplete.bindTo('bounds', map);
+        var autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
 
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-  var infowindow = new google.maps.InfoWindow();
-  var marker = new google.maps.Marker({
-    map: map
-  });
-  google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map, marker);
-  });
+        var infowindow = new google.maps.InfoWindow();
+        var marker = new google.maps.Marker({
+            map: map
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
 
-  google.maps.event.addListener(autocomplete, 'place_changed', function() {
-    infowindow.close();
-    var place = autocomplete.getPlace();
-    if (!place.geometry) {
-      return;
+        google.maps.event.addListener(autocomplete, 'place_changed', function() {
+            infowindow.close();
+            var place = autocomplete.getPlace();
+            if (!place.geometry) {
+                return;
+            }
+
+            if (place.geometry.viewport) {
+                map.fitBounds(place.geometry.viewport);
+            } else {
+                map.setCenter(place.geometry.location);
+                map.setZoom(17);
+            }
+
+            // Set the position of the marker using the place ID and location
+            marker.setPlace( /** @type {!google.maps.Place} */ ({
+                placeId: place.place_id,
+                location: place.geometry.location
+            }));
+            marker.setVisible(true);
+
+            infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+                'Place ID: ' + place.place_id + '<br>' +
+                place.formatted_address);
+            infowindow.open(map, marker);
+        });
     }
 
-    if (place.geometry.viewport) {
-      map.fitBounds(place.geometry.viewport);
-    } else {
-      map.setCenter(place.geometry.location);
-      map.setZoom(17);
-    }
-
-    // Set the position of the marker using the place ID and location
-    marker.setPlace(/** @type {!google.maps.Place} */ ({
-      placeId: place.place_id,
-      location: place.geometry.location
-    }));
-    marker.setVisible(true);
-
-    infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-        'Place ID: ' + place.place_id + '<br>' +
-        place.formatted_address);
-    infowindow.open(map, marker);
-  });
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
+    google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-  </head>
-  <body>
- <section id="navbar">
+</head>
+
+<body>
+    <section id="navbar">
         <nav class="navbar navbar-default" style="background-color: rgba(51,51,51,0.8);opacity: 1;text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -131,8 +135,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
             </div>
         </nav>
     </section>
-    <input id="pac-input" class="controls" type="text"
-        placeholder="Enter a location">
+    <input id="pac-input" class="controls" type="text" placeholder="Enter a location">
     <div id="map-canvas"></div>
     <footer id="footer" style="background-color:#2E3444; height:250px;">
         <div class="container-fluid" style="height:250px;">
@@ -181,5 +184,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
             </div>
         </div>
     </footer>
-  </body>
+</body>
+
 </html>
