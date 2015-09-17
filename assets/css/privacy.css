@@ -12,6 +12,9 @@ span {
     color: #F2F2F2;
     font-family: "Open Sans";
 }
+.space {
+    padding-top: 30px;
+}
 q {
     margin-top: 15px;
     font-family: "Sans";

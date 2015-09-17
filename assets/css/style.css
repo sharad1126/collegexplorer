@@ -1,4 +1,4 @@
-/* ==== Google font ==== */
+
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
 
 
@@ -65,17 +65,6 @@ a:focus {
     padding: 20px;
 }
 
-.team h5 {
-    margin-bottom: 10px;
-}
-
-.team p.subtitle {
-    margin-bottom: 10px;
-}
-
-.avatar {
-    margin-bottom: 20px;
-}
 #contact {
     background-position: center;
     background-repeat: no-repeat;
