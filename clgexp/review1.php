@@ -382,7 +382,7 @@
                     <div class="col-md-1">
                     </div>
                     <div class="col-md-9">
-                        <a href="index.php?id=<?php echo urlencode($id);?>"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to ask a question</button></a>
+                        <a href="login.php?id=<?php echo urlencode($id);?>"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to ask a question</button></a>
                     </div>  
                 </div>
             </div>

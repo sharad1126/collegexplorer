@@ -11,7 +11,7 @@ function signed($user_registered,$id)
 {
     if($user_registered)
         {
-            redirect_to("index.php?id=".urlencode($id));
+            redirect_to("login.php?id=".urlencode($id));
 
         }
     exit;
