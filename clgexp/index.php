@@ -9,7 +9,7 @@ if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) &&
   $Lname= $_POST['Lname'];
   $email= $_POST['email'];
   $password=$_POST['password'];
- // $password_hash = md5('$password');
+  $password_hash = md5($password);
      if(!empty($uname) && !empty($Fname) && !empty($Lname) && !empty($email) && !empty($password) )
     { 
         $query = mysqli_query($conn, "SELECT * FROM login WHERE username='$uname'");
@@ -19,7 +19,7 @@ if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) &&
                 }
              else
                 {  
-                      $query = "INSERT INTO login(username,firstname,lastname,email,password) VALUES ('{$uname}','{$Fname}','{$Lname}','{$email}','{$password}')"; 
+                      $query = "INSERT INTO login(username,firstname,lastname,email,password) VALUES ('{$uname}','{$Fname}','{$Lname}','{$email}','{$password_hash}')"; 
                       $user_registered = mysqli_query($conn,$query);
                       signed($user_registered,$id);  
                 }
@@ -29,20 +29,23 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
 {
     $uname=  $_POST['UNAME'];
     $password=$_POST['PASSWORD'];
-    //$password_hash= md5($password);
+    $password_hash= md5($password);
     if(!empty($uname) && !empty($password) )        
     {        
-        $query_run = "SELECT * FROM login WHERE username='{$uname}' AND password = '{$password}'" ;
+        $query_run = "SELECT * FROM login WHERE username='{$uname}'" ;
         $result_query = @mysqli_query($conn,$query_run); 
             if($result_query)
                 {
                     $user_exist= mysqli_num_rows($result_query);
-                    if(!$user_exist==0)
-                        {
-                            confirm_logged($result_query,$id);       
-                        }
+                    $result_s=mysqli_fetch_assoc($result_query);
+                    if($password_hash==$result_s['password'])
+                    {
+                    	confirm_logged($result_s['id'],$id); 
+                    }
+          
                     else
                     {
+                    	echo $password_hash." ".$result_s['password'];
                         echo "Invalid Username or Password";
                     }
                 }

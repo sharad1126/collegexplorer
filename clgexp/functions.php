@@ -17,14 +17,11 @@ function signed($user_registered,$id)
     exit;
 }
 
-function confirm_logged($query_rows,$id)
+function confirm_logged($user_id,$id)
 {  
-        $query_rows1=mysqli_fetch_assoc($query_rows);
-        $_SESSION['user_id']= $query_rows1['id'];
-<<<<<<< HEAD
+        //$query_rows1=mysqli_fetch_assoc($query_rows);
+        $_SESSION['user_id']= $user_id;
         $user_logged=1;
-=======
->>>>>>> 6db6a32ebca07bb57f5556266dac7c4d60bba8ba
         redirect_to("review1.php?id=".urlencode($id));
 
 }
