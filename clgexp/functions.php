@@ -21,7 +21,6 @@ function confirm_logged($user_id,$id)
 {  
         //$query_rows1=mysqli_fetch_assoc($query_rows);
         $_SESSION['user_id']= $user_id;
-        $user_logged=1;
         redirect_to("review1.php?id=".urlencode($id));
 
 }

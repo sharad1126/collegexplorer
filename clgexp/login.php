@@ -44,10 +44,9 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
                     {
                     	confirm_logged($result_s['id'],$id); 
                     }
-          
                     else
                     {
-                    	//echo $password_hash." ".$result_s['password'];
+                    	echo $password_hash." ".$result_s['password'];
                     	echo "<div>Invalid Username or Password</div>";
                     }
                 }

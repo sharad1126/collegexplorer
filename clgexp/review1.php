@@ -391,7 +391,7 @@
         <?php } ?>
         <?php
             //session_start();
-            if(isset($_SESSION['user_id']))
+            if(isset($_SESSION['user_id']) && isset($_GET['id']))
             {  ?>
          <div class="logintoask">
             <div class="container">
@@ -404,14 +404,22 @@
                 </div>
             </div>
         </div>
-        <form name="sent-message" id="contactForm">
-            <div class="row">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-9">
-                    <div class="form-group">
-                        <form action="review.html">
-                            <textarea class="form-control" placeholder="Post a Review/ Ask a Question/ Answer to a Question " id="styled" rows="7" required></textarea>
+                        <?php 
+                        $id = $_GET['id'];
+                        if(isset($_POST['ask']))
+                        {
+                            $id = $_GET['id'];
+                            $question_ask = $_POST['ask']; 
+                            if(!empty($question_ask))
+                            {
+                                $question_query = "INSERT INTO question(questiondb,cid) VALUES ('{$question_ask}', '{$id}')";
+                                $result_question = mysqli_query($conn,$question_query);
+                                if($result_question) { echo "fuck off";}
+                            }
+                        }
+                    ?>
+                        <form action="review1.php?id=<?php echo urlencode($id); ?>" method= "POST">
+                            <input type="text" name="ask">
                             <br>
                             <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
                         </form>
@@ -419,7 +427,22 @@
                 </div>
             </div>
         </form>
-            <?php } ?> 
+            <?php }  // session ?> 
+            <?php 
+                if(isset($_GET['id'])) {
+                if(isset($_SESSION['user_id']) || !isset($_SESSION['user_id']) ) {
+                $id= $_GET['id'];
+                $question_query= "SELECT * FROM question WHERE cid= ".$id."";
+                $result_question = mysqli_query($conn,$question_query);
+                while($row = mysqli_fetch_assoc($result_question)) { $qid= $row['qid'];
+                    ?> <BR> <CENTER>  
+                <a href="question.php?qid=<?php echo urlencode($qid);?>">
+                    <?php 
+                echo $row['questiondb']; 
+                } 
+            }
+        }
+            ?>
         <footer id="footer" style="background-color:#2E3444; height:250px;">
             <div class="container-fluid" style="height:250px;">
                 <div class="row">
