@@ -14,9 +14,6 @@
 	min-height: 500px;
 }
 
-.js .grid {
-	background: url(../img/loading.gif) no-repeat 50% 100px;
-}
 
 .js .grid.loaded {
 	background: none;
@@ -37,32 +34,6 @@
 
 .js .grid.loaded li {
 	display: block;
-}
-/* Heading */
-.dream h1 {
-	display: block;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 600;
-}
-
-.dream h1 {
-	display: block;
-	margin-left: 150px;
-	padding: 135px;
-	color: #945827;
-	text-transform: uppercase;
-	background-image: url("http://dms.iitd.ac.in/2.jpg");
-	letter-spacing: 1px;
-	font-weight: 300;
-}
-.dream h1 a{
-	display: block;
-	color: #000000;
-	font-weight: 800;
-}
-.dream h1 a:hover {
-	color: #FF0000;
 }
 
 /* Title box */
