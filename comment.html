@@ -47,21 +47,28 @@
         </div>
         <div class="col-md-8" style="margin-top: 100px;">
             <h3 style="color: black; font-family: 'Roboto', sans-serif;">This is your question which will be displayed. Wanna write an answer to this ? Or add a comment regarding this fact...</h3>
-            <a href="#demo" class="comment" data-toggle="collapse" style="color: #444242;">Comment</a>
+            <a href="#demo" class="comment" data-toggle="collapse" data-toggle="tooltip" title="Click to Comment" style="color: #444242;">Comment</a>
             <div id="demo" class="collapse">
-            <br>
+                <br>
                 <textarea rows="2" style="background-color: #F4F4F4" class="form-control autogrow" name="comment" value="" required="" placeholder="Write a comment..."></textarea>
                 <br>
                 <input type="submit" name="submit" class="btn btn-info btn-sm" style="background-color: #444242; color: white;">
             </div>
         </div>
-    <div class="col-md-2">
+        <div class="col-md-2">
+        </div>
     </div>
+    <div class="container-fluid" style="margin-top: 30px;">
+        <div class="col-md-7">
+        </div>
+        <div class="col-md-3">
+            <a href="#" data-toggle="tooltip" title="Write your comment above"><img src="assets/images/boy.jpg""></a>
+        </div>
+        <div class="col-md-2">
+        </div>
     </div>
-
-    <div class="space" style="padding-top: 150px;">
+    <div class="space" style="margin-top: 50px;">
     </div>
-   
     <!-- footer     -->
     <footer id="footer" style="background-color:#2E3444; height:250px;">
         <div class="container-fluid" style="height:250px;">
@@ -110,6 +117,11 @@
             </div>
         </div>
     </footer>
+    <script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 </body>
 
 </html>
