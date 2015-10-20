@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <link rel="shortcut icon" href="favicon.png" />
     <script type="text/javascript" href="assets/js/modernizr.js"></script>
+    <script type="text/javascript" href="assets/js/comment.js"></script>
 </head>
 
 <body>
@@ -51,9 +52,9 @@
             <a href="#demo" class="comment" data-toggle="collapse" data-toggle="tooltip" title="Click to Comment" style="color: #444242;">Comment</a>
             <div id="demo" class="collapse">
                 <br>
-                <textarea rows="2" style="background-color: #F4F4F4" class="form-control autogrow" name="comment" value="" required="" placeholder="Write a comment..."></textarea>
+                <textarea id="para" rows="2" style="background-color: #F4F4F4" class="form-control autogrow" name="comment" value="" required="" placeholder="Write a comment..."></textarea>
                 <br>
-                <input type="submit" name="submit" class="btn btn-info btn-sm" style="background-color: #444242; color: white;">
+                <input id="comment" type="submit" name="submit" class="btn btn-info btn-sm" style="background-color: #444242; color: white;">
             </div>
         </div>
         <div class="col-md-2">
@@ -69,6 +70,17 @@
         </div>
     </div>
     <div class="space" style="margin-top: 50px;">
+        <div class="container-fluid">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8" style="margin-top: 40px;">
+                <div class="here" id="data">
+                    <p style="color: black; font-family: 'Open Sans', sans-serif; font-size: 18px;">This is my comment 1</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
     </div>
     <!-- footer     -->
     <footer id="footer" style="background-color:#2E3444; height:250px;">
