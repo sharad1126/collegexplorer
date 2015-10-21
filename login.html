@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0086)http://s.codepen.io/boomerang/9b017862feea2d2c509a0b09688be4bf1441892511058/index.html -->
-<html class="">
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Write a Review</title>
+    <meta name="description" content="review, college" />
     <link rel="canonical" href="loginform.html">
-    <link href="css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/content.css" />
+    <script src="assets/js/modernizr.custom.js"></script>
     <link rel="stylesheet prefetch" href="http://codepen.io/assets/reset/normalize.css">
     <style class="cp-pen-styles">
     *,
@@ -18,11 +21,6 @@
     
     html {
         overflow-y: scroll;
-    }
-    
-    body {
-        background: #c1bdba;
-        font-family: 'Titillium Web', sans-serif;
     }
     
     a {
@@ -209,75 +207,162 @@
 </head>
 
 <body>
-    <div class="form">
-        <ul class="tab-group">
-            <li class="tab active"><a href="#signup">Sign Up</a></li>
-            <li class="tab"><a href="#login">Log In</a></li>
-        </ul>
-        <div class="tab-content">
-            <div id="signup">
-                <h1>Sign Up</h1>
-                <form action="review.html" method="post">
-                    <div class="top-row">
-                        <div class="field-wrap">
-                            <label>
-                                Username<span class="req">*</span>
-                            </label>
-                            <input type="text" required="" autocomplete="off">
+    <section>
+        <div class="morph-button morph-button-overlay morph-button-fixed">
+            <button type="button">Login</button>
+            <div class="morph-content">
+                <div>
+                    <div class="content-style-overlay">
+                        <span class="icon icon-close"></span>
+                        <div class="form">
+                            <ul class="tab-group">
+                                <li class="tab active"><a href="#signup">Sign Up</a></li>
+                                <li class="tab"><a href="#login">Log In</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="signup">
+                                    <h1>Sign Up</h1>
+                                    <form action="review.html" method="post">
+                                        <div class="top-row">
+                                            <div class="field-wrap">
+                                                <label>
+                                                    Username<span class="req">*</span>
+                                                </label>
+                                                <input type="text" required="" autocomplete="off">
+                                            </div>
+                                            <div class="field-wrap">
+                                                <label>
+                                                    First Name<span class="req">*</span>
+                                                </label>
+                                                <input type="text" required="" autocomplete="off">
+                                            </div>
+                                            <div class="field-wrap">
+                                                <label>
+                                                    Last Name<span class="req">*</span>
+                                                </label>
+                                                <input type="text" required="" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="field-wrap">
+                                            <label>
+                                                Email Address<span class="req">*</span>
+                                            </label>
+                                            <input type="email" required="" autocomplete="off">
+                                        </div>
+                                        <div class="field-wrap">
+                                            <label>
+                                                Set A Password<span class="req">*</span>
+                                            </label>
+                                            <input type="password" required="" autocomplete="off">
+                                        </div>
+                                        <button type="submit" class="button button-block">Get Started</button>
+                                    </form>
+                                </div>
+                                <div id="login">
+                                    <h1>Welcome Back!</h1>
+                                    <form action="review.html" method="post">
+                                        <div class="field-wrap">
+                                            <label>
+                                                Username<span class="req">*</span>
+                                            </label>
+                                            <input type="text" required="" autocomplete="off">
+                                        </div>
+                                        <div class="field-wrap">
+                                            <label>
+                                                Password<span class="req">*</span>
+                                            </label>
+                                            <input type="password" required="" autocomplete="off">
+                                        </div>
+                                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+                                        <button class="button button-block">Log In</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- tab-content -->
                         </div>
-                        <div class="field-wrap">
-                            <label>
-                                First Name<span class="req">*</span>
-                            </label>
-                            <input type="text" required="" autocomplete="off">
-                        </div>
-                        <div class="field-wrap">
-                            <label>
-                                Last Name<span class="req">*</span>
-                            </label>
-                            <input type="text" required="" autocomplete="off">
-                        </div>
                     </div>
-                    <div class="field-wrap">
-                        <label>
-                            Email Address<span class="req">*</span>
-                        </label>
-                        <input type="email" required="" autocomplete="off">
-                    </div>
-                    <div class="field-wrap">
-                        <label>
-                            Set A Password<span class="req">*</span>
-                        </label>
-                        <input type="password" required="" autocomplete="off">
-                    </div>
-                    <button type="submit" class="button button-block">Get Started</button>
-                </form>
-            </div>
-            <div id="login">
-                <h1>Welcome Back!</h1>
-                <form action="review.html" method="post">
-                    <div class="field-wrap">
-                        <label>
-                            Username<span class="req">*</span>
-                        </label>
-                        <input type="text" required="" autocomplete="off">
-                    </div>
-                    <div class="field-wrap">
-                        <label>
-                            Password<span class="req">*</span>
-                        </label>
-                        <input type="password" required="" autocomplete="off">
-                    </div>
-                    <p class="forgot"><a href="#">Forgot Password?</a></p>
-                    <button class="button button-block">Log In</button>
-                </form>
+                </div>
             </div>
         </div>
-        <!-- tab-content -->
-    </div>
-    <!-- /form -->
-    <script src="stopExecutionOnTimeout.js"></script>
-    <script src="jquery.min.js"></script>
+    </section>
+    <!-- /container -->
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/uiMorphingButton_fixed.js"></script>
+    <script>
+    (function() {
+        var docElem = window.document.documentElement,
+            didScroll, scrollPosition;
+
+        // trick to prevent scrolling when opening/closing button
+        function noScrollFn() {
+            window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
+        }
+
+        function noScroll() {
+            window.removeEventListener('scroll', scrollHandler);
+            window.addEventListener('scroll', noScrollFn);
+        }
+
+        function scrollFn() {
+            window.addEventListener('scroll', scrollHandler);
+        }
+
+        function canScroll() {
+            window.removeEventListener('scroll', noScrollFn);
+            scrollFn();
+        }
+
+        function scrollHandler() {
+            if (!didScroll) {
+                didScroll = true;
+                setTimeout(function() {
+                    scrollPage();
+                }, 60);
+            }
+        };
+
+        function scrollPage() {
+            scrollPosition = {
+                x: window.pageXOffset || docElem.scrollLeft,
+                y: window.pageYOffset || docElem.scrollTop
+            };
+            didScroll = false;
+        };
+
+        scrollFn();
+
+        var el = document.querySelector('.morph-button');
+
+        new UIMorphingButton(el, {
+            closeEl: '.icon-close',
+            onBeforeOpen: function() {
+                // don't allow to scroll
+                noScroll();
+            },
+            onAfterOpen: function() {
+                // can scroll again
+                canScroll();
+                // add class "noscroll" to body
+                classie.addClass(document.body, 'noscroll');
+                // add scroll class to main el
+                classie.addClass(el, 'scroll');
+            },
+            onBeforeClose: function() {
+                // remove class "noscroll" to body
+                classie.removeClass(document.body, 'noscroll');
+                // remove scroll class from main el
+                classie.removeClass(el, 'scroll');
+                // don't allow to scroll
+                noScroll();
+            },
+            onAfterClose: function() {
+                // can scroll again
+                canScroll();
+            }
+        });
+    })();
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
     <script>
     $('.form').find('input, textarea').on('keyup blur focus', function(e) {
         var $this = $(this),
@@ -310,9 +395,7 @@
         $('.tab-content > div').not(target).hide();
         $(target).fadeIn(600);
     });
-    //@ sourceURL=pen.js
     </script>
-    <script src="css_live_reload_init.js"></script>
 </body>
 
 </html>
