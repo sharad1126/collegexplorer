@@ -8,12 +8,273 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/review.css">
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <script type="text/javascript" href="assets/js/modernizr.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="favicon.png" />
+    <link rel="canonical" href="loginform.html">
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/content.css" />
+    <script src="assets/js/modernizr.custom.js"></script>
+    <link rel="stylesheet prefetch" href="http://codepen.io/assets/reset/normalize.css">
+    <style class="cp-pen-styles">
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    html {
+        overflow-y: scroll;
+    }
+    
+    body {
+        background-color: #FBFCF7;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+        color: #0C0C0B;
+        text-align: justify;
+        font-size: 16px;
+        text-justify: inter-word;
+    }
+    
+    h1 {
+        font-size: 45px;
+        font-family: 'raleway', sans-serif;
+        text-transform: uppercase;
+        color: #FC573A;
+    }
+    
+    h2 {
+        font-size: 24px;
+        font-family: 'dosis', sans-serif;
+        text-transform: uppercase;
+        color: #FC573A;
+    }
+    
+    .one {
+        padding-left: 20px;
+    }
+    
+    .one .col-md-3 {
+        border: 1px solid white;
+        background-color: #6F5499;
+    }
+    
+    q {
+        font-family: 'PT Mono', ;
+        font-size: 35px;
+        color: white;
+    }
+    
+    .quote {
+        background-color: #6F5499;
+    }
+    
+    #review {
+        text-align: justify;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #review h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'raleway', sans-serif;
+        text-transform: uppercase;
+        color: #FC573A;
+    }
+    
+    .border {
+        border: 1px solid black;
+        padding: 20px 45px 80px 45px;
+        background-color: #F1F2ED;
+    }
+    
+    textarea#styled {
+        border: 3px solid #cccccc;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #1ab188;
+        -webkit-transition: .5s ease;
+        transition: .5s ease;
+    }
+    
+    a:hover {
+        color: #179b77;
+    }
+    
+    .form {
+        background: rgba(19, 35, 47, 0.9);
+        padding: 40px;
+        max-width: 600px;
+        margin: 40px auto;
+        border-radius: 4px;
+        box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    }
+    
+    .tab-group {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+    }
+    
+    .tab-group:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .tab-group li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        background: rgba(160, 179, 176, 0.25);
+        color: #a0b3b0;
+        font-size: 20px;
+        float: left;
+        width: 50%;
+        text-align: center;
+        cursor: pointer;
+        -webkit-transition: .5s ease;
+        transition: .5s ease;
+    }
+    
+    .tab-group li a:hover {
+        background: #179b77;
+        color: #ffffff;
+    }
+    
+    .tab-group .active a {
+        background: #1ab188;
+        color: #ffffff;
+    }
+    
+    .tab-content > div:last-child {
+        display: none;
+    }
+    
+    label {
+        position: absolute;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+        left: 13px;
+        color: rgba(255, 255, 255, 0.5);
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+        -webkit-backface-visibility: hidden;
+        pointer-events: none;
+        font-size: 22px;
+    }
+    
+    label .req {
+        margin: 2px;
+        color: #1ab188;
+    }
+    
+    label.active {
+        -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        transform: translateY(50px);
+        left: 2px;
+        font-size: 14px;
+    }
+    
+    label.active .req {
+        opacity: 0;
+    }
+    
+    label.highlight {
+        color: #ffffff;
+    }
+    
+    input,
+    textarea {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 5px 10px;
+        background: none;
+        background-image: none;
+        border: 1px solid #a0b3b0;
+        color: #ffffff;
+        border-radius: 0;
+        -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+        transition: border-color .25s ease, box-shadow .25s ease;
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline: 0;
+        border-color: #1ab188;
+    }
+    
+    textarea {
+        border: 2px solid #a0b3b0;
+        resize: vertical;
+    }
+    
+    .field-wrap {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    
+    .top-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .top-row > div {
+        float: left;
+        width: 48%;
+        margin-right: 4%;
+    }
+    
+    .top-row > div:last-child {
+        margin: 0;
+    }
+    
+    .button {
+        border: 0;
+        outline: none;
+        border-radius: 0;
+        padding: 15px 0;
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        background: #1ab188;
+        color: #ffffff;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    
+    .button:hover,
+    .button:focus {
+        background: #179b77;
+    }
+    
+    .button-block {
+        display: block;
+        width: 100%;
+    }
+    
+    .forgot {
+        margin-top: -20px;
+        text-align: right;
+    }
+    </style>
 </head>
 
 <body>
@@ -68,73 +329,73 @@
                 <br>
                 <h2>Undergraduate </h2>
                 <ul style="list-style-type: disc;margin: 0px;padding-left: 35px;overflow: hidden;font-family: 'Roboto', sans-serif;font-size: 16px;color: #0C0C0B;">
-                    <li>Aerospace Engineering</li>
+                    <li style="float: left;">Aerospace Engineering</li>
                     <br>
-                    <li>Chemical Engineering</li>
+                    <li style="float: left;">Chemical Engineering</li>
                     <br>
-                    <li>Civil Engineering</li>
+                    <li style="float: left;">Civil Engineering</li>
                     <br>
-                    <li>Computer Science and Engineering</li>
+                    <li style="float: left;">Computer Science and Engineering</li>
                     <br>
-                    <li>Electrical Engineering</li>
+                    <li style="float: left;">Electrical Engineering</li>
                     <br>
-                    <li>Mechanical Engineering</li>
+                    <li style="float: left;">Mechanical Engineering</li>
                     <br>
-                    <li>Metallurgical Engineering and Materials Science</li>
+                    <li style="float: left;">Metallurgical Engineering and Materials Science</li>
                     <br>
-                    <li>Enginerring Physics.</li>
+                    <li style="float: left;">Enginerring Physics.</li>
                 </ul>
                 <br>
                 <h2>Undergraduate-cum-postgraduate dual programs</h2>
                 <ul style="list-style-type: disc;margin: 0px;padding-left: 35px;overflow: hidden;font-family: 'Roboto', sans-serif;font-size: 16px;color: #0C0C0B;">
-                    <li>Aerospace Engineering</li>
+                    <li style="float: left;">Aerospace Engineering</li>
                     <br>
-                    <li>Chemical Engineering</li>
+                    <li style="float: left;">Chemical Engineering</li>
                     <br>
-                    <li>Civil Engineering</li>
+                    <li style="float: left;">Civil Engineering</li>
                     <br>
-                    <li>Computer Science and Engineering</li>
+                    <li style="float: left;">Computer Science and Engineering</li>
                     <br>
-                    <li>Electrical Engineering</li>
+                    <li style="float: left;">Electrical Engineering</li>
                     <br>
-                    <li>Mechanical Engineering</li>
+                    <li style="float: left;">Mechanical Engineering</li>
                     <br>
-                    <li>Metallurgical Engineering and Materials Science</li>
+                    <li style="float: left;">Metallurgical Engineering and Materials Science</li>
                     <br>
-                    <li>Enginerring Physics.</li>
+                    <li style="float: left;">Enginerring Physics.</li>
                 </ul>
                 <br>
                 <h2>Postgraduate programs</h2>
                 <ul style="list-style-type: disc;margin: 0px;padding-left: 35px;overflow: hidden;font-family: 'Roboto', sans-serif;font-size: 16px;color: #0C0C0B;">
-                    <li>Aerospace Engineering</li>
+                    <li style="float: left;">Aerospace Engineering</li>
                     <br>
-                    <li>Biosciences and Bioengineering</li>
+                    <li style="float: left;">Biosciences and Bioengineering</li>
                     <br>
-                    <li>Chemical Engineering</li>
+                    <li style="float: left;">Chemical Engineering</li>
                     <br>
-                    <li>Civil Engineering</li>
+                    <li style="float: left;">Civil Engineering</li>
                     <br>
-                    <li>Computer Science and Engineering</li>
+                    <li style="float: left;">Computer Science and Engineering</li>
                     <br>
-                    <li>Earth Sciences</li>
+                    <li style="float: left;">Earth Sciences</li>
                     <br>
-                    <li>Electrical Engineering</li>
+                    <li style="float: left;">Electrical Engineering</li>
                     <br>
-                    <li>Mechanical Engineering</li>
+                    <li style="float: left;">Mechanical Engineering</li>
                     <br>
-                    <li>Metallurgical Engineering and Materials Science</li>
+                    <li style="float: left;">Metallurgical Engineering and Materials Science</li>
                     <br>
-                    <li>Center of Studies in Resources Engineering</li>
+                    <li style="float: left;">Center of Studies in Resources Engineering</li>
                     <br>
-                    <li>Energy Science and Engineering</li>
+                    <li style="float: left;">Energy Science and Engineering</li>
                     <br>
-                    <li>Industrial Engineering and Operations Research</li>
+                    <li style="float: left;">Industrial Engineering and Operations Research</li>
                     <br>
-                    <li>Systems and Control Engineering</li>
+                    <li style="float: left;">Systems and Control Engineering</li>
                     <br>
-                    <li>Environmental Science and Engineering</li>
+                    <li style="float: left;">Environmental Science and Engineering</li>
                     <br>
-                    <li>Centre For Technology Alternatives For Rural Areas (CTARA)</li>
+                    <li style="float: left;">Centre For Technology Alternatives For Rural Areas (CTARA)</li>
                 </ul>
                 <br>
                 <br>
@@ -143,7 +404,84 @@
                 <div class="col-md-1">
                 </div>
                 <div class="col-xs-10 col-md-3" style="text-align: center;">
-                    <h3 style="color: white;font-family: 'dosis',;">Rank Of IIT Bombay As Per Top Magazines</h3>
+                    <section>
+                        <div class="morph-button morph-button-overlay morph-button-fixed">
+                            <button type="button">Write a Review</button>
+                            <div class="morph-content">
+                                <div>
+                                    <div class="content-style-overlay">
+                                        <span class="icon icon-close"></span>
+                                        <div class="form">
+                                            <ul class="tab-group">
+                                                <li class="tab active"><a href="#signup">Sign In</a></li>
+                                                <li class="tab"><a href="#login">Log In</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="signup">
+                                                    <h1 style="color: #ffffff;">Sign Up</h1>
+                                                    <form action="review.html" method="post">
+                                                        <div class="top-row">
+                                                            <div class="field-wrap">
+                                                                <label>
+                                                                    Username<span class="req">*</span>
+                                                                </label>
+                                                                <input type="text" required="" autocomplete="off">
+                                                            </div>
+                                                            <div class="field-wrap">
+                                                                <label>
+                                                                    First Name<span class="req">*</span>
+                                                                </label>
+                                                                <input type="text" required="" autocomplete="off">
+                                                            </div>
+                                                            <div class="field-wrap">
+                                                                <label>
+                                                                    Last Name<span class="req">*</span>
+                                                                </label>
+                                                                <input type="text" required="" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                        <div class="field-wrap">
+                                                            <label>
+                                                                Email Address<span class="req">*</span>
+                                                            </label>
+                                                            <input type="email" required="" autocomplete="off">
+                                                        </div>
+                                                        <div class="field-wrap">
+                                                            <label>
+                                                                Set A Password<span class="req">*</span>
+                                                            </label>
+                                                            <input type="password" required="" autocomplete="off">
+                                                        </div>
+                                                        <button type="submit" class="button button-block">Get Started</button>
+                                                    </form>
+                                                </div>
+                                                <div id="login">
+                                                    <h1 style="color: #ffffff;">Welcome Back!</h1>
+                                                    <form action="review.html" method="post">
+                                                        <div class="field-wrap">
+                                                            <label>
+                                                                Username<span class="req">*</span>
+                                                            </label>
+                                                            <input type="text" required="" autocomplete="off">
+                                                        </div>
+                                                        <div class="field-wrap">
+                                                            <label>
+                                                                Password<span class="req">*</span>
+                                                            </label>
+                                                            <input type="password" required="" autocomplete="off">
+                                                        </div>
+                                                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+                                                        <button class="button button-block">Log In</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- tab-content -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="col-md-1">
                 </div>
@@ -209,12 +547,12 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Application Forms</h4>
+                        <h4 class="modal-title" style="color: black;">Application Forms</h4>
                     </div>
                     <div class="modal-body">
                         <p>Online:</p>
                         <ul>
-                            <li>02/05/2015 - 07/05/2015</li>
+                            <li style="float: left; color: black;">02/05/2015 - 07/05/2015</li>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -228,16 +566,18 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Examination Date</h4>
+                        <h4 class="modal-title" style="color: black;">Examination Date</h4>
                     </div>
                     <div class="modal-body">
                         <p>Online</p>
                         <ul>
-                            <li>04/04/2015</li>
+                            <li style="float: left; color: black;">04/04/2015</li>
                         </ul>
+                        <br>
+                        <br>
                         <p>Offline</p>
                         <ul>
-                            <li>10/04/2015</li>
+                            <li style="float: left; color: black;">10/04/2015</li>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -251,11 +591,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Result Date</h4>
+                        <h4 class="modal-title" style="color: black;">Result Date</h4>
                     </div>
                     <div class="modal-body">
                         <ul>
-                            <li>27/04/2015</li>
+                            <li style="float: left; color: black;">27/04/2015</li>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -269,11 +609,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Counselling Dates</h4>
+                        <h4 class="modal-title" style="color: black;">Counselling Dates</h4>
                     </div>
                     <div class="modal-body">
                         <ul>
-                            <li>01/07/2015 - 26/07/2015</li>
+                            <li style="float: left; color: black;">01/07/2015 - 26/07/2015</li>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -407,6 +747,116 @@
         </div>
     </footer>
     <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/uiMorphingButton_fixed.js"></script>
+    <script>
+    (function() {
+        var docElem = window.document.documentElement,
+            didScroll, scrollPosition;
+
+        // trick to prevent scrolling when opening/closing button
+        function noScrollFn() {
+            window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
+        }
+
+        function noScroll() {
+            window.removeEventListener('scroll', scrollHandler);
+            window.addEventListener('scroll', noScrollFn);
+        }
+
+        function scrollFn() {
+            window.addEventListener('scroll', scrollHandler);
+        }
+
+        function canScroll() {
+            window.removeEventListener('scroll', noScrollFn);
+            scrollFn();
+        }
+
+        function scrollHandler() {
+            if (!didScroll) {
+                didScroll = true;
+                setTimeout(function() {
+                    scrollPage();
+                }, 60);
+            }
+        };
+
+        function scrollPage() {
+            scrollPosition = {
+                x: window.pageXOffset || docElem.scrollLeft,
+                y: window.pageYOffset || docElem.scrollTop
+            };
+            didScroll = false;
+        };
+
+        scrollFn();
+
+        var el = document.querySelector('.morph-button');
+
+        new UIMorphingButton(el, {
+            closeEl: '.icon-close',
+            onBeforeOpen: function() {
+                // don't allow to scroll
+                noScroll();
+            },
+            onAfterOpen: function() {
+                // can scroll again
+                canScroll();
+                // add class "noscroll" to body
+                classie.addClass(document.body, 'noscroll');
+                // add scroll class to main el
+                classie.addClass(el, 'scroll');
+            },
+            onBeforeClose: function() {
+                // remove class "noscroll" to body
+                classie.removeClass(document.body, 'noscroll');
+                // remove scroll class from main el
+                classie.removeClass(el, 'scroll');
+                // don't allow to scroll
+                noScroll();
+            },
+            onAfterClose: function() {
+                // can scroll again
+                canScroll();
+            }
+        });
+    })();
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+    $('.form').find('input, textarea').on('keyup blur focus', function(e) {
+        var $this = $(this),
+            label = $this.prev('label');
+        if (e.type === 'keyup') {
+            if ($this.val() === '') {
+                label.removeClass('active highlight');
+            } else {
+                label.addClass('active highlight');
+            }
+        } else if (e.type === 'blur') {
+            if ($this.val() === '') {
+                label.removeClass('active highlight');
+            } else {
+                label.removeClass('highlight');
+            }
+        } else if (e.type === 'focus') {
+            if ($this.val() === '') {
+                label.removeClass('highlight');
+            } else if ($this.val() !== '') {
+                label.addClass('highlight');
+            }
+        }
+    });
+    $('.tab a').on('click', function(e) {
+        e.preventDefault();
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+        target = $(this).attr('href');
+        $('.tab-content > div').not(target).hide();
+        $(target).fadeIn(600);
+    });
+    </script>
 </body>
 
 </html>
