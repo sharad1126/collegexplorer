@@ -1,5 +1,4 @@
 <?php session_start(); ?>
-<?php date_default_timezone_set('Asia/Calcutta'); ?>
 <?php require_once "connect.php" ?>
 <!DOCTYPE html>
 <html>
@@ -45,8 +44,11 @@
             </div>
         </nav>
     </section>
-    <center>
-    <?php 
+    <div class="container-fluid">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8" style="margin-top: 100px;">
+            <h3 style="color: black; font-family: 'Roboto', sans-serif;"><?php 
                 if(isset($_GET['qid'])) {
                 $qid= $_GET['qid'];
                 $question_query= "SELECT * FROM question WHERE qid= ".$qid."";
@@ -54,14 +56,8 @@
                 $row = mysqli_fetch_assoc($result_question) ;
                 echo $row['questiondb'];
             }
-            ?>     
-    <div class="container-fluid">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-8" style="margin-top: 100px;">
-            <h3 style="color: black; font-family: 'Roboto', sans-serif;"></h3>
-            <h4 style="text-align: right;"><a href="#demo" class="comment" data-toggle="collapse" style="color: #444242;">Comment</a>
-            </h4>
+            ?></h3>
+            <a href="#demo" class="comment" data-toggle="collapse" style="color: #444242;">Comment</a>
             <div id="demo" class="collapse">
             <br>
             <?php 
@@ -73,40 +69,34 @@
 				 				$row = mysqli_fetch_assoc($result_user);
 				                $user_name= $row['username'];
 				                $user_email=$row['email'];
-                                $time = date('dS F Y - g : i : s A l T');
 				                if(isset($_POST['answer']))
 				                {
 				                    $answer= $_POST['answer'];
-				                    $answer_query= "INSERT INTO answer(answerdb,qid,user_name,user_email,time) VALUES('{$answer}', '{$qid}', '{$user_name}','{$user_email}','{$time}')";
+				                    $answer_query= "INSERT INTO answer(answerdb,qid,user_name,user_email) VALUES('{$answer}', '{$qid}', '{$user_name}','{$user_email}')";
 				                    $result_answer = mysqli_query($conn,$answer_query);
-				                 } ?>
-				                 
+				                } ?> 
+				                <?php 
+								 $answer_query= "SELECT * FROM answer WHERE qid='{$qid}'";
+								                $result_answer = mysqli_query($conn,$answer_query);
+								                while($row = mysqli_fetch_assoc($result_answer)) {
+								                echo $row['user_name']." Answered <br>"; 
+								                echo $row['answerdb']." <br>";            
+								                print date("m/d/y G.i:s<br>", time()). " <br>";
+
+								            }
+								                ?>
             	<form action="question.php?qid=<?php echo urlencode($qid);?>" method="POST">
-                <input  rows="2" style="background-color: #F4F4F4" class="form-control autogrow" name="answer" value="" required="" placeholder="Write a comment..." name="answer" type="text">
+                <input  rows="2" style="background-color: #F4F4F4" class="form-control autogrow" name="comment" value="" required="" placeholder="Write a comment..." name="answer" type="text">
                 <br>
                 <input type="submit" name="submit" class="btn btn-info btn-sm" style="background-color: #444242; color: white;"> 
                 </form>
-                <?php 
+                <?php
 		            }
 		        else
-		        	{ if(isset($_GET['qid'])) {
-                        $qid= $_GET['qid'];
-        		echo "<br>" .'<a href="login.php?qid='.urlencode($qid).'"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to answer a question</button></a><br>';
+		        	{
+        		echo "<br>" .'<a href="login.php?qid='.urlencode($qid).'"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to answer a question</button></a>';
         	}
-        }
             ?>
-            <?php 
-                if(isset($_GET['qid'])) {  $qid= $_GET['qid'];
-                                 $answer_query= "SELECT * FROM answer WHERE qid='{$qid}'";
-                                    $result_answer = mysqli_query($conn,$answer_query);
-                                    while($row = mysqli_fetch_assoc($result_answer)) {
-                                    echo $row['user_name']."<br><br>"; 
-                                    echo $row['answerdb']." <br>";
-                                    echo $row['time']." <br>"; 
-                                        }
-                                    }
-                ?>
-            
             </div>
         </div>
         <?php 
@@ -180,4 +170,5 @@
         </div>
     </footer>
 </body>
+
 </html>

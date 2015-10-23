@@ -100,74 +100,52 @@
                         <br>
                         <h2>Undergraduate </h2>
                         <ul style="list-style-type: disc;margin: 0px;padding-left: 35px;overflow: hidden;font-family: 'Roboto', sans-serif;font-size: 16px;color: #0C0C0B;">
-                            <li>Aerospace Engineering</li>
-                            <br>
-                            <li>Chemical Engineering</li>
-                            <br>
-                            <li>Civil Engineering</li>
-                            <br>
-                            <li>Computer Science and Engineering</li>
-                            <br>
-                            <li>Electrical Engineering</li>
-                            <br>
-                            <li>Mechanical Engineering</li>
-                            <br>
-                            <li>Metallurgical Engineering and Materials Science</li>
-                            <br>
-                            <li>Enginerring Physics.</li>
+                                   <?php 
+                                    if(isset($_GET['id']))
+                                        {
+                                            $id=$_GET['id'];
+                                            $query= "SELECT * FROM college_list WHERE clg_id= ".$id." LIMIT 1";
+                                            $result= mysqli_query($conn,$query);
+                                            $row = mysqli_fetch_assoc($result);
+                                            $p=explode(",",$row['ug']);
+                                            foreach($p as $value)
+                                            {   
+                                                echo $value."<br/>"; 
+                                            }  
+                                        }  ?> 
                         </ul>
                         <br>
                         <h2>Undergraduate-cum-postgraduate dual programs</h2>
                         <ul style="list-style-type: disc;margin: 0px;padding-left: 35px;overflow: hidden;font-family: 'Roboto', sans-serif;font-size: 16px;color: #0C0C0B;">
-                            <li>Aerospace Engineering</li>
-                            <br>
-                            <li>Chemical Engineering</li>
-                            <br>
-                            <li>Civil Engineering</li>
-                            <br>
-                            <li>Computer Science and Engineering</li>
-                            <br>
-                            <li>Electrical Engineering</li>
-                            <br>
-                            <li>Mechanical Engineering</li>
-                            <br>
-                            <li>Metallurgical Engineering and Materials Science</li>
-                            <br>
-                            <li>Enginerring Physics.</li>
-                        </ul>
+                            <?php 
+                                    if(isset($_GET['id']))
+                                        {
+                                            $id=$_GET['id'];
+                                            $query= "SELECT * FROM college_list WHERE clg_id= ".$id." LIMIT 1";
+                                            $result= mysqli_query($conn,$query);
+                                            $row = mysqli_fetch_assoc($result);
+                                            $p=explode(".",$row['ugpg']);
+                                            foreach($p as $value)
+                                            {   
+                                                echo "<li/>".$value."<br/>"; 
+                                            }  
+                                        }  ?>  </ul>
                         <br>
                         <h2>Postgraduate programs</h2>
                         <ul style="list-style-type: disc;margin: 0px;padding-left: 35px;overflow: hidden;font-family: 'Roboto', sans-serif;font-size: 16px;color: #0C0C0B;">
-                            <li>Aerospace Engineering</li>
-                            <br>
-                            <li>Biosciences and Bioengineering</li>
-                            <br>
-                            <li>Chemical Engineering</li>
-                            <br>
-                            <li>Civil Engineering</li>
-                            <br>
-                            <li>Computer Science and Engineering</li>
-                            <br>
-                            <li>Earth Sciences</li>
-                            <br>
-                            <li>Electrical Engineering</li>
-                            <br>
-                            <li>Mechanical Engineering</li>
-                            <br>
-                            <li>Metallurgical Engineering and Materials Science</li>
-                            <br>
-                            <li>Center of Studies in Resources Engineering</li>
-                            <br>
-                            <li>Energy Science and Engineering</li>
-                            <br>
-                            <li>Industrial Engineering and Operations Research</li>
-                            <br>
-                            <li>Systems and Control Engineering</li>
-                            <br>
-                            <li>Environmental Science and Engineering</li>
-                            <br>
-                            <li>Centre For Technology Alternatives For Rural Areas (CTARA)</li>
-                        </ul>
+                            <?php 
+                                    if(isset($_GET['id']))
+                                        {
+                                            $id=$_GET['id'];
+                                            $query= "SELECT * FROM college_list WHERE clg_id= ".$id." LIMIT 1";
+                                            $result= mysqli_query($conn,$query);
+                                            $row = mysqli_fetch_assoc($result);
+                                            $p=explode(",",$row['pg']);
+                                            foreach($p as $value)
+                                            {   
+                                                echo $value."<br/>"; 
+                                            }  
+                                        }  ?>                         </ul>
                         <br>
                         <br>
                     </div>
@@ -426,18 +404,7 @@
                                     echo $row['hmess']; 
                                 } ?></p>
                                 <br>
-                                <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Ragging</h3>
-                                <p>
-                                   <?php 
-                            if(isset($_GET['id']))
-                                {
-                                    $id=$_GET['id'];
-                                    $query= "SELECT * FROM college_list WHERE clg_id= ".$id." LIMIT 1";
-                                    $result= mysqli_query($conn,$query);
-                                    $row = mysqli_fetch_assoc($result);
-                                    echo $row['rag']; 
-                                } ?></p>
-                                <br>
+                                
                                 <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Level Of Burden</h3>
                                 <p>
                                    <?php 
@@ -510,7 +477,7 @@
                             {
                                 $question_query = "INSERT INTO question(questiondb,cid) VALUES ('{$question_ask}', '{$id}')";
                                 $result_question = mysqli_query($conn,$question_query);
-                                if($result_question) { echo "ok";}
+                                //if($result_question) { echo "ok";}
                             }
                         }
                     ?>
@@ -602,10 +569,10 @@ error_reporting(1);
                  $query = "INSERT INTO subscribe(email) VALUES ('{$email}')"; 
                  $result = mysqli_query($conn,$query);
                  if(!$result)
-                        {
-                          die('Error, Please Try Again');  
-                      }
+                    {
+                        die('Error, Please Try Again');  
+                    }
           }
          }
     } 
-          ?>
+?>
