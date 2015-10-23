@@ -271,6 +271,7 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
                         text-align: right;
                     }
                     </style>
+                    <script src='https://www.google.com/recaptcha/api.js'></script>
                 </head>
 
                 <body>
@@ -322,6 +323,7 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
                                         </label>
                                         <input type="password" required="" autocomplete="off" name="password">
                                     </div>
+                                    <div class="g-recaptcha" data-sitekey="6LcXPAwTAAAAAKYhmZakX3JhI-RjxwWd5Qaubcum"></div>
                                     <button type="submit" class="button button-block">Get Started</button>
                                 </form>
                             </div>
