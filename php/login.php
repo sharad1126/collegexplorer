@@ -8,11 +8,11 @@
 <?php
 if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) && isset($_POST['email'])&& isset($_POST['password']))
 {
-    $uname= $_POST['uname'];
-    $Fname= $_POST['Fname'];
-  $Lname= $_POST['Lname'];
-  $email= $_POST['email'];
-  $password=$_POST['password'];
+    $uname= mysqli_real_escape_string($conn,$_POST['uname']);
+    $Fname= mysqli_real_escape_string($conn,$_POST['Fname']);
+  $Lname= mysqli_real_escape_string($conn,$_POST['Lname']);
+  $email= mysqli_real_escape_string($conn,$_POST['email']);
+  $password=mysqli_real_escape_string($conn,$_POST['password']);
   $password_hash = md5($password);
      if(!empty($uname) && !empty($Fname) && !empty($Lname) && !empty($email) && !empty($password) )
     { 
@@ -25,14 +25,24 @@ if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) &&
                 {  
                       $query = "INSERT INTO login(username,firstname,lastname,email,password) VALUES ('{$uname}','{$Fname}','{$Lname}','{$email}','{$password_hash}')"; 
                       $user_registered = mysqli_query($conn,$query);
-                      signed($user_registered,$id);  
+                      //signed($user_registered,$id);
+                      if(isset($_GET['id']))
+                        {
+                         $flag=0;
+                         confirm_logged($result_s['id'],$id,$flag);
+                        } 
+                        else
+                        {
+                            $flag=1;
+                            confirm_logged($result_s['id'],$qid,$flag);
+                        }  
                 }
     }
 }
 if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
 {
-    $uname=  $_POST['UNAME'];
-    $password=$_POST['PASSWORD'];
+    $uname=  mysqli_real_escape_string($conn,$_POST['UNAME']);
+    $password=mysqli_real_escape_string($conn,$_POST['PASSWORD']);
     $password_hash= md5($password);
     if(!empty($uname) && !empty($password) )        
     {        
@@ -64,9 +74,6 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
     }
 }
 ?>
-
-
-
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                     <meta charset="UTF-8">
@@ -271,6 +278,7 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
                         text-align: right;
                     }
                     </style>
+                     <script src='https://www.google.com/recaptcha/api.js'></script>
                 </head>
 
                 <body>
@@ -322,6 +330,7 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
                                         </label>
                                         <input type="password" required="" autocomplete="off" name="password">
                                     </div>
+                                     <div class="g-recaptcha" data-sitekey="6LcXPAwTAAAAAKYhmZakX3JhI-RjxwWd5Qaubcum"></div>
                                     <button type="submit" class="button button-block">Get Started</button>
                                 </form>
                             </div>
