@@ -7,19 +7,22 @@ function redirect_to($new_location)
     exit;
     }
 
-function signed($user_registered,$id)
+/*function signed($user_id,$id,$flag)
 {
-    if($user_registered)
+         if($flag==0)
         {
-            redirect_to("login.php?id=".urlencode($id));
-
+            $_SESSION['user_id']= $user_id;
+            redirect_to("review.php?id=".urlencode($id));
         }
-    exit;
-}
+        else
+        {
+            $_SESSION['user_id']= $user_id;
+            redirect_to("question.php?qid=".urlencode($id));
+        }
+} */
 
 function confirm_logged($user_id,$id,$flag)
 {  
-        //$query_rows1=mysqli_fetch_assoc($query_rows);
         if($flag==0)
         {
         $_SESSION['user_id']= $user_id;
