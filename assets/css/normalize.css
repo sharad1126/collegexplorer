@@ -7,12 +7,12 @@ footer,
 header,
 hgroup,
 main,
+section
 nav,
-section,
 summary
 {
 	display:block;
-	}
+}
 audio,
 canvas,
 video

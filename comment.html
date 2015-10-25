@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <link rel="shortcut icon" href="favicon.png" />
     <script type="text/javascript" href="assets/js/modernizr.js"></script>
@@ -47,14 +48,20 @@
         <div class="col-md-2">
         </div>
         <div class="col-md-8" style="margin-top: 40px;">
-            <h3 style="color: black;"><strong>Question.</strong></h3>
+            <div style="display:inline-block; vertical-align:bottom;">
+                <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">
+            </div>
+            <div style="display:inline-block; vertical-align: top;">
+                <h3 style="color: black; padding-left: 10px;"><b>Username</b></h3>
+                <i style="padding-left: 10px;">26th October, 2015 | 02:36 A.M.</i>
+            </div>
             <h3 style="color: black; font-family: 'Open Sans', sans-serif; font-size: 22px;">This is your question which will be displayed. Wanna write an answer to it ? Or add a comment regarding this fact...</h3>
             <a href="#demo" class="comment" data-toggle="collapse" data-toggle="tooltip" title="Click to Comment" style="color: #444242;">Comment</a>
             <div id="demo" class="collapse">
                 <br>
-                <textarea id="para" rows="2" style="background-color: #F4F4F4" class="form-control autogrow" name="comment" value="" required="" placeholder="Write a comment..."></textarea>
+                <textarea class="form-control autogrow" id="para" rows="3" style="background-color: #f3f3f3" required="" name="comment" placeholder="Write your comment here..."></textarea>
                 <br>
-                <input id="comment" type="submit" name="submit" class="btn btn-info btn-sm" style="background-color: #444242; color: white;">
+                <input id="comment" type="submit" name="submit" class="btn btn-info btn-sm" style="border-color: #4D5959; background-color: #4D5959; color: white;">
             </div>
         </div>
         <div class="col-md-2">
@@ -74,8 +81,21 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8" style="margin-top: 40px;">
+                <h3 style="color: #594236; text-align: center; font-family: 'Roboto Condensed', sans-serif; font-size: 40px;"><b>Previous Comments</b></h3>
+                <br>
                 <div class="here" id="data">
+                    <hr>
+                    <div style="display:inline-block; vertical-align:bottom;">
+                        <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">
+                    </div>
+                    <div style="display:inline-block; vertical-align: top;">
+                        <h3 style="color: black; padding-left: 10px;"><b>Username</b></h3>
+                        <i style="padding-left: 10px;">26th October, 2015 | 02:36 A.M.</i>
+                    </div>
+                    <br>
+                    <br>
                     <p style="color: black; font-family: 'Open Sans', sans-serif; font-size: 18px;">This is my comment 1</p>
+                    <hr>
                 </div>
             </div>
             <div class="col-md-2">
