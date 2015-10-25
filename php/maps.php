@@ -17,8 +17,6 @@ if(isset($_GET['id']))
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
-    <script type="text/javascript" href="assets/js/modernizr.js"></script>
     <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="favicon.png" />
     <style>
