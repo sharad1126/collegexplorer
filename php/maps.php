@@ -1,3 +1,15 @@
+<?php require_once "connect.php" ?>
+<?php 
+if(isset($_GET['id']))
+                {
+                    $id=$_GET['id'];
+                    $query= "SELECT * FROM college_list WHERE clg_id= ".$id." LIMIT 1";
+                    $result= mysqli_query($conn,$query);
+                    $row = mysqli_fetch_assoc($result);
+                    $latitude = $row['latitude'];
+                    $longitude = $row['longitude']; 
+                }
+                ?>
 <!DOCTYPE html>
 <html>
 
@@ -47,8 +59,8 @@
 
     function initMap() {
         var pyrmont = {
-            lat: 28.5450,
-            lng: 77.1922
+            lat: <?php echo $latitude; ?>,
+            lng: <?php echo $longitude; ?>
         };
 
         map = new google.maps.Map(document.getElementById('map'), {
@@ -159,29 +171,7 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <section id="navbar">
-        <nav class="navbar navbar-default" style="background-color: rgba(51,51,51,0.8);opacity: 1;text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="collegexplorer.html" style="width: 130px;height: 25px;">CollegExplorer</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <div class="menu-menu-glowne-en-container">
-                            <ul id="menu-menu-glowne-en" class="menu">
-                                <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="colleges.php"><span data-hover="COLLEGES">COLLEGES</span></a></li>
-                                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="map5.php"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
-                                <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="aboutus.php"><span data-hover="ABOUT US">ABOUT US</span></a></li>
-                                <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#team"><span data-hover="TEAM">TEAM</span></a></li>
-                                <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="#contact"><span data-hover="CONTACT US">CONTACT US</span></a></li>
-                            </ul>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
+    
     <div id="map"></div>
     <div id="right-panel">
         <h2>Results</h2>

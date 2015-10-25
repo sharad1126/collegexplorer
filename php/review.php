@@ -1,5 +1,12 @@
 <?php session_start(); ?>
 <?php require_once "connect.php" ?>
+<?php 
+$query= "SELECT * FROM college_list";
+$result= mysqli_query($conn,$query);
+$row = mysqli_fetch_assoc($result);  
+if(isset($_GET['id']))
+                {
+                    $id=$_GET['id'];  }  ?>
         <!DOCTYPE html>
         <html lang="en">
 
@@ -37,7 +44,7 @@
                                 <div class="menu-menu-glowne-en-container">
                                     <ul id="menu-menu-glowne-en" class="menu">
                                         <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="collegexplorer.php"><span data-hover="HOME">HOME</span></a></li>
-                                        <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="maps.php"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
+                                        <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="maps.php?id=<?php echo urlencode($id);?>"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
                                         <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#"><span data-hover="TEAM">TEAM</span></a></li>
                                         <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="aboutus.php"><span data-hover="ABOUT US">ABOUT US</span></a></li>
                                     </ul>
@@ -110,7 +117,7 @@
                                             $p=explode(",",$row['ug']);
                                             foreach($p as $value)
                                             {   
-                                                echo $value."<br/>"; 
+                                                echo "<li>".$value."</li><br>"; 
                                             }  
                                         }  ?> 
                         </ul>
@@ -124,12 +131,13 @@
                                             $query= "SELECT * FROM college_list WHERE clg_id= ".$id." LIMIT 1";
                                             $result= mysqli_query($conn,$query);
                                             $row = mysqli_fetch_assoc($result);
-                                            $p=explode(".",$row['ugpg']);
+                                            $p=explode(",",$row['ugpg']);  
                                             foreach($p as $value)
                                             {   
-                                                echo "<li/>".$value."<br/>"; 
-                                            }  
-                                        }  ?>  </ul>
+                                                echo "<li>".$value."</li><br>"; 
+                                            }   
+                                        }  ?>  
+                                        </ul>
                         <br>
                         <h2>Postgraduate programs</h2>
                         <ul style="list-style-type: disc;margin: 0px;padding-left: 35px;overflow: hidden;font-family: 'Roboto', sans-serif;font-size: 16px;color: #0C0C0B;">
@@ -143,7 +151,7 @@
                                             $p=explode(",",$row['pg']);
                                             foreach($p as $value)
                                             {   
-                                                echo $value."<br/>"; 
+                                                echo "<li>".$value."</li><br>"; 
                                             }  
                                         }  ?>                         </ul>
                         <br>
@@ -472,7 +480,7 @@
                         if(isset($_POST['ask']))
                         {
                             $id = $_GET['id'];
-                            $question_ask = $_POST['ask']; 
+                            $question_ask = mysqli_real_escape_string($conn,htmlentities($_POST['ask'])); 
                             if(!empty($question_ask))
                             {
                                 $question_query = "INSERT INTO question(questiondb,cid) VALUES ('{$question_ask}', '{$id}')";

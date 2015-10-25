@@ -1,4 +1,4 @@
-<?php require_once "connect.php" ?> 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,22 +44,23 @@
     <div class="container">
         <h2 class="section-heading" style="color: #fd5f54; font-family: 'Dosis', sans-serif; font-size: 50px;text-align:center;">Our Objective</h2>
         <br>
-        <p style="font-size:20px;font-family: 'Josefin Sans', sans-serif;">CollegExplorer aims at providing students an authentic information about the leading engineering colleges in India. We also provide students the information regarding the food joints near their colleges and verified professional counsellors who can help the students select the most appropriate college and stream.</p>
+        <br>
+        <p style="font-size:20px;font-family: 'Josefin Sans', sans-serif;">CollegExplorer aims at providing students an authentic and raw information of the leading engineering colleges in India by the students of the college to our visitors directly. We also provide students the information regarding the facilities that are available to the students near their college. The students are also allowed to participate in a Question Answer forum to traverse even deeper into the college and get to know more about the college by the students of that college themselves.</p>
         <p style="font-size:20px;font-family: 'Josefin Sans', sans-serif;">The website focusses on college faculties, studies, opportunities, placements, cultural events, extracurricular activities, fests, competitions etc. We also provide them the names of the closest food joints, atms, cafes, medical stores, hospitals etc on a map which could help them navigate faster.</p>
         <br>
         <div class="row">
             <div class="col-md-4 text-center">
-                <img src="assets/images/restaurant.jpg" class="img-responsive" alt="Responsive image">
+                <img src="assets/images/qa.jpg" alt="Responsive image">
                 <h4 style="font-family: 'Josefin Sans', sans-serif;font-size:22px;">Facts & FAQ's</h4>
                 <p style="font-family: 'Josefin Sans', sans-serif;font-size:18px;">CollegExplorer provides all facts about the colleges and their reviews with a facilty to ask questions about the colleges, answered by the respective college students</p>
             </div>
             <div class="col-md-4 text-center">
-                <img src="assets/images/restaurant.jpg" class="img-responsive" alt="Responsive image">
+                <img src="assets/images/food.jpg" alt="Responsive image">
                 <h4 style="font-family: 'Josefin Sans', sans-serif;font-size:22px;">Facilities</h4>
                 <p style="font-family: 'Josefin Sans', sans-serif;font-size:18px;">CollegExplorer provides all facilities to students at no cost that no other player in the same segment offers today like food joints, atms and other needs near colleges</p>
             </div>
             <div class="col-md-4 text-center">
-                <img src="assets/images/restaurant.jpg" class="img-responsive" alt="Responsive image">
+                <img src="assets/images/dates.jpg" alt="Responsive image">
                 <h4 style="font-family: 'Josefin Sans', sans-serif;font-size:22px;">Important Dates</h4>
                 <p style="font-family: 'Josefin Sans', sans-serif;font-size:18px;">CollegExplorer provides all important dates - application forms, results, counselling, and other links at one place</p>
             </div>
@@ -67,9 +68,14 @@
         <br>
         <br>
         <!-- Our Story -->
-        <h2 class="section-heading" style="color: #fd5f54; font-family: 'Dosis', sans-serif; font-size: 50px;text-align:center;">Our Story</h2>
+        <h2 class="section-heading" style="color: #fd5f54; font-family: 'Dosis', sans-serif; font-size: 50px; text-align:center;">Our Story</h2>
         <br>
-        <p style="font-size:20px;font-family: 'Josefin Sans', sans-serif;">The idea came to us admist the maggi sessions.</p>
+        <br>
+        <p style="font-size:20px;font-family: 'Josefin Sans', sans-serif; text-align: justify;">The idea of CollegExplorer knocked our minds way back when we ourselves were in our school time and we used to surf various websites in order to trove relevant information of our dream Colleges, food and reviews being of the prime importance apparently. But lamentably it was quite tedious to stack all information from different sources.</p>
+        <br>
+        <p style="font-size:20px;font-family: 'Josefin Sans', sans-serif; text-align: justify;">Eventually we creeped into the college life and began learning the imperative things. Once we were done, it was time to implement what we had so long in our mind to be paraded to the world so that they could have an easy going while finding a good college not just in terms of rankings but also in terms of authentic reviews from the ongoing students of the college and the most important part being the facilities and the ease with which these facilities like Food Joints, ATMs and Medical Stores etc. are available to the students.</p>
+        <div class="blank" style="margin-top: 70px;">
+        </div>
     </div>
     <!-- footer     -->
     <footer id="footer" style="background-color:#2E3444; height:250px;">
@@ -91,10 +97,10 @@
                 </div>
                 <div class="col-md-3">
                     <h3 class="footerTitle" style="color:#FF6E49;">Subscribe </h3>
-                    <form id="footerSignupForm" method="POST" action="aboutus.php">
+                    <form id="footerSignupForm">
                         <div class="form-group">
                             <label class="sr-only" for="footerEmailInput"></label>
-                            <input id="footerEmailInput"  name ="email" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
+                            <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
                         </div>
                         <button type="submit" style="background-color: #EEE5E9; border-color:#EEE5E9;">Get all important updates</button>
                     </form>
@@ -121,31 +127,5 @@
     </footer>
     <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
+
 </html>
-<?php 
-error_reporting(1);
-  if(isset($_POST['email']))
-    {
-        $email=  $_POST['email'];
-        if(!empty($email))
-          {  
-            $query = mysqli_query($conn, "SELECT * FROM subscribe WHERE email='$email'");
-            if (mysqli_num_rows($query)!=0)
-                {
-                    echo " User already subscribed! ";
-                }
-          else {
-            if(filter_var($email, FILTER_VALIDATE_EMAIL)==true)
-           {          
-                 $query = "INSERT INTO subscribe(email) VALUES ('{$email}')"; 
-                 $result = mysqli_query($conn,$query);
-                 if(!$result)
-                        {
-                          die('Error, Please Try Again');  
-                        }
-          }
-               }
- 
-         }
-} 
-          ?>

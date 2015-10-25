@@ -8,11 +8,11 @@
 <?php
 if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) && isset($_POST['email'])&& isset($_POST['password']))
 {
-    $uname= mysqli_real_escape_string($conn,$_POST['uname']);
-    $Fname= mysqli_real_escape_string($conn,$_POST['Fname']);
-  $Lname= mysqli_real_escape_string($conn,$_POST['Lname']);
-  $email= mysqli_real_escape_string($conn,$_POST['email']);
-  $password=mysqli_real_escape_string($conn,$_POST['password']);
+    $uname= mysqli_real_escape_string($conn,htmlentities($_POST['uname']));
+    $Fname= mysqli_real_escape_string($conn,htmlentities($_POST['Fname']));
+  $Lname= mysqli_real_escape_string($conn,htmlentities($_POST['Lname']));
+  $email= mysqli_real_escape_string($conn,htmlentities($_POST['email']));
+  $password=mysqli_real_escape_string($conn,htmlentities($_POST['password']));
   $password_hash = md5($password);
      if(!empty($uname) && !empty($Fname) && !empty($Lname) && !empty($email) && !empty($password) )
     { 
@@ -25,11 +25,16 @@ if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) &&
                 {  
                       $query = "INSERT INTO login(username,firstname,lastname,email,password) VALUES ('{$uname}','{$Fname}','{$Lname}','{$email}','{$password_hash}')"; 
                       $user_registered = mysqli_query($conn,$query);
+                      $query_run = "SELECT * FROM login WHERE username='{$uname}'" ;
+                      $result_query = @mysqli_query($conn,$query_run);
+                       $result_s=mysqli_fetch_assoc($result_query);
+                       //print_r($result_s);
                       //signed($user_registered,$id);
                       if(isset($_GET['id']))
                         {
                          $flag=0;
                          confirm_logged($result_s['id'],$id,$flag);
+
                         } 
                         else
                         {
@@ -41,8 +46,8 @@ if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) &&
 }
 if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
 {
-    $uname=  mysqli_real_escape_string($conn,$_POST['UNAME']);
-    $password=mysqli_real_escape_string($conn,$_POST['PASSWORD']);
+    $uname=  mysqli_real_escape_string($conn,htmlentities($_POST['UNAME']));
+    $password=mysqli_real_escape_string($conn,htmlentities($_POST['PASSWORD']));
     $password_hash= md5($password);
     if(!empty($uname) && !empty($password) )        
     {        
@@ -330,7 +335,7 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
                                         </label>
                                         <input type="password" required="" autocomplete="off" name="password">
                                     </div>
-                                     <div class="g-recaptcha" data-sitekey="6LcXPAwTAAAAAKYhmZakX3JhI-RjxwWd5Qaubcum"></div>
+                                     <div class="g-recaptcha" data-sitekey="6LcXPAwTAAAAAKYhmZakX3JhI-RjxwWd5Qaubcum" style="padding-left: 115px;padding-bottom: 20px;"></div>
                                     <button type="submit" class="button button-block">Get Started</button>
                                 </form>
                             </div>

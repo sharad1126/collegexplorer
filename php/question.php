@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <link rel="shortcut icon" href="favicon.png" />
     <script type="text/javascript" href="assets/js/modernizr.js"></script>
+    <script type="text/javascript" href="assets/js/comment.js"></script>
 </head>
 
 <body>
@@ -34,9 +35,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <div class="menu-menu-glowne-en-container">
                             <ul id="menu-menu-glowne-en" class="menu">
-                                <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="collegexplorer.html"><span data-hover="HOME">HOME</span></a></li>
-                                <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="colleges.html"><span data-hover="COLLEGES">COLLEGES</span></a></li>
-                                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="maps.html"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
+                                <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="collegexplorer.php"><span data-hover="HOME">HOME</span></a></li>
+                                <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="colleges.php"><span data-hover="COLLEGES">COLLEGES</span></a></li>
+                                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="maps.php"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
                                 <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#"><span data-hover="TEAM">TEAM</span></a></li>
                             </ul>
                         </div>
@@ -54,45 +55,45 @@
                 $row = mysqli_fetch_assoc($result_question) ;
                 echo $row['questiondb'];
             }
-            ?>     
+            ?>  
     <div class="container-fluid">
         <div class="col-md-2">
         </div>
-        <div class="col-md-8" style="margin-top: 100px;">
-            <h3 style="color: black; font-family: 'Roboto', sans-serif;"></h3>
-            <h4 style="text-align: right;"><a href="#demo" class="comment" data-toggle="collapse" style="color: #444242;">Comment</a>
-            </h4>
-            <div id="demo" class="collapse">
+        <div class="col-md-8" style="margin-top: 40px;">
+            <h3 style="color: black;"><strong>Question.</strong></h3>
+            <h3 style="color: black; font-family: 'Open Sans', sans-serif; font-size: 22px;">This is your question which will be displayed. Wanna write an answer to it ? Or add a comment regarding this fact...</h3>
+            <a href="#demo" class="comment" data-toggle="collapse" data-toggle="tooltip" title="Click to Comment" style="color: #444242;">Comment</a>
+           <div id="demo" class="collapse">
             <br>
             <?php 
-				if(isset($_SESSION['user_id']))
-							{
-								$user_id= $_SESSION['user_id'];
-				 				$user_query= "SELECT * FROM login WHERE id='{$user_id}'";
-				              	$result_user = mysqli_query($conn,$user_query);
-				 				$row = mysqli_fetch_assoc($result_user);
-				                $user_name= $row['username'];
-				                $user_email=$row['email'];
+                if(isset($_SESSION['user_id']))
+                            {
+                                $user_id= $_SESSION['user_id'];
+                                $user_query= "SELECT * FROM login WHERE id='{$user_id}'";
+                                $result_user = mysqli_query($conn,$user_query);
+                                $row = mysqli_fetch_assoc($result_user);
+                                $user_name= $row['username'];
+                                $user_email=$row['email'];
                                 $time = date('dS F Y - g : i : s A l T');
-				                if(isset($_POST['answer']))
-				                {
-				                    $answer= $_POST['answer'];
-				                    $answer_query= "INSERT INTO answer(answerdb,qid,user_name,user_email,time) VALUES('{$answer}', '{$qid}', '{$user_name}','{$user_email}','{$time}')";
-				                    $result_answer = mysqli_query($conn,$answer_query);
-				                 } ?>
-				                 
-            	<form action="question.php?qid=<?php echo urlencode($qid);?>" method="POST">
+                                if(isset($_POST['answer']))
+                                {
+                                    $answer=mysqli_real_escape_string($conn,htmlentities($_POST['answer']));
+                                    $answer_query= "INSERT INTO answer(answerdb,qid,user_name,user_email,time) VALUES('{$answer}', '{$qid}', '{$user_name}','{$user_email}','{$time}')";
+                                    $result_answer = mysqli_query($conn,$answer_query);
+                                 } ?>
+                                 
+                <form action="question.php?qid=<?php echo urlencode($qid);?>" method="POST">
                 <input  rows="2" style="background-color: #F4F4F4" class="form-control autogrow" name="answer" value="" required="" placeholder="Write a comment..." name="answer" type="text">
                 <br>
                 <input type="submit" name="submit" class="btn btn-info btn-sm" style="background-color: #444242; color: white;"> 
                 </form>
                 <?php 
-		            }
-		        else
-		        	{ if(isset($_GET['qid'])) {
+                    }
+                else
+                    { if(isset($_GET['qid'])) {
                         $qid= $_GET['qid'];
-        		echo "<br>" .'<a href="login.php?qid='.urlencode($qid).'"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to answer a question</button></a><br>';
-        	}
+                echo "<br>" .'<a href="login.php?qid='.urlencode($qid).'"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to answer a question</button></a><br>';
+            }
         }
             ?>
             <?php 
@@ -111,26 +112,44 @@
         </div>
         <?php 
             if(isset($_SESSION['user_id'])) { ?>
-			 <div class="logintoask">
-			            <div class="container">
-			                <div class="row">
-			                    <div class="col-md-1">
-			                    </div>
-			                    <div class="col-md-9">
-			                        <a href="logout.php"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Logout</button></a>
-			                    </div>  
-			                </div>
-			            </div>
+             <div class="logintoask">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="logout.php"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Logout</button></a>
+                                </div>  
+                            </div>
+                        </div>
         </div><?php
     }
     ?>
-    <div class="col-md-2">
+        <div class="col-md-2">
+        </div>
     </div>
+    <div class="container-fluid" style="margin-top: 40px;">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-5">
+            <a href="#" data-toggle="tooltip" title="Write your comment above"><img src="assets/images/boy.gif"></a>
+        </div>
+        <div class="col-md-2">
+        </div>
     </div>
-
-    <div class="space" style="padding-top: 150px;">
+    <div class="space" style="margin-top: 50px;">
+        <div class="container-fluid">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8" style="margin-top: 40px;">
+                <div class="here" id="data">
+                    <p style="color: black; font-family: 'Open Sans', sans-serif; font-size: 18px;">This is my comment 1</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
     </div>
-   
     <!-- footer     -->
     <footer id="footer" style="background-color:#2E3444; height:250px;">
         <div class="container-fluid" style="height:250px;">
@@ -179,5 +198,11 @@
             </div>
         </div>
     </footer>
+    <script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 </body>
+
 </html>
