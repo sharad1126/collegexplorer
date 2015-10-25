@@ -70,11 +70,13 @@
         color: white;
         word-spacing: 3px;
     }
+    
     .quote span {
-    	color: white;
-    	font-family: 'raleway', sans-serif;
-    	font-size: 25px;
+        color: white;
+        font-family: 'raleway', sans-serif;
+        font-size: 25px;
     }
+    
     .quote {
         background-color: #6F5499;
     }
@@ -115,6 +117,7 @@
     
     a:hover {
         color: #179b77;
+        text-decoration: none;
     }
     
     .form {
@@ -417,7 +420,7 @@
                                     <span class="icon icon-close"></span>
                                     <div class="container-fluid">
                                         <div class="col-md-12" style="margin-top: 40px;">
-                                            <p style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 30px; text-align: center;"><strong>Write a Review</strong></p>
+                                            <p style="color: #000000; font-family: 'raleway', sans-serif; font-size: 30px; text-align: center;"><strong>Write a Review</strong></p>
                                             <form name="sent-message" id="contactForm">
                                                 <br>
                                                 <div class="row">
@@ -599,7 +602,7 @@
     <div class="quote" style="text-align:center;">
         <hr>
         <br>
-        <q>   A good, pragmatic and sympathetic review is always a wonderful surprise   </q><span> - Joyce Carol </span>
+        <q> A good, pragmatic and sympathetic review is always a wonderful surprise </q><span> - Joyce Carol </span>
         <br>
         <br>
     </div>
@@ -665,12 +668,38 @@
                         <textarea class="form-control" placeholder="Post a Review/ Ask a Question/ Answer to a Question " id="styled" rows="7" required></textarea>
                         <br>
                         <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
-                    </form>[ ]
+                    </form>
                 </div>
             </div>
         </div>
     </form>
-    <footer id="footer" style="background-color:#2E3444; height:250px;">
+    <div class="space" style="margin-top: 50px;">
+        <div class="container-fluid">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8" style="margin-top: 30px;">
+                <h2 style="text-align: center; font-size: 40px;"><b>Question and Answers</b></h2>
+                <br>
+                <div class="here" id="data">
+                    <hr>
+                    <div style="display:inline-block; vertical-align:bottom;">
+                        <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">
+                    </div>
+                    <div style="display:inline-block; vertical-align: top;">
+                        <h3 style="color: #2D2D2D; padding-left: 10px;"><b>Username</b></h3>
+                        <i style="padding-left: 10px; color: black;">26th October, 2015 | 02:36 A.M.</i>
+                    </div>
+                    <br>
+                    <br>
+                    <a href="comment.html"><p style="color: black; font-family: 'Open Sans', sans-serif; font-size: 20px; margin-left: 60px;">This is your question which will be displayed. Wanna write an answer to it ? Or add a comment regarding this fact...</p></a>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+    <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
         <div class="container-fluid" style="height:250px;">
             <div class="row">
                 <div class="col-md-3">
