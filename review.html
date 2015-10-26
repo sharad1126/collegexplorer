@@ -6,6 +6,7 @@
     <title>Review Page</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway|Dosis' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
@@ -53,6 +54,16 @@
         font-family: 'dosis', sans-serif;
         text-transform: uppercase;
         color: #FC573A;
+    }
+    
+    .ques a {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    .ques a:hover {
+        color: #6D3CBC;
     }
     
     .one {
@@ -297,7 +308,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="collegexplorer.html" style="width: 130px;height: 25px;">CollegExplorer</a>
+                    <a class="navbar-brand" href="collegexplorer.html" style="width: 130px;height: 25px; font-family: 'Open Sans', sans-serif;color: #fd5f54; margin-top: 8px; margin-left: 4px;">CollegExplorer</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -691,7 +702,9 @@
                     </div>
                     <br>
                     <br>
-                    <a href="comment.html"><p style="color: black; font-family: 'Open Sans', sans-serif; font-size: 20px; margin-left: 60px;">This is your question which will be displayed. Wanna write an answer to it ? Or add a comment regarding this fact...</p></a>
+                    <div class="ques" style="margin-left: 60px;">
+                        <a a href="comment.html">This is your question which will be displayed. Wanna write an answer to it ? Or add a comment regarding this fact...</a>
+                    </div>
                     <hr>
                 </div>
             </div>
@@ -704,16 +717,17 @@
             <div class="row">
                 <div class="col-md-3">
                     <div id="footerlogo">
-                        <img src="http://www.mantratec.com/images/CE.jpg" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; ">
+                        <img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; ">
                         <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <h3 class="footertitle" style="color:#FF6E49;">LEARN MORE</h3>
                     <div class="learnmorelinks">
-                        <ul><a href="#" style="color:white;text-decoration: none;">CONTACT</a></ul>
-                        <ul><a href="#" style="color:white;text-decoration: none;">ABOUT</a></ul>
-                        <ul><a href="#" style="color:white;text-decoration: none;">OPPORTUNITIES</a></ul>
+                        <ul><a href="aboutus.html" style="color:white;text-decoration: none;">ABOUT US</a></ul>
+                        <ul><a href="privacy.html" style="color:white;text-decoration: none;">PRIVACY POLICY</a></ul>
+                        <ul><a href="terms.html" style="color:white;text-decoration: none;">TERMS & CONDITIONS</a></ul>
+                        <ul><a href="disclaimer.html" style="color:white;text-decoration: none;">DISCLAIMER</a></ul>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -736,11 +750,10 @@
                             <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
                         </ul>
                         <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">
+                            <br>
                             <span id="addressTitle" style="color:white;">CollegExplorer</span>
-                            <br> Ballupur Chowk,
-                            <br> Dehradun, UK 248001
                         </div>
-                        <div id="footerEmail"><a href="mailto:collegexplorer@gmail.com" style="color:white;text-decoration: none;padding-left:30px;">collegexplorer@gmail.com</a></div>
+                        <div id="footerEmail"><a href="collegexplorer@gmail.com" style="color:white;text-decoration: none;padding-left:30px;">collegexplorer@gmail.com</a></div>
                     </div>
                 </div>
             </div>
