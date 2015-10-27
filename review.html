@@ -15,10 +15,8 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/content.css" />
     <script src="assets/js/modernizr.custom.js"></script>
-    <link rel="stylesheet prefetch" href="http://codepen.io/assets/reset/normalize.css">
-    <style class="cp-pen-styles">
+    <style>
     *,
     *:before,
     *:after {
@@ -128,169 +126,6 @@
     a:hover {
         color: #179b77;
         text-decoration: none;
-    }
-    
-    .form {
-        background: rgba(19, 35, 47, 0.9);
-        padding: 40px;
-        max-width: 600px;
-        margin: 40px auto;
-        border-radius: 4px;
-        box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-    }
-    
-    .tab-group {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 40px 0;
-    }
-    
-    .tab-group:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    .tab-group li a {
-        display: block;
-        text-decoration: none;
-        padding: 15px;
-        background: rgba(160, 179, 176, 0.25);
-        color: #a0b3b0;
-        font-size: 20px;
-        float: left;
-        width: 50%;
-        text-align: center;
-        cursor: pointer;
-        -webkit-transition: .5s ease;
-        transition: .5s ease;
-    }
-    
-    .tab-group li a:hover {
-        background: #179b77;
-        color: #ffffff;
-    }
-    
-    .tab-group .active a {
-        background: #1ab188;
-        color: #ffffff;
-    }
-    
-    .tab-content > div:last-child {
-        display: none;
-    }
-    
-    label {
-        position: absolute;
-        -webkit-transform: translateY(6px);
-        -ms-transform: translateY(6px);
-        transform: translateY(6px);
-        left: 13px;
-        color: rgba(255, 255, 255, 0.5);
-        -webkit-transition: all 0.25s ease;
-        transition: all 0.25s ease;
-        -webkit-backface-visibility: hidden;
-        pointer-events: none;
-        font-size: 22px;
-    }
-    
-    label .req {
-        margin: 2px;
-        color: #1ab188;
-    }
-    
-    label.active {
-        -webkit-transform: translateY(50px);
-        -ms-transform: translateY(50px);
-        transform: translateY(50px);
-        left: 2px;
-        font-size: 14px;
-    }
-    
-    label.active .req {
-        opacity: 0;
-    }
-    
-    label.highlight {
-        color: #ffffff;
-    }
-    
-    input,
-    textarea {
-        font-size: 22px;
-        display: block;
-        width: 100%;
-        height: 100%;
-        padding: 5px 10px;
-        background: none;
-        background-image: none;
-        border: 1px solid #a0b3b0;
-        color: #ffffff;
-        border-radius: 0;
-        -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-        transition: border-color .25s ease, box-shadow .25s ease;
-    }
-    
-    input:focus,
-    textarea:focus {
-        outline: 0;
-        border-color: #1ab188;
-    }
-    
-    textarea {
-        border: 2px solid #a0b3b0;
-        resize: vertical;
-    }
-    
-    .field-wrap {
-        position: relative;
-        margin-bottom: 40px;
-    }
-    
-    .top-row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    .top-row > div {
-        float: left;
-        width: 48%;
-        margin-right: 4%;
-    }
-    
-    .top-row > div:last-child {
-        margin: 0;
-    }
-    
-    .button {
-        border: 0;
-        outline: none;
-        border-radius: 0;
-        padding: 15px 0;
-        font-size: 2rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: .1em;
-        background: #1ab188;
-        color: #ffffff;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    .button:hover,
-    .button:focus {
-        background: #179b77;
-    }
-    
-    .button-block {
-        display: block;
-        width: 100%;
-    }
-    
-    .forgot {
-        margin-top: -20px;
-        text-align: right;
     }
     </style>
 </head>
@@ -421,45 +256,59 @@
             </div>
             <div class="col-md-1">
             </div>
-            <div class="col-xs-10 col-md-3" style="text-align: center;">
+            <div class="col-xs-10 col-md-3">
                 <section>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button">Write a Review</button>
                         <div class="morph-content">
-                            <div>
-                                <div class="content-style-overlay">
-                                    <span class="icon icon-close"></span>
-                                    <div class="container-fluid">
-                                        <div class="col-md-12" style="margin-top: 40px;">
-                                            <p style="color: #000000; font-family: 'raleway', sans-serif; font-size: 30px; text-align: center;"><strong>Write a Review</strong></p>
-                                            <form name="sent-message" id="contactForm">
-                                                <br>
-                                                <div class="row">
-                                                    <div class="col-md-2">
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="form-group">
-                                                            <form action="review.html">
-                                                                <textarea class="form-control" placeholder="Post a Review..." id="styled" rows="8" required></textarea>
-                                                                <br>
-                                                                <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                    </div>
+                            <span class="icon icon-close"></span>
+                            <div class="container-fluid">
+                                <div class="col-md-12" style="margin-top: 40px; text-align: center;">
+                                    <img src="assets/images/review.png" style="float: middle;">
+                                    <p style="font-family: 'raleway', sans-serif; font-size: 30px; text-align: center;"><strong>Write a Review</strong></p>
+                                    <br>
+                                    <form name="sent-message" id="contactForm">
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <form action="review.html">
+                                                        <textarea class="form-control" placeholder="Post a Review..." id="styled" rows="8" required></textarea>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
+                                                    </form>
                                                 </div>
-                                            </form>
+                                            </div>
+                                            <div class="col-md-2">
+                                            </div>
                                         </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div style="margin-top: 50px;">
+                                <div class="container-fluid">
+                                    <div class="col-md-2">
                                     </div>
-                                    <div class="container-fluid" style="margin-top: 40px;">
-                                        <div class="col-md-2">
+                                    <div class="col-md-8" style="margin-top: 40px;">
+                                        <h3 style="text-align: center; font-size: 34px; font-family: 'dosis', sans-serif; text-transform: uppercase; color: #FC573A;"><b>More Reviews</b></h3>
+                                        <br>
+                                        <hr>
+                                        <div style="display:inline-block; vertical-align:bottom;">
+                                            <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">
                                         </div>
-                                        <div class="col-md-8" style="margin-left: 20px;">
-                                            <a href="#" data-toggle="tooltip" title="Write your comment above"><img src="assets/images/boy.gif" height="350px;" width="330px"></a>
+                                        <div style="display:inline-block; vertical-align: top;">
+                                            <h3 style="color: #2D2D2D; padding-left: 10px;"><b>Username</b></h3>
+                                            <i style="padding-left: 10px;">28th October, 2015 | 02:34 A.M.</i>
                                         </div>
-                                        <div class="col-md-2">
-                                        </div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <p style="color: black; font-family: 'Open Sans', sans-serif; font-size: 20px; margin-left: 60px;">This is my review</p>
+                                        <hr>
+                                    </div>
+                                    <div class="col-md-2">
                                     </div>
                                 </div>
                             </div>
