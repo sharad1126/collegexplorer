@@ -128,6 +128,27 @@
         text-decoration: none;
     }
     </style>
+    <!-- map -->
+    <style>
+    #map-canvas {
+        width: 280px;
+        height: 280px;
+        background-color: #CCC;
+    }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+    function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+            center: new google.maps.LatLng(28.545, 77.1922),
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
@@ -350,375 +371,384 @@
                     <p style="color: white; text-align: center;">Rank : 3</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <!-- Trigger the modal with a button -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <p style="font-size: 27px; font-family: 'dosis',sans-serif; color: #FC573A;">Important Dates and Events</p>
-            </div>
-            <div class="col-md-2">
-                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal1">Application Forms</button>
-            </div>
-            <div class="col-md-2">
-                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal2">Examination Date</button>
-            </div>
-            <div class="col-md-2">
-                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal3">Result Declaration</button>
-            </div>
-            <div class="col-md-2">
-                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4">Counselling Dates</button>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="container">
-        <div class="modal fade" id="myModal1" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title" style="color: black;">Application Forms</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Online:</p>
-                        <ul>
-                            <li style="float: left; color: black;">02/05/2015 - 07/05/2015</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="myModal2" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title" style="color: black;">Examination Date</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Online</p>
-                        <ul>
-                            <li style="float: left; color: black;">04/04/2015</li>
-                        </ul>
-                        <br>
-                        <br>
-                        <p>Offline</p>
-                        <ul>
-                            <li style="float: left; color: black;">10/04/2015</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="myModal3" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title" style="color: black;">Result Date</h4>
-                    </div>
-                    <div class="modal-body">
-                        <ul>
-                            <li style="float: left; color: black;">27/04/2015</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="myModal4" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title" style="color: black;">Counselling Dates</h4>
-                    </div>
-                    <div class="modal-body">
-                        <ul>
-                            <li style="float: left; color: black;">01/07/2015 - 26/07/2015</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="quote" style="text-align:center;">
-        <hr>
-        <br>
-        <q> A good, pragmatic and sympathetic review is always a wonderful surprise </q><span> - Joyce Carol </span>
-        <br>
-        <br>
-    </div>
-    <div class="container" style="padding-top: 100px;">
-        <div class="row">
             <div class="col-md-1">
             </div>
-            <div class="col-md-9">
-                <section id="review">
-                    <div class="border">
-                        <h1>Review</h1>
-                        <br>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Foreword</h3>
-                        <p>
-                            I am Aadhar from Civil engineering department (B.Tech) IIT Bombay. I am a fresher and I joined IITB on 22/7/15 and I consider this as my best decision till now. </p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Procedure & Preparation</h3>
-                        <p>
-                            The procedure for admission is quite complex starting from Jee Mains and ending with Jee Advanced I took 3 years to crack these exams including 2 years at Indore and 1 year at Kota and I studied rigorously during my last year for around 8 hours a day to fulfill my dream of becoming an IITian but I think that 2 years of sincere preparation is sufficient for anyone to clear these exams, things will be more easy for reserved people.</p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Fests and Events</h3>
-                        <p>When it comes to events,we have 3-4 events daily and some mega annual events like Mood Indigo, Techfest etc which indeed require no introduction.</p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Sports Facilities</h3>
-                        <p>
-                            For sports we have both indoor and outdoor sports ranging from table tennis, football, basketball etc. Other than this we have events like marathon,cycling,rappelling etc and an awesome swimming pool.</p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Faculty</h3>
-                        <p>The faculties are very cooperative and most of them are quite beyond what I expected. Attendance varies with professor, but most require 80%. DX grade given in case required attendance as stated is not achieved and the student has to repeat tthe course.</p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Interaction With Seniors</h3>
-                        <p>We interact a lot with our seniors and are on friendly terms with them. We call them by their first name only,and use ‘aap’ while addressing them.</p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Placements & Internships</h3>
-                        <p>At the best institute in India, you expect some brilliant internships and placements, and IIT Bombay does not disappoint. Some of the best companies from all fields – including investment banks like Goldman Sachs and Morgan Stanley, the big names of management consultancy like McKinsey, BCG and Bain pick up a number of IITians at some hair-raising salaries. It’s one of the very few colleges visited by IT leaders like Samsung,Microsoft and Google, and the salaries can go as high as 80 lac per annum. The average package stands at about 9 lac. In short if any company visits India for recruitment their first choice will be IIT Bombay.</p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Hostel and Mess</h3>
-                        <p>
-                            Hostel and mess are perhaps the most disappointing thing here,the mess food isn't very delicious but we have other substitutes as well, including night canteen which can certainly help, the rooms are sufficient but from the next year we will have really tiny rooms. </p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Efforts towards Academics</h3>
-                        <p>
-                            Academics is really painful and the extent of efforts increases exponentially during exams.</p>
-                        <br>
-                        <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Verdict</h3>
-                        <p>In all I wanna conclude that there are a lot of reasons why IITB is the best college in India.
-                        </p>
-                    </div>
-                </section>
+            <div class="col-xs-10 col-md-3">
+                <h2>Contact Info:</h2>
+                <p>Indian Institute of Technology Delhi</p>
+                <p>Hauz Khas, New Delhi-110 016, INDIA</p>
+                <p>Phone: 011 2659 7135</p>
+                <p><a href="mailto:webmaster@admin.iitd.ac.in" style="text-decoration: none;">Email: webmaster@admin.iitd.ac.in</a></p>
+                <div id="map-canvas"></div>
             </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <form name="sent-message" id="contactForm">
-        <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-9">
-                <div class="form-group">
-                    <form action="review.html">
-                        <textarea class="form-control" placeholder="Post a Review/ Ask a Question/ Answer to a Question " id="styled" rows="7" required></textarea>
-                        <br>
-                        <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </form>
-    <div class="space" style="margin-top: 50px;">
+        <br>
+        <br>
+        <!-- Trigger the modal with a button -->
         <div class="container-fluid">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-8" style="margin-top: 30px;">
-                <h2 style="text-align: center; font-size: 40px;"><b>Question and Answers</b></h2>
-                <br>
-                <div class="here" id="data">
-                    <hr>
-                    <div style="display:inline-block; vertical-align:bottom;">
-                        <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">
-                    </div>
-                    <div style="display:inline-block; vertical-align: top;">
-                        <h3 style="color: #2D2D2D; padding-left: 10px;"><b>Username</b></h3>
-                        <i style="padding-left: 10px; color: black;">26th October, 2015 | 02:36 A.M.</i>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="ques" style="margin-left: 60px;">
-                        <a a href="comment.html">This is your question which will be displayed. Wanna write an answer to it ? Or add a comment regarding this fact...</a>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-            <div class="col-md-2">
-            </div>
-        </div>
-    </div>
-    <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
-        <div class="container-fluid" style="height:250px;">
             <div class="row">
                 <div class="col-md-3">
-                    <div id="footerlogo">
-                        <a href="collegexplorer.html"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; "></a>
-                        <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
-                    </div>
+                    <p style="font-size: 27px; font-family: 'dosis',sans-serif; color: #FC573A;">Important Dates and Events</p>
                 </div>
-                <div class="col-md-3">
-                    <h3 class="footertitle" style="color:#FF6E49;">LEARN MORE</h3>
-                    <div class="learnmorelinks">
-                        <ul><a href="aboutus.html" style="color:white;text-decoration: none;">ABOUT US</a></ul>
-                        <ul><a href="privacy.html" style="color:white;text-decoration: none;">PRIVACY POLICY</a></ul>
-                        <ul><a href="terms.html" style="color:white;text-decoration: none;">TERMS & CONDITIONS</a></ul>
-                        <ul><a href="disclaimer.html" style="color:white;text-decoration: none;">DISCLAIMER</a></ul>
-                    </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal1">Application Forms</button>
                 </div>
-                <div class="col-md-3">
-                    <h3 class="footerTitle" style="color:#FF6E49;">Subscribe </h3>
-                    <form id="footerSignupForm">
-                        <div class="form-group">
-                            <label class="sr-only" for="footerEmailInput"></label>
-                            <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal2">Examination Date</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal3">Result Declaration</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4">Counselling Dates</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="container">
+            <div class="modal fade" id="myModal1" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color: black;">Application Forms</h4>
                         </div>
-                        <button type="submit" style="background-color: #EEE5E9; border-color:#EEE5E9;">Get all important updates</button>
-                    </form>
+                        <div class="modal-body">
+                            <p>Online:</p>
+                            <ul>
+                                <li style="float: left; color: black;">02/05/2015 - 07/05/2015</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <div id="connectCol">
-                        <h3 class="footerTitle" style="color:#FF6E49; padding-left:30px; ">Connect</h3>
-                        <ul id="footerSocialBtns">
-                            <a id="headerTwBtn" class="headerSocialBtn" href="https://www.twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                            <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                            <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                            <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                        </ul>
-                        <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">
+            </div>
+            <div class="modal fade" id="myModal2" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color: black;">Examination Date</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Online</p>
+                            <ul>
+                                <li style="float: left; color: black;">04/04/2015</li>
+                            </ul>
                             <br>
-                            <span id="addressTitle" style="color:white;">CollegExplorer</span>
+                            <br>
+                            <p>Offline</p>
+                            <ul>
+                                <li style="float: left; color: black;">10/04/2015</li>
+                            </ul>
                         </div>
-                        <div id="footerEmail"><a href="collegexplorer@gmail.com" style="color:white;text-decoration: none;padding-left:30px;">collegexplorer@gmail.com</a></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal3" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color: black;">Result Date</h4>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li style="float: left; color: black;">27/04/2015</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal4" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color: black;">Counselling Dates</h4>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li style="float: left; color: black;">01/07/2015 - 26/07/2015</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="assets/js/classie.js"></script>
-    <script src="assets/js/uiMorphingButton_fixed.js"></script>
-    <script>
-    (function() {
-        var docElem = window.document.documentElement,
-            didScroll, scrollPosition;
+        <br>
+        <br>
+        <div class="quote" style="text-align:center;">
+            <hr>
+            <br>
+            <q> A good, pragmatic and sympathetic review is always a wonderful surprise </q><span> - Joyce Carol </span>
+            <br>
+            <br>
+        </div>
+        <div class="container" style="padding-top: 100px;">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-9">
+                    <section id="review">
+                        <div class="border">
+                            <h1>Review</h1>
+                            <br>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Foreword</h3>
+                            <p>
+                                I am Aadhar from Civil engineering department (B.Tech) IIT Bombay. I am a fresher and I joined IITB on 22/7/15 and I consider this as my best decision till now. </p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Procedure & Preparation</h3>
+                            <p>
+                                The procedure for admission is quite complex starting from Jee Mains and ending with Jee Advanced I took 3 years to crack these exams including 2 years at Indore and 1 year at Kota and I studied rigorously during my last year for around 8 hours a day to fulfill my dream of becoming an IITian but I think that 2 years of sincere preparation is sufficient for anyone to clear these exams, things will be more easy for reserved people.</p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Fests and Events</h3>
+                            <p>When it comes to events,we have 3-4 events daily and some mega annual events like Mood Indigo, Techfest etc which indeed require no introduction.</p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Sports Facilities</h3>
+                            <p>
+                                For sports we have both indoor and outdoor sports ranging from table tennis, football, basketball etc. Other than this we have events like marathon,cycling,rappelling etc and an awesome swimming pool.</p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Faculty</h3>
+                            <p>The faculties are very cooperative and most of them are quite beyond what I expected. Attendance varies with professor, but most require 80%. DX grade given in case required attendance as stated is not achieved and the student has to repeat tthe course.</p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Interaction With Seniors</h3>
+                            <p>We interact a lot with our seniors and are on friendly terms with them. We call them by their first name only,and use ‘aap’ while addressing them.</p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Placements & Internships</h3>
+                            <p>At the best institute in India, you expect some brilliant internships and placements, and IIT Bombay does not disappoint. Some of the best companies from all fields – including investment banks like Goldman Sachs and Morgan Stanley, the big names of management consultancy like McKinsey, BCG and Bain pick up a number of IITians at some hair-raising salaries. It’s one of the very few colleges visited by IT leaders like Samsung,Microsoft and Google, and the salaries can go as high as 80 lac per annum. The average package stands at about 9 lac. In short if any company visits India for recruitment their first choice will be IIT Bombay.</p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Hostel and Mess</h3>
+                            <p>
+                                Hostel and mess are perhaps the most disappointing thing here,the mess food isn't very delicious but we have other substitutes as well, including night canteen which can certainly help, the rooms are sufficient but from the next year we will have really tiny rooms. </p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Efforts towards Academics</h3>
+                            <p>
+                                Academics is really painful and the extent of efforts increases exponentially during exams.</p>
+                            <br>
+                            <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Verdict</h3>
+                            <p>In all I wanna conclude that there are a lot of reasons why IITB is the best college in India.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <form name="sent-message" id="contactForm">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <form action="review.html">
+                            <textarea class="form-control" placeholder="Post a Review/ Ask a Question/ Answer to a Question " id="styled" rows="7" required></textarea>
+                            <br>
+                            <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="space" style="margin-top: 50px;">
+            <div class="container-fluid">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8" style="margin-top: 30px;">
+                    <h2 style="text-align: center; font-size: 40px;"><b>Question and Answers</b></h2>
+                    <br>
+                    <div class="here" id="data">
+                        <hr>
+                        <div style="display:inline-block; vertical-align:bottom;">
+                            <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">
+                        </div>
+                        <div style="display:inline-block; vertical-align: top;">
+                            <h3 style="color: #2D2D2D; padding-left: 10px;"><b>Username</b></h3>
+                            <i style="padding-left: 10px; color: black;">26th October, 2015 | 02:36 A.M.</i>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="ques" style="margin-left: 60px;">
+                            <a a href="comment.html">This is your question which will be displayed. Wanna write an answer to it ? Or add a comment regarding this fact...</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+        <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
+            <div class="container-fluid" style="height:250px;">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="footerlogo">
+                            <a href="collegexplorer.html"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; "></a>
+                            <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footertitle" style="color:#FF6E49;">LEARN MORE</h3>
+                        <div class="learnmorelinks">
+                            <ul><a href="aboutus.html" style="color:white;text-decoration: none;">ABOUT US</a></ul>
+                            <ul><a href="privacy.html" style="color:white;text-decoration: none;">PRIVACY POLICY</a></ul>
+                            <ul><a href="terms.html" style="color:white;text-decoration: none;">TERMS & CONDITIONS</a></ul>
+                            <ul><a href="disclaimer.html" style="color:white;text-decoration: none;">DISCLAIMER</a></ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footerTitle" style="color:#FF6E49;">Subscribe </h3>
+                        <form id="footerSignupForm">
+                            <div class="form-group">
+                                <label class="sr-only" for="footerEmailInput"></label>
+                                <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
+                            </div>
+                            <button type="submit" style="background-color: #EEE5E9; border-color:#EEE5E9;">Get all important updates</button>
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="connectCol">
+                            <h3 class="footerTitle" style="color:#FF6E49; padding-left:30px; ">Connect</h3>
+                            <ul id="footerSocialBtns">
+                                <a id="headerTwBtn" class="headerSocialBtn" href="https://www.twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                                <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                                <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                                <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                            </ul>
+                            <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">
+                                <br>
+                                <span id="addressTitle" style="color:white;">CollegExplorer</span>
+                            </div>
+                            <div id="footerEmail"><a href="collegexplorer@gmail.com" style="color:white;text-decoration: none;padding-left:30px;">collegexplorer@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="assets/js/classie.js"></script>
+        <script src="assets/js/uiMorphingButton_fixed.js"></script>
+        <script>
+        (function() {
+            var docElem = window.document.documentElement,
+                didScroll, scrollPosition;
 
-        // trick to prevent scrolling when opening/closing button
-        function noScrollFn() {
-            window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
-        }
-
-        function noScroll() {
-            window.removeEventListener('scroll', scrollHandler);
-            window.addEventListener('scroll', noScrollFn);
-        }
-
-        function scrollFn() {
-            window.addEventListener('scroll', scrollHandler);
-        }
-
-        function canScroll() {
-            window.removeEventListener('scroll', noScrollFn);
-            scrollFn();
-        }
-
-        function scrollHandler() {
-            if (!didScroll) {
-                didScroll = true;
-                setTimeout(function() {
-                    scrollPage();
-                }, 60);
+            // trick to prevent scrolling when opening/closing button
+            function noScrollFn() {
+                window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
             }
-        };
 
-        function scrollPage() {
-            scrollPosition = {
-                x: window.pageXOffset || docElem.scrollLeft,
-                y: window.pageYOffset || docElem.scrollTop
+            function noScroll() {
+                window.removeEventListener('scroll', scrollHandler);
+                window.addEventListener('scroll', noScrollFn);
+            }
+
+            function scrollFn() {
+                window.addEventListener('scroll', scrollHandler);
+            }
+
+            function canScroll() {
+                window.removeEventListener('scroll', noScrollFn);
+                scrollFn();
+            }
+
+            function scrollHandler() {
+                if (!didScroll) {
+                    didScroll = true;
+                    setTimeout(function() {
+                        scrollPage();
+                    }, 60);
+                }
             };
-            didScroll = false;
-        };
 
-        scrollFn();
+            function scrollPage() {
+                scrollPosition = {
+                    x: window.pageXOffset || docElem.scrollLeft,
+                    y: window.pageYOffset || docElem.scrollTop
+                };
+                didScroll = false;
+            };
 
-        var el = document.querySelector('.morph-button');
+            scrollFn();
 
-        new UIMorphingButton(el, {
-            closeEl: '.icon-close',
-            onBeforeOpen: function() {
-                // don't allow to scroll
-                noScroll();
-            },
-            onAfterOpen: function() {
-                // can scroll again
-                canScroll();
-                // add class "noscroll" to body
-                classie.addClass(document.body, 'noscroll');
-                // add scroll class to main el
-                classie.addClass(el, 'scroll');
-            },
-            onBeforeClose: function() {
-                // remove class "noscroll" to body
-                classie.removeClass(document.body, 'noscroll');
-                // remove scroll class from main el
-                classie.removeClass(el, 'scroll');
-                // don't allow to scroll
-                noScroll();
-            },
-            onAfterClose: function() {
-                // can scroll again
-                canScroll();
+            var el = document.querySelector('.morph-button');
+
+            new UIMorphingButton(el, {
+                closeEl: '.icon-close',
+                onBeforeOpen: function() {
+                    // don't allow to scroll
+                    noScroll();
+                },
+                onAfterOpen: function() {
+                    // can scroll again
+                    canScroll();
+                    // add class "noscroll" to body
+                    classie.addClass(document.body, 'noscroll');
+                    // add scroll class to main el
+                    classie.addClass(el, 'scroll');
+                },
+                onBeforeClose: function() {
+                    // remove class "noscroll" to body
+                    classie.removeClass(document.body, 'noscroll');
+                    // remove scroll class from main el
+                    classie.removeClass(el, 'scroll');
+                    // don't allow to scroll
+                    noScroll();
+                },
+                onAfterClose: function() {
+                    // can scroll again
+                    canScroll();
+                }
+            });
+        })();
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script>
+        $('.form').find('input, textarea').on('keyup blur focus', function(e) {
+            var $this = $(this),
+                label = $this.prev('label');
+            if (e.type === 'keyup') {
+                if ($this.val() === '') {
+                    label.removeClass('active highlight');
+                } else {
+                    label.addClass('active highlight');
+                }
+            } else if (e.type === 'blur') {
+                if ($this.val() === '') {
+                    label.removeClass('active highlight');
+                } else {
+                    label.removeClass('highlight');
+                }
+            } else if (e.type === 'focus') {
+                if ($this.val() === '') {
+                    label.removeClass('highlight');
+                } else if ($this.val() !== '') {
+                    label.addClass('highlight');
+                }
             }
         });
-    })();
-    </script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script>
-    $('.form').find('input, textarea').on('keyup blur focus', function(e) {
-        var $this = $(this),
-            label = $this.prev('label');
-        if (e.type === 'keyup') {
-            if ($this.val() === '') {
-                label.removeClass('active highlight');
-            } else {
-                label.addClass('active highlight');
-            }
-        } else if (e.type === 'blur') {
-            if ($this.val() === '') {
-                label.removeClass('active highlight');
-            } else {
-                label.removeClass('highlight');
-            }
-        } else if (e.type === 'focus') {
-            if ($this.val() === '') {
-                label.removeClass('highlight');
-            } else if ($this.val() !== '') {
-                label.addClass('highlight');
-            }
-        }
-    });
-    $('.tab a').on('click', function(e) {
-        e.preventDefault();
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-        target = $(this).attr('href');
-        $('.tab-content > div').not(target).hide();
-        $(target).fadeIn(600);
-    });
-    </script>
+        $('.tab a').on('click', function(e) {
+            e.preventDefault();
+            $(this).parent().addClass('active');
+            $(this).parent().siblings().removeClass('active');
+            target = $(this).attr('href');
+            $('.tab-content > div').not(target).hide();
+            $(target).fadeIn(600);
+        });
+        </script>
 </body>
 
 </html>
