@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="max-width:100%;">
 
 <head>
     <meta charset="UTF-8" />
@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="favicon.png" />
 </head>
 
-<body class="loading">
+<body class="loading" style="max-width:100%; overflow-x:hidden;">
     <!--menu bar-->
     <section id="navbar">
         <nav class="navbar navbar-default" style="background-color: rgba(51,51,51,0.8);opacity: 1;text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
@@ -351,6 +351,59 @@
         </div>
     </footer>
     <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="typeahead.js"></script>
+    <script>
+    var substringMatcher = function(strs) {
+        return function findMatches(q, cb) {
+            var matches, substringRegex;
+
+            // an array that will be populated with substring matches
+            matches = [];
+
+            // regex used to determine if a string contains the substring `q`
+            substrRegex = new RegExp(q, 'i');
+
+            // iterate through the pool of strings and for any string that
+            // contains the substring `q`, add it to the `matches` array
+            $.each(strs, function(i, str) {
+                if (substrRegex.test(str)) {
+                    matches.push(str);
+                }
+            });
+
+            cb(matches);
+        };
+    };
+
+    var college = ['IIT DELHI', 'IIT MUMBAI', 'IIT KHARAGPUR', 'IIT MADRAS', 'IIT KANPUR', 'IT-BHU', 'BITS PILANI', 'IIT GUWAHATI', 'NIT TRICHY', 'NIT SURATKAL', 'ISM DHANBAD', 'NIT WARANGAL', 'NIT ROURKELA', 'IIIT HYDERABAD', 'NSIT DELHI', 'COEP PUNE', 'PSG COIMBATORE', 'IIIT ALLAHABAD', 'JNTUH HYDERABAD', 'DTU', 'BIT RANCHI', 'MIT', 'NIT HAMIRPUR', 'MS RAMIAH BANGALORE', 'NIT DURGAPUR', 'THAPAR PATIALA', 'BIT SINDRI DHANBAD', 'VNIT NAGPUR', 'NIE MYSORE', 'NIRMA', 'SGS INDORE', 'UNIVERSITY COLLEGE OF ENGINEERING HYDERABAD', 'VIT VELLORE', 'CHAITANYA BHARTI HYDERABAD', 'GURUNANAK DEV ENGINEERING LUDHIANA', 'ZAKIR HUSAIN COLLEGE ALIGARH', 'DJ SANGHVI MUMBAI', 'MIT PUNE', 'THIAGARAJAR MADURAI', 'KONGU ENGINEERING COLLEGE ERODE', 'BANNARI AMMAN IT ERODE'];
+
+    $('.sb-search-input').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+    }, {
+        name: 'college',
+        source: substringMatcher(college)
+    });
+
+    // constructs the suggestion engine
+    var college = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        // `college` is an array of college names defined in "The Basics"
+        local: college
+    });
+
+    $('#bloodhound .sb-search-input').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+    }, {
+        name: 'college',
+        source: college
+    });
+    </script>
 </body>
 
 </html>
