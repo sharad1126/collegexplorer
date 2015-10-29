@@ -128,26 +128,6 @@
         text-decoration: none;
     }
     </style>
-    <style>
-    #map-canvas {
-        width: 280px;
-        height: 280px;
-        background-color: #CCC;
-    }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-    function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-            center: new google.maps.LatLng(28.545, 77.1922),
-            zoom: 16,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 </head>
 
 <body>
@@ -307,31 +287,6 @@
                                     </form>
                                 </div>
                             </div>
-                            <div style="margin-top: 50px;">
-                                <div class="container-fluid">
-                                    <div class="col-md-2">
-                                    </div>
-                                    <div class="col-md-8" style="margin-top: 40px;">
-                                        <h3 style="text-align: center; font-size: 34px; font-family: 'dosis', sans-serif; text-transform: uppercase; color: #FC573A;"><b>More Reviews</b></h3>
-                                        <br>
-                                        <hr>
-                                        <div style="display:inline-block; vertical-align:bottom;">
-                                            <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">
-                                        </div>
-                                        <div style="display:inline-block; vertical-align: top;">
-                                            <h3 style="color: #2D2D2D; padding-left: 10px;"><b>Username</b></h3>
-                                            <i style="padding-left: 10px;">28th October, 2015 | 02:34 A.M.</i>
-                                        </div>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <p style="color: black; font-family: 'Open Sans', sans-serif; font-size: 20px; margin-left: 60px;">This is my review</p>
-                                        <hr>
-                                    </div>
-                                    <div class="col-md-2">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -368,17 +323,6 @@
                     <br>
                     <br>
                     <p style="color: white; text-align: center;">Rank : 3</p>
-                </div>
-                <div class="col-md-1">
-                </div>
-                <div class="col-xs-10 col-md-3" style="background-color:#FBFCF7;">
-                    <br>
-                    <h2>Contact Info:</h2>
-                    <p>Indian Institute of Technology Delhi</p>
-                    <p>Hauz Khas, New Delhi-110 016, INDIA</p>
-                    <p>Phone: 011 2659 7135</p>
-                    <p><a href="mailto:webmaster@admin.iitd.ac.in" style="text-decoration: none;">Email: webmaster@admin.iitd.ac.in</a></p>
-                    <div id="map-canvas"></div>
                 </div>
             </div>
         </div>

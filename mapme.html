@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Place search pagination</title>
+    <script src="http://maps.googleapis.com/maps/api/js">
+    </script>
+</head>
+<style>
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#googleMap {
+    height: 100%;
+}
+</style>
+<script>
+var myCenter = new google.maps.LatLng(28.5450, 77.1922);
+
+function initialize() {
+    var mapProp = {
+        center: myCenter,
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+    var marker = new google.maps.Marker({
+        position: myCenter,
+        animation: google.maps.Animation.BOUNCE
+    });
+
+
+    marker.setMap(map);
+
+    var infowindow = new google.maps.InfoWindow({
+        content: "Your Destination"
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<body>
+    <div id="googleMap"></div>
+</body>
+
+</html>
