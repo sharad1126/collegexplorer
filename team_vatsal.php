@@ -32,7 +32,7 @@
     <nav role="navigation">
         <nav class="subnav">
             <ul>
-                <li style="float: left;"><a href="team.php" class="btn btn-danger btn-lg" role="button">TEAM</a></li>
+                <li style="float: left;"><a href="team.php" class="btn btn-danger btn-lg" role="button">BACK</a></li>
                 <li class="current">
                     <a href="team_vatsal.php" class="img_loaded">
                         <img class="resize" src="assets/images/vatsal_sm.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
@@ -131,7 +131,7 @@
 <!-- footer     -->
     <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
         <div class="container-fluid" style="height:250px;">
-            <div class="row">
+            <div class="row" style="margin-top: 20px;">
                 <div class="col-md-3">
                     <div id="footerlogo">
                         <a href="collegexplorer.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; "></a>
