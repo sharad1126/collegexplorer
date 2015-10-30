@@ -302,6 +302,20 @@ if(isset($_GET['id']))
         margin-top: -20px;
         text-align: right;
     }
+
+    .hitbtn {
+        position: relative;
+        background: #1E9E53;
+        color: white;
+        padding: 0 50px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1.2px;
+        font-size: 18px;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        line-height: 3.3;
+    }
     </style>
     <style>
     #map-canvas {
@@ -491,7 +505,7 @@ if(isset($_GET['id']))
                             }
                          ?> 
                     <div class="morph-button morph-button-overlay morph-button-fixed">
-                        <button type="button">Write a Review</button>
+                        <button type="button" style="border-radius: 2px;">Write a Review</button>
                          <div class="morph-content">
                             <span class="icon icon-close"></span>
                             <div class="container-fluid">
@@ -509,7 +523,7 @@ if(isset($_GET['id']))
                                                     <form action="review.html">
                                                         <textarea class="form-control" placeholder="Post a Review..." id="styled" name= "review" rows="8" required></textarea>
                                                         <br>
-                                                        <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
+                                                        <button type="submit" class="hitbtn" style="text-align: center;">SUBMIT</button>
                                                     </form>
                                                 </div>
                                             </div>
@@ -526,7 +540,7 @@ if(isset($_GET['id']))
                         else 
                         { ?>
                            
-                             <a href="login.php?id=<?php echo urlencode($id);?>" class="morph-button morph-button-overlay morph-button-fixed"><button type="button">Login To Write a Review</button></a> 
+                             <a href="login.php?id=<?php echo urlencode($id);?>" class="morph-button morph-button-overlay morph-button-fixed"><button type="button" style="border-radius: 2px;">Login To Write a Review</button></a> 
                          
                        <?php } 
                         ?>
@@ -859,7 +873,7 @@ if(isset($_GET['id']))
                     <div class="col-md-1">
                     </div>
                     <div class="col-md-9">
-                        <a href="login.php?id=<?php echo urlencode($id);?>"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to ask a question</button></a>
+                        <a href="login.php?id=<?php echo urlencode($id);?>"><button type="submit" class="hitbtn" style="text-align: center;">Login to Ask a Question</button></a>
                     </div>  
                 </div>
             </div>
@@ -875,7 +889,7 @@ if(isset($_GET['id']))
                     <div class="col-md-1">
                     </div>
                     <div class="col-md-9">
-                        <a href="logout.php"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Logout</button></a>
+                        <a href="logout.php"><button type="submit" class="hitbtn" style="text-align: center;">LOGOUT</button></a>
                     </div>  
                 </div>
             </div>
@@ -907,7 +921,7 @@ if(isset($_GET['id']))
                         <form action="review.php?id=<?php echo urlencode($id); ?>" method= "POST">
                             <input type="text" name="ask" style="color:black;" placeholder="Ask your doubts here .." rows="2" class="form-control autogrow" id="styled" required>
                             <br>
-                            <button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Submit</button>
+                            <button type="submit" class="hitbtn" style="text-align: center;">SUBMIT</button>
                         </form>
                     </div>
                 </div>
