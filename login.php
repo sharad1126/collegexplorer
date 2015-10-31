@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-                <html class="">
+<html lang="en">
 <?php require_once("connect.php");?>
 <?php require_once("functions.php");?>
 <?php if(isset($_GET['id']))$id= $_GET['id']; ?>
@@ -22,7 +22,7 @@ if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) &&
         $query = mysqli_query($conn, "SELECT * FROM login WHERE username='$uname'");
             if (mysqli_num_rows($query)!=0)
                 {
-                    echo "Username already exists";
+                    echo "<script>alert('Username already exists');</script>";
                 }
              else
                 {  
@@ -31,8 +31,6 @@ if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) &&
                       $query_run = "SELECT * FROM login WHERE username='{$uname}'" ;
                       $result_query = @mysqli_query($conn,$query_run);
                        $result_s=mysqli_fetch_assoc($result_query);
-                       //print_r($result_s);
-                      //signed($user_registered,$id);
                       if(isset($_GET['id']))
                         {
                          $flag=0;
@@ -48,42 +46,7 @@ if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) &&
     }
 }
 else
-echo "aiye feel captcha you na idiot";
-}
-if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
-{
-    $uname=  mysqli_real_escape_string($conn,htmlentities($_POST['UNAME']));
-    $password=mysqli_real_escape_string($conn,htmlentities($_POST['PASSWORD']));
-    $password_hash= md5($password);
-    if(!empty($uname) && !empty($password) )        
-    {        
-        $query_run = "SELECT * FROM login WHERE username='{$uname}'" ;
-        $result_query = @mysqli_query($conn,$query_run); 
-            if($result_query)
-                {
-                    $user_exist= mysqli_num_rows($result_query);
-                    $result_s=mysqli_fetch_assoc($result_query);
-                    if($password_hash==$result_s['password'])
-                    {
-                        if(isset($_GET['id']))
-                        {
-                         $flag=0;
-                    	 confirm_logged($result_s['id'],$id,$flag);
-                        } 
-                        else
-                        {
-                            $flag=1;
-                            confirm_logged($result_s['id'],$qid,$flag);
-                        }
-                    }
-                    else
-                    { 
-                    	echo "<div>Invalid Username or Password</div>";
-                        
-                     
-                    }
-                }
-    }
+echo "<script>alert('Please verify that you are not a Robot.');</script>";
 }
 ?>
                 <head>
@@ -360,8 +323,35 @@ if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
                                             Password<span class="req">*</span>
                                         </label>
                                         <input type="password" required="" autocomplete="off" name="PASSWORD">
-                                    </div>
-                                    <p class="forgot"><a href="#">Forgot Password?</a></p>
+                                    </div>  <?php 
+                                    if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
+                {
+                    $uname=  mysqli_real_escape_string($conn,htmlentities($_POST['UNAME']));
+                    $password=mysqli_real_escape_string($conn,htmlentities($_POST['PASSWORD']));
+                    $password_hash= md5($password);
+                    if(!empty($uname) && !empty($password) )        
+                    {        
+                        $query_run = "SELECT * FROM login WHERE username='{$uname}'" ;
+                        $result_query = @mysqli_query($conn,$query_run); 
+                            if($result_query)
+                                {
+                                    $user_exist= mysqli_num_rows($result_query);
+                                    $result_s=mysqli_fetch_assoc($result_query);
+                                    if($password_hash==$result_s['password'])
+                                    {
+                                        if(isset($_GET['id']))
+                                        {
+                                         $flag=0;
+                                         confirm_logged($result_s['id'],$id,$flag);
+                                        } 
+                                        else
+                                        {
+                                            $flag=1;
+                                            confirm_logged($result_s['id'],$qid,$flag);
+                                        }
+                                    } 
+                 ?>
+                                    <p class="forgot"><?php if($password_hash!=$result_s['password'])?>Username and/or Password incorrect.Try again.</p> <?php } } }?>
                                     <button class="button button-block">Log In</button>
                                 </form>
                             </div>
