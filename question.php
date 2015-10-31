@@ -16,7 +16,21 @@
     <script type="text/javascript" href="assets/js/modernizr.js"></script>
     <script type="text/javascript" href="assets/js/comment.js"></script>
 </head>
-
+<style>
+.hitbtn {
+        position: relative;
+        background: #1E9E53;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1.2px;
+        font-size: 16px;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        line-height: 2.7;
+    }
+</style>
 <body>
     <!-- navbar   -->
     <section id="navbar">
@@ -89,7 +103,7 @@
                                  } ?>
                                  
                 <form action="question.php?qid=<?php echo urlencode($qid);?>" method="POST">
-                <input  rows="2" style="background-color: #F4F4F4" class="form-control autogrow" name="answer" value="" required="" placeholder="Write a comment..." name="answer" type="text">
+                <input  rows="3" style="background-color: #F4F4F4" class="form-control autogrow" name="answer" value="" required="" placeholder="Write a comment..." name="answer" type="text">
                 <br>
                 <input type="submit" name="submit" class="btn btn-info btn-sm" style="background-color: #444242; color: white;"> 
                 </form>
@@ -98,7 +112,7 @@
                 else
                     { if(isset($_GET['qid'])) {
                         $qid= $_GET['qid'];
-                echo "<br>" .'<a href="login.php?qid='.urlencode($qid).'"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Login to answer a question</button></a><br>';
+                echo "<br>" .'<a href="login.php?qid='.urlencode($qid).'"><button type="submit" class="hitbtn" style="text-align: center;">Login to ask a Question</button></a><br>';
             }
         }
             ?>
@@ -112,7 +126,7 @@
                                 <div class="col-md-1">
                                 </div>
                                 <div class="col-md-9">
-                                    <a href="logout.php"><button type="submit" class="btn btn-success btn-lg" style="text-align: center;">Logout</button></a>
+                                    <a href="logout.php"><button type="submit" class="hitbtn" style="text-align: center;">Logout</button></a>
                                 </div>  
                             </div>
                         </div>

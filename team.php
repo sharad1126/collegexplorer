@@ -53,18 +53,17 @@
             <div class="grid-wrap" style="position: relative; height: 924.75px;">
                 <header class="block-wrap" data-rowspan="2" data-colspan="2" style="position: absolute; width: 616.5px; height: 616.5px; top: 0px; left: 0px;">
                     <hgroup class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                        <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Meet The Team</h1>
+                        <br>
+                        <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">We Are Cute</h1>
                         <br>
                         <br>
                         <q style="font-family: 'Josefin Sans', sans-serif; font-size: 35px; color: white;">The best teamwork comes from men who are working independently toward one goal in unison.</q><span style="color: white; font-size: 23px; margin-left: 20px;"> - James Cash Penney</span>
                         <br>
                         <br>
                         <br>
-                        <p style="font-family: 'Josefin Sans', sans-serif; font-size: 35px; color: #FE5F55; text-align: center;">T - <span style="color: white; text-align: center;">Together</span></p>
-                        <p style="font-family: 'Josefin Sans', sans-serif; font-size: 35px; color: #FE5F55; text-align: center;">E - <span style="color: white; text-align: center;">Everyone</span></p>
-                        <p style="font-family: 'Josefin Sans', sans-serif; font-size: 35px; color: #FE5F55; text-align: center;">A - <span style="color: white; text-align: center;">Achieves</span></p>
-                        <p style="font-family: 'Josefin Sans', sans-serif; font-size: 35px; color: #FE5F55; text-align: center;">M - <span style="color: white;">Much more</span></p>
-                    </hgroup>
+                        <br>
+                        <q style="font-family: 'Josefin Sans', sans-serif; font-size: 35px; color: white;">If things seem under control, you are just not going fast enough.</q><span style="color: white; font-size: 23px; margin-left: 20px;"> - Mario Andretti</span>
+                        </hgroup>
                 </header>
                 <ul>
                     <li class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 616.5px;">
@@ -112,7 +111,7 @@
                 <div class="row" style="margin-top: 20px;">
                     <div class="col-md-3">
                         <div id="footerlogo">
-                            <a href="collegexplorer.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; "></a>
+                            <a href="collegexplorer.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-bottom:20px;"></a>
                             <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
                         </div>
                     </div>
@@ -126,8 +125,8 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <h3 class="footerTitle" style="color:#FF6E49;">Subscribe </h3>
-                        <form id="footerSignupForm" method="POST" action="team.php">
+                        <h3 class="footerTitle" style="color:#FF6E49;">SUBSCRIBE</h3>
+                        <form id="footerSignupForm" method="POST" action="team.php" style="margin-top: 15px;">
                             <div class="form-group">
                                 <label class="sr-only" for="footerEmailInput"></label>
                                 <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="" name="email">
@@ -137,7 +136,7 @@
                     </div>
                     <div class="col-md-3">
                         <div id="connectCol">
-                            <h3 class="footerTitle" style="color:#FF6E49; padding-left:30px; ">Connect</h3>
+                            <h3 class="footerTitle" style="color:#FF6E49; padding-left:30px; ">CONNECT</h3>
                             <ul id="footerSocialBtns">
                                 <a id="headerTwBtn" class="headerSocialBtn" href="https://www.twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
                                 <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>

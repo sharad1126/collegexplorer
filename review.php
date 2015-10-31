@@ -307,14 +307,14 @@ if(isset($_GET['id']))
         position: relative;
         background: #1E9E53;
         color: white;
-        padding: 0 50px;
+        padding: 0 30px;
         font-family: 'Roboto', sans-serif;
         letter-spacing: 1.2px;
-        font-size: 18px;
+        font-size: 16px;
         border-radius: 3px;
         border: none;
         outline: none;
-        line-height: 3.3;
+        line-height: 2.7;
     }
     </style>
     <style>
@@ -918,8 +918,9 @@ if(isset($_GET['id']))
                     <div class="col-md-1">
                     </div>
                     <div class="col-md-9">
+                    <br>
                         <form action="review.php?id=<?php echo urlencode($id); ?>" method= "POST">
-                            <input type="text" name="ask" style="color:black;" placeholder="Ask your doubts here .." rows="2" class="form-control autogrow" id="styled" required>
+                            <input type="text" name="ask" style="color:black;" placeholder="Ask your doubts here .." rows="7" class="form-control autogrow" id="styled" required>
                             <br>
                             <button type="submit" class="hitbtn" style="text-align: center;">SUBMIT</button>
                         </form>
