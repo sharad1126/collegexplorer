@@ -13,7 +13,6 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/team.css">
         <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
@@ -56,7 +55,7 @@
                 <header class="block-wrap" data-rowspan="2" data-colspan="2" style="position: absolute; width: 616.5px; height: 616.5px; top: 0px; left: 0px;">
                     <hgroup class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                         <br>
-                        <h1 style="text-align: center; color: #FE5F55; font-family: 'Dancing Script', cursive; font-size: 45px; word-spacing: 7px;">We're Cute</h1>
+                        <h1 style="text-align: center; color: #FE5F55; font-family: 'Dancing Script', cursive; font-size: 45px; word-spacing: 7px;">Meet The Team</h1>
                         <br>
                         <br>
                         <q style="font-family: 'Josefin Sans', sans-serif; font-size: 35px; color: white;">The best teamwork comes from men who are working independently toward one goal in unison.</q><span style="color: white; font-size: 23px; margin-left: 20px;"> - James Cash Penney</span>
@@ -73,7 +72,7 @@
                             <a class="link-block img_loaded" href="team_vatsal.php">
                                 <img class="resize" src="assets/images/vatsal.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
                             </a>
-                            <h3 style="font-family: 'Permanent Marker', cursive; letter-spacing: 3.5px;"><a href="team_vatsal.php">Vatsal Shrivastav</a></h3>
+                            <h3><a href="team_vatsal.php">Vatsal Shrivastav</a></h3>
                             <p>Front End Developer</p>
                         </figure>
                     </li>
@@ -82,7 +81,7 @@
                             <a class="link-block img_loaded" href="team_sharad.php">
                                 <img class="resize" src="assets/images/sharad.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
                             </a>
-                            <h3 style="font-family: 'Permanent Marker', cursive; letter-spacing: 3.5px;" ><a href="team_sharad.php">Sharad Agarwal</a></h3>
+                            <h3><a href="team_sharad.php">Sharad Agarwal</a></h3>
                             <p>Front End Developer</p>
                         </figure>
                     </li>
@@ -91,7 +90,7 @@
                             <a class="link-block img_loaded" href="team_yash.php">
                                 <img class="resize" src="assets/images/yash.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
                             </a>
-                            <h3 style="font-family: 'Permanent Marker', cursive; letter-spacing: 3.5px;"><a href="team_yash.php">Yash Jain</a></h3>
+                            <h3><a href="team_yash.php">Yash Jain</a></h3>
                             <p>Back End Developer</p>
                         </figure>
                     </li>
@@ -100,7 +99,7 @@
                             <a class="link-block img_loaded" href="team_hari.php">
                                 <img class="resize" src="assets/images/hari.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
                             </a>
-                            <h3 style="font-family: 'Permanent Marker', cursive; letter-spacing: 3.5px;"><a href="team_hari.php">Hari Prakash</a></h3>
+                            <h3><a href="team_hari.php">Hari Prakash</a></h3>
                             <p>Editor</p>
                         </figure>
                     </li>
