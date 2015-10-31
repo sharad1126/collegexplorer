@@ -1,0 +1,75 @@
+body {
+    background-color: #FBFCF7;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #0C0C0B;
+    text-align: justify;
+    font-size: 18px;
+    text-justify: inter-word;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: 'raleway', sans-serif;
+    text-transform: uppercase;
+    color: #FC573A;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'dosis', sans-serif;
+    text-transform: uppercase;
+    color: #FC573A;
+}
+
+li {
+    float: left;
+}
+
+.one {
+    padding-left: 20px;
+}
+
+.one .col-md-3 {
+    border: 1px solid white;
+    background-color: #6F5499;
+}
+
+q {
+    font-family: 'PT Mono', ;
+    font-size: 35px;
+    color: white;
+}
+
+.quote {
+    background-color: #6F5499;
+}
+
+#review {
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#review h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'raleway', sans-serif;
+    text-transform: uppercase;
+    color: #FC573A;
+}
+
+.border {
+    border: 1px solid black;
+    padding: 20px 45px 80px 45px;
+    background-color: #F1F2ED;
+}
+
+textarea#styled {
+    border: 3px solid #cccccc;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
