@@ -43,7 +43,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="collegexplorer.html" style="width: 130px;height: 25px;">CollegExplorer</a>
+                     <a class="navbar-brand" href="collegexplorer.html" style="width: 130px;height: 25px; font-family: 'Open Sans', sans-serif;color: #fd5f54; margin-top: 8px; margin-left: 4px;">CollegExplorer</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -103,7 +103,7 @@
                                  } ?>
                                  
                 <form action="question.php?qid=<?php echo urlencode($qid);?>" method="POST">
-                <input  rows="3" style="background-color: #F4F4F4" class="form-control autogrow" name="answer" value="" required="" placeholder="Write a comment..." name="answer" type="text">
+                <textarea rows="3" style="background-color: #F4F4F4" class="form-control autogrow" name="answer" value="" required="" placeholder="Write a comment..." name="answer" type="text"></textarea>
                 <br>
                 <input type="submit" name="submit" class="btn btn-info btn-sm" style="background-color: #444242; color: white;"> 
                 </form>
@@ -158,7 +158,7 @@
         if(isset($_GET['qid'])) {  $qid= $_GET['qid'];
                                  $answer_query= "SELECT * FROM answer WHERE qid='{$qid}'";
                                     $result_answer = mysqli_query($conn,$answer_query);  
-                                    while($row = mysqli_fetch_assoc($result_answer)) {  ?> 
+                                    while($row = mysqli_fetch_assoc($result_answer)) {   ?> 
                             <hr>
                             <div style="display:inline-block; vertical-align:bottom;">
                                 <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">

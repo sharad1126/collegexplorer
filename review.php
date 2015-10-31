@@ -920,7 +920,7 @@ if(isset($_GET['id']))
                     <div class="col-md-9">
                     <br>
                         <form action="review.php?id=<?php echo urlencode($id); ?>" method= "POST">
-                            <input type="text" name="ask" style="color:black;" placeholder="Ask your doubts here .." rows="7" class="form-control autogrow" id="styled" required>
+                            <textarea type="text" name="ask" style="color:black;" placeholder="Ask your doubts here .." rows="7" class="form-control autogrow" id="styled" required></textarea> 
                             <br>
                             <button type="submit" class="hitbtn" style="text-align: center;">SUBMIT</button>
                         </form>
