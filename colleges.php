@@ -81,6 +81,7 @@
                 <div id="main" role="main">
                     <section class="slider">
                         <div class="flexslider">
+                            <h4>hey</h4>
                             <ul class="slides">
                                 <li>
                                     <img src="assets/images/iitdel_slide.jpg" />
@@ -188,14 +189,20 @@
     <!-- FlexSlider -->
     <script src="assets/js/jquery.flexslider.js"></script>
     <script type="text/javascript">
+        console.log("First");
+
         $(function() {
             SyntaxHighlighter.all();
             });
         $(window).load(function() {
+                    console.log("Inside Window Load");
+
         $('.flexslider').flexslider({
             animation: "slide",
             start: function(slider) {
             $('body').removeClass('loading');
+                                    console.log("Inside FlexSlider function");
+
             }
         });
     });
