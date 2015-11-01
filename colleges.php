@@ -114,26 +114,7 @@
                     </section>
                 </div>
             </div>
-            <!-- jQuery -->
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-            <script>
-            window.jQuery || document.write('<script src="js/jquery-1.7.min.js">\x3C/script>')
-            </script>
-            <!-- FlexSlider -->
-            <script defer src="assets/js/jquery.flexslider.js"></script>
-            <script type="text/javascript">
-            $(function() {
-                SyntaxHighlighter.all();
-            });
-            $(window).load(function() {
-                $('.flexslider').flexslider({
-                    animation: "slide",
-                    start: function(slider) {
-                        $('body').removeClass('loading');
-                    }
-                });
-            });
-            </script>
+            
             
             <!-- Search Bar --> 
             <div id="sb-search" class="sb-search">
@@ -143,11 +124,6 @@
                     <span class="sb-icon-search"></span>
                 </form>
             </div>
-            <script src="assets/js/classie.js"></script>
-            <script src="assets/js/uisearch.js"></script>
-            <script>
-            new UISearch(document.getElementById('sb-search'));
-            </script>
             
             <!-- Photos of colleges -->
             <section class="grid-wrap">
@@ -160,18 +136,6 @@
                            } ?>
                 </ul>
             </section>
-            </div>
-
-            <!-- /container -->
-            <script src="assets/js/masonry.pkgd.min.js"></script>
-            <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-            <script src="assets/js/colorfinder-1.1.js"></script>
-            <script src="assets/js/gridScrollFx.js"></script>
-            <script>
-            new GridScrollFx(document.getElementById('grid'), {
-                viewportFactor: 0.4
-            });
-            </script>
     <!-- footer     -->
     <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
         <div class="container-fluid" style="height:250px;">
@@ -220,8 +184,38 @@
             </div>
         </div>
     </footer>
-            <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- FlexSlider -->
+    <script defer src="assets/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            SyntaxHighlighter.all();
+            });
+        $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider) {
+            $('body').removeClass('loading');
+            }
+        });
+    });
+    </script>
+    <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/uisearch.js"></script>
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+    </script>
+    <!-- /container -->
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/colorfinder-1.1.js"></script>
+    <script src="assets/js/gridScrollFx.js"></script>
+    <script>
+       new GridScrollFx(document.getElementById('grid'), {
+        viewportFactor: 0.4
+    });
+    </script>
     <script type="text/javascript" src="typeahead.js"></script>
     <script>
     var substringMatcher = function(strs) {
@@ -273,25 +267,30 @@
         name: 'college',
         source: college
     });</script>
+        
         </body>
         </html>
+
+
+
+
         <?php 
-error_reporting(1);
-  if(isset($_POST['email']))
-    {
-        $email=  mysqli_real_escape_string($conn,htmlentities($_POST['email']));
-        if(!empty($email))
+         error_reporting(1);
+         if(isset($_POST['email']))
+         {
+            $email=  mysqli_real_escape_string($conn,htmlentities($_POST['email']));
+            if(!empty($email))
           {  
-          if(filter_var($email, FILTER_VALIDATE_EMAIL)==true)
+            if(filter_var($email, FILTER_VALIDATE_EMAIL)==true)
            {          
-                 $query = "INSERT INTO subscribe(email) VALUES ('{$email}')"; 
-                 $result = mysqli_query($conn,$query);
-                 if(!$result)
-                        {
-                          die('Error, Please Try Again');  
-                      }
+               $query = "INSERT INTO subscribe(email) VALUES ('{$email}')"; 
+               $result = mysqli_query($conn,$query);
+               if(!$result)
+                {
+                   die('Error, Please Try Again');  
+                }
+            }
           }
-         }
-    } 
+          } 
           ?>
 
