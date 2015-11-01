@@ -184,6 +184,7 @@
             </div>
         </div>
     </footer>
+    
     <!-- FlexSlider -->
     <script defer src="assets/js/jquery.flexslider.js"></script>
     <script type="text/javascript">
