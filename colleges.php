@@ -186,7 +186,7 @@
     </footer> -->
     
     <!-- FlexSlider -->
-    <script defer src="assets/js/jquery.flexslider.js"></script>
+    <script src="assets/js/jquery.flexslider.js"></script>
     <script type="text/javascript">
         $(function() {
             SyntaxHighlighter.all();
