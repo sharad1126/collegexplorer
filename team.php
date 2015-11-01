@@ -141,7 +141,7 @@
                             <ul id="footerSocialBtns">
                                 <a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/CollegExplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
                                 <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                                <a id="headerliBtn" class="headerSocialBtn" href="#" target="_blank"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                                <a id="headerliBtn" class="headerSocialBtn" href="#"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
                                 <a id="headergpBtn" class="headerSocialBtn" href="https://plus.google.com/u/0/b/117050924670156821117/117050924670156821117/posts/p/pub" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
                             </ul>
                             <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">

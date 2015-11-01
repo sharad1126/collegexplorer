@@ -842,7 +842,7 @@ if(isset($_GET['id']))
                                 } ?></p>
                                 <br>
                                 
-                                <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Level Of Burden</h3>
+                                <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Responsibilities</h3>
                                 <p>
                                    <?php 
                             if(isset($_GET['id']))
@@ -851,7 +851,7 @@ if(isset($_GET['id']))
                                     $query= "SELECT * FROM college_list WHERE clg_id= ".$id." LIMIT 1";
                                     $result= mysqli_query($conn,$query);
                                     $row = mysqli_fetch_assoc($result);
-                                    echo $row['burden']; 
+                                    echo $row['responsibility']; 
                                 } ?></p>
                                 <br>
                                 <h3 style=" font-size: 20px;font-family: 'dosis',sans-serif;text-transform: uppercase;color: #FC573A;">Verdict</h3>
@@ -1011,7 +1011,7 @@ if(isset($_GET['id']))
                         <ul id="footerSocialBtns">
                             <a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/CollegExplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
                             <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                            <a id="headerliBtn" class="headerSocialBtn" href="#" target="_blank"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                            <a id="headerliBtn" class="headerSocialBtn" href="#"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
                             <a id="headergpBtn" class="headerSocialBtn" href="https://plus.google.com/u/0/b/117050924670156821117/117050924670156821117/posts/p/pub" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
                         </ul>
                         <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">
