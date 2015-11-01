@@ -45,7 +45,7 @@
         </nav>
     </nav>
     <header class="hero-banner img_loaded" style="margin-top: 60px;">
-        <img class="resize" src="assets/images/sharad.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1; height: 700px; width:1360px;">
+        <img class="resize" src="assets/images/sharad_lg.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
         <hgroup>
             <h1>Sharad Agarwal</h1>
             <h2 class="text-hl">Front End Developer</h2>

@@ -45,7 +45,7 @@
             </nav>
         </nav>
         <header class="hero-banner img_loaded" style="margin-top: 60px;">
-            <img class="resize" src="assets/images/hari.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1; height: 700px; width:1360px;">
+            <img class="resize" src="assets/images/hari.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
             <hgroup>
                 <h1>Hari Prakash</h1>
                 <h2 class="text-hl">Moderator</h2>
@@ -56,10 +56,10 @@
         <div class="block-wrap small-screen-double-wide" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 0px;">
             <div class="block list-block" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <ul>
-                    <li><a href="#" target="_blank">Facebook</a></li>
-                    <li><a href="#" target="_blank">LinkedIn</a></li>
-                    <li><a href="#" target="_blank">Google Plus</a></li>
-                    <li><a href="#" target="_blank">About Me</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Google Plus</a></li>
+                    <li><a href="#">About Me</a></li>
                 </ul>
             </div>
         </div>
