@@ -50,7 +50,7 @@
 
         <body class="loading" style="max-width:100%; overflow-x:hidden;">
             <!--menu bar-->
-            <section id="navbar">
+            <!-- <section id="navbar">
                 <nav class="navbar navbar-default" style="background-color: rgba(51,51,51,0.8);opacity: 1;text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
                     <div class="container-fluid">
                         <div class="navbar-header">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 </nav>
-            </section>
+            </section> -->
             <div id="container" class="cf">
                 <div id="main" role="main">
                     <section class="slider">
@@ -117,13 +117,13 @@
             
             
             <!-- Search Bar --> 
-            <div id="sb-search" class="sb-search">
+            <!-- <div id="sb-search" class="sb-search">
                 <form method="POST" action="colleges.php">
                     <input class="sb-search-input" placeholder="Enter the college you are searching for..." type="text" value="" name="search" id="search">
                     <input class="sb-search-submit" type="submit" value="">
                     <span class="sb-icon-search"></span>
                 </form>
-            </div>
+            </div> -->
             
             <!-- Photos of colleges -->
             <section class="grid-wrap">
@@ -137,7 +137,7 @@
                 </ul>
             </section>
     <!-- footer     -->
-    <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
+    <!-- <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
         <div class="container-fluid" style="height:250px;">
             <div class="row">
                 <div class="col-md-3">
@@ -183,7 +183,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     
     <!-- FlexSlider -->
     <script defer src="assets/js/jquery.flexslider.js"></script>
