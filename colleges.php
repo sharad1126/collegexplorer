@@ -33,7 +33,6 @@
             <meta name="description" content="List Of Engineering colleges" />
             <meta name="keywords" content="Engineering Colleges, CollegeExplorer, Colleges" />
             <meta name="author" content="Vatsal Shirvastav" , "Sharad Agarwal" />
-            <link rel="shortcut icon" href="../favicon.ico" />
             <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
             <link rel="stylesheet" type="text/css" href="assets/css/demo3.css" />
             <link rel="stylesheet" type="text/css" href="assets/css/component3.css" />
@@ -95,18 +94,18 @@
                                 <li>
                                     <img src="assets/images/nitrourkela_slide.jpg" />
                                 </li>
-                                <li>
+<!--                                 <li>
                                     <img src="assets/images/iitkh_slide.jpg" />
-                                </li>
+                                </li> -->
                                 <li>
                                     <img src="assets/images/bitspilani_slide.jpg" />
                                 </li>
-                                <li>
+                               <!--  <li>
                                     <img src="assets/images/iitroor_slide.jpg" />
-                                </li>
-                                <li>
+                                </li> -->
+                                <!-- <li>
                                     <img src="assets/images/nitwar_slide.jpg" />
-                                </li>
+                                </li> -->
                                 <li>
                                     <img src="assets/images/iitmad_slide.jpg" />
                                 </li>
