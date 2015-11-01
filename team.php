@@ -100,7 +100,7 @@
                                 <img class="resize" src="assets/images/hari.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
                             </a>
                             <h3><a href="team_hari.php">Hari Prakash</a></h3>
-                            <p>Editor</p>
+                            <p>Moderator</p>
                         </figure>
                     </li>
                 </ul>

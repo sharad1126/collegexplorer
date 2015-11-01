@@ -48,75 +48,55 @@
             <img class="resize" src="assets/images/hari.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1; height: 700px; width:1360px;">
             <hgroup>
                 <h1>Hari Prakash</h1>
-                <h2 class="text-hl">Editor</h2>
+                <h2 class="text-hl">Moderator</h2>
             </hgroup>
         </header>
-        <div class="grid-wrap" style="position: relative; height: 924.75px;">
-            <div class="block-wrap small-screen-double-wide" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 0px;">
-                <div class="block list-block" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <ul>
-                        <li><a href="https://www.facebook.com/vatsal.shrivastav" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.linkedin.com/profile/view?id=AAIAABi9EpMBUu2HHnwqbpHWGkk9gS_ZQaHHLr8&trk=nav_responsive_tab_profile_pic" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://plus.google.com/u/0/103824242113703775527/posts" target="_blank">Google Plus</a></li>
-                        <li><a href="http://www.vatsal-shrivastav.branded.me/" target="_blank">About Me</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="block-wrap" data-rowspan="2" data-colspan="2" style="position: absolute; width: 616.5px; height: 616.5px; top: 0px; left: 308.25px;">
-                <div class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
-                    <br>
-                    <br>
-                    <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Vatsal is a B.tech student who seeks his abyssal interest in Web Development and Designing.</p>
-                    <br>
-                    <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is engrossed by the departments of cyber security and wishes to pursue his future as a Penetration Tester or a Pen-Tester in some renowned firm.</p>
-                    <br>
-                    <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is also driven by issues related to Database Handling and Management and has a sound technical knowledge of PHP, SQL and MySQL.</p>
-                </div>
-            </div>
-            <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
-                <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <img class="resize" src="assets/images/favicon.png" style="opacity: 1;">
-                </div>
-            </div>
-            <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 308.25px; left: 0px;">
-                <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <img class="resize" src="assets/images/vatsal_sm.jpg" style="opacity: 1;">
-                </div>
-            </div>
-            <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 308.25px; left: 924.75px;">
-                <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <img class="resize" src="assets/images/sharad_sm.jpg" style="opacity: 1;">
-                </div>
-            </div>
-            <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 0px;">
-                <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <img class="resize" src="assets/images/yash_sm.jpg" style="opacity: 1;">
-                </div>
-            </div>
-            <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 924.75px;">
-                <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <blockquote>
-                        <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
-                    </blockquote>
-                    <cite style="font-size: 20px; color: #FF6E49"> - Vatsal Shrivastav</cite>
-                </div>
-            </div>
-            <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 308.25px;">
-                <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <img class="resize" src="assets/images/hari_sm.jpg" style="opacity: 1;">
-                </div>
-            </div>
-            <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 616.5px;">
-                <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                    <blockquote>
-                        <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
-                    </blockquote>
-                    <cite style="font-size: 20px; color: #FF6E49;"> - Vatsal Shrivastav</cite>
-                </div>
+        
+    <div class="grid-wrap" style="position: relative; height: 924.75px;">
+        <div class="block-wrap small-screen-double-wide" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 0px;">
+            <div class="block list-block" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
+                <ul>
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="#" target="_blank">LinkedIn</a></li>
+                    <li><a href="#" target="_blank">Google Plus</a></li>
+                    <li><a href="#" target="_blank">About Me</a></li>
+                </ul>
             </div>
         </div>
-        <!-- footer     -->
+        <div class="block-wrap" data-rowspan="2" data-colspan="2" style="position: absolute; width: 616.5px; height: 616.5px; top: 0px; left: 308.25px;">
+            <div class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
+                <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
+                <br>
+                <br>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Hari is a B.tech student who has a strong inclination towards website security issues.</p>
+                <br>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is captivated towards the field of cyber security and wishes to pursue his future as a Penetration Tester or a Pen-Tester in some renowned firm.</p>
+                <br>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He also has a strong desire to master in the field of back end development.</p>
+                <br>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He prefers to listen music when free.</p>
+            </div>
+        </div>
+          <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
+            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
+                <img class="resize" src="assets/images/hari2.jpg" style="opacity: 1;">
+            </div>
+        </div>
+        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
+            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
+                <img class="resize" src="assets/images/favicon.png" style="opacity: 1;">
+            </div>
+        </div>
+        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 616.5px;">
+            <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
+                <blockquote>
+                    <p style="color: white;">Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible.</p>
+                </blockquote>
+                <cite style="font-size: 20px; color: #FF6E49;"> - Francis of Assisi</cite>
+            </div>
+        </div>
+    </div>
+    <!-- footer     -->
    <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
             <div class="container-fluid" style="height:250px;">
                 <div class="row" style="margin-top: 20px;">

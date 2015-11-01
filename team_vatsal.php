@@ -101,9 +101,9 @@
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 924.75px;">
             <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <blockquote>
-                    <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
+                    <p style="color: white;">Always remember that you are absolutely unique. Just like everyone else.</p>
                 </blockquote>
-                <cite style="font-size: 20px; color: #FF6E49"> - Vatsal Shrivastav</cite>
+                <cite style="font-size: 20px; color: #FF6E49"> - Margaret Mead</cite>
             </div>
         </div>
     </div>
