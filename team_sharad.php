@@ -55,10 +55,12 @@
         <div class="block-wrap small-screen-double-wide" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 0px;">
             <div class="block list-block" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <ul>
-                    <li><a href="https://www.facebook.com/vatsal.shrivastav" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com/profile/view?id=AAIAABi9EpMBUu2HHnwqbpHWGkk9gS_ZQaHHLr8&trk=nav_responsive_tab_profile_pic" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://plus.google.com/u/0/103824242113703775527/posts" target="_blank">Google Plus</a></li>
-                    <li><a href="http://www.vatsal-shrivastav.branded.me/" target="_blank">About Me</a></li>
+                    <li><a href="https://www.facebook.com/sharad1126" target="_blank">Facebook</a></li>
+                    <li><a href="https://in.linkedin.com/in/sharadagarwal1126" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://plus.google.com/+SharadAgarwalsharadagarwal/about" target="_blank">Google Plus</a></li>
+                    <li><a href="https://twitter.com/shad1126" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com/sharad1126/" target="_blank"></a>Follow me on Insta</li>
+                    <li><a href="http://www.sharad-agarwal.branded.me/" target="_blank">About Me</a></li>
                 </ul>
             </div>
         </div>
