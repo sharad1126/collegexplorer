@@ -113,7 +113,7 @@
                 <div class="row" style="margin-top: 20px;">
                     <div class="col-md-3">
                         <div id="footerlogo">
-                            <a href="collegexplorer.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-bottom:20px;"></a>
+                            <a href="index.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-bottom:20px;"></a>
                             <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
                         </div>
                     </div>

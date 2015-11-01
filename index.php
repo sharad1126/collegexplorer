@@ -76,7 +76,7 @@ error_reporting(1);
         <nav class="navbar navbar-default" style="background-color: rgba(51,51,51,0.8);opacity: 1;text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="collegexplorer.php" style="width: 130px;height: 25px; font-family: 'Open Sans', sans-serif;color: #fd5f54; margin-top: 8px; margin-left: 4px;">CollegExplorer</a>
+                    <a class="navbar-brand" href="index.php" style="width: 130px;height: 25px; font-family: 'Open Sans', sans-serif;color: #fd5f54; margin-top: 8px; margin-left: 4px;">CollegExplorer</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -130,7 +130,7 @@ error_reporting(1);
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                   <form name="sent-message" id="contactForm" method="POST" action="collegexplorer.php">
+                   <form name="sent-message" id="contactForm" method="POST" action="index.php">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -166,7 +166,7 @@ error_reporting(1);
             <div class="row">
                 <div class="col-md-3">
                     <div id="footerlogo">
-                        <a href="collegexplorer.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; "></a>
+                        <a href="index.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-top:20px; padding-bottom:20px; "></a>
                         <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
                     </div>
                 </div>
@@ -181,7 +181,7 @@ error_reporting(1);
                 </div>
                 <div class="col-md-3">
                     <h3 class="footerTitle" style="color:#FF6E49;">Subscribe </h3>
-                    <form id="footerSignupForm" method="POST" action="collegexplorer.php">
+                    <form id="footerSignupForm" method="POST" action="index.php">
                         <div class="form-group">
                             <label class="sr-only" for="footerEmailInput"></label>
                             <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required=""  name="email">
