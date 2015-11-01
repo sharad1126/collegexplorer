@@ -69,7 +69,7 @@
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Vatsal is a B.tech student who seeks his abyssal interest in Web Development and Designing.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Sharad is a B.tech student who seeks his abyssal interest in Web Development and ethical hacking.</p>
                 <br>
                 <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is engrossed by the departments of cyber security and wishes to pursue his future as a Penetration Tester or a Pen-Tester in some renowned firm.</p>
                 <br>
@@ -99,22 +99,25 @@
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 924.75px;">
             <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <blockquote>
-                    <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
+                    <p style="color: white;">EVERYONE HAS IDEAS. THEY MAY BE TOO BUSY OR LACK THE CONFIDENCE OR TECHNICAL ABILITY TO CARRY THEM OUT. BUT I WANT TO CARRY THEM OUT. IT IS A MATTER OF GETTING UP AND DOING IT</p>
                 </blockquote>
-                <cite style="font-size: 20px; color: #FF6E49"> - Vatsal Shrivastav</cite>
+                <cite style="font-size: 20px; color: #FF6E49"> - James Dyson</cite>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 308.25px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/hari_sm.jpg" style="opacity: 1;">
+            <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
+                <blockquote>
+                    <p style="color: white;">We know what we are, but know not what we may be.</p>
+                </blockquote>
+                <cite style="font-size: 20px; color: #FF6E49"> - William Shakespeare</cite>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 616.5px;">
             <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <blockquote>
-                    <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
+                    <p style="color: white;">Don't Stop when you are tired, Stop when you are done.</p>
                 </blockquote>
-                <cite style="font-size: 20px; color: #FF6E49;"> - Vatsal Shrivastav</cite>
+                <cite style="font-size: 20px; color: #FF6E49;"> - Marilyn Monroe</cite>
             </div>
         </div>
     </div>
