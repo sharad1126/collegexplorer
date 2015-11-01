@@ -153,9 +153,9 @@
             <!-- Photos of colleges -->
             <section class="grid-wrap">
                 <ul class="grid swipe-down" id="grid">
-                    <?php while($row = mysqli_fetch_assoc($result))  { $id=$row['clg_id'];  //echo $id; ?>
+                    <?php while($row = mysqli_fetch_assoc($result))  { $id=$row['clg_id']; $college=$row['college_name']; ?>
                         <li>
-                            <a href="review.php?id=<?php echo urlencode($id);?>"><img src="img/<?php echo $id;?>.jpg" id="<?php echo $row['college_name'];?>">
+                            <a href="review.php?id=<?php echo urlencode($id);?>&college<?php echo urlencode($college); ?>"><img src="img/<?php echo $id;?>.jpg" id="<?php echo $row['college_name'];?>">
                             <h3><?php echo $row['college_name']; echo "</h3></a>";
                              echo "</li>";
                            } ?>

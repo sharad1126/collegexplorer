@@ -4,19 +4,18 @@
 <?php require_once("functions.php");?>
 <?php if(isset($_GET['id']))$id= $_GET['id']; ?>
 <?php if(isset($_GET['qid']))$qid= $_GET['qid']; ?>
-
+<?php $loginerror = ""; ?>
 <?php
 if(isset($_POST['uname']) && isset($_POST['Fname']) && isset($_POST['Lname']) && isset($_POST['email'])&& isset($_POST['password']))
 {
      if($_POST['g-recaptcha-response']!="") 
      { 
-
-    $uname= mysqli_real_escape_string($conn,htmlentities($_POST['uname']));
-    $Fname= mysqli_real_escape_string($conn,htmlentities($_POST['Fname']));
-  $Lname= mysqli_real_escape_string($conn,htmlentities($_POST['Lname']));
-  $email= mysqli_real_escape_string($conn,htmlentities($_POST['email']));
-  $password=mysqli_real_escape_string($conn,htmlentities($_POST['password']));
-  $password_hash = md5($password);
+        $uname= mysqli_real_escape_string($conn,htmlentities($_POST['uname']));
+        $Fname= mysqli_real_escape_string($conn,htmlentities($_POST['Fname']));
+      $Lname= mysqli_real_escape_string($conn,htmlentities($_POST['Lname']));
+      $email= mysqli_real_escape_string($conn,htmlentities($_POST['email']));
+      $password=mysqli_real_escape_string($conn,htmlentities($_POST['password']));
+      $password_hash = md5($password);
      if(!empty($uname) && !empty($Fname) && !empty($Lname) && !empty($email) && !empty($password) )
     { 
         $query = mysqli_query($conn, "SELECT * FROM login WHERE username='$uname'");
@@ -49,6 +48,35 @@ else
 echo "<script>alert('Please verify that you are not a Robot.');</script>";
 }
 ?>
+ <?php 
+                                    if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
+                                { 
+                                    $loginerror= "";
+                                    $uname=  mysqli_real_escape_string($conn,htmlentities($_POST['UNAME']));
+                                    $password=mysqli_real_escape_string($conn,htmlentities($_POST['PASSWORD']));
+                                    $password_hash= md5($password);
+                                    if(!empty($uname) && !empty($password) )        
+                                    {        
+                                        $query_run = "SELECT * FROM login WHERE username='{$uname}'" ;
+                                        $result_query = @mysqli_query($conn,$query_run); 
+                                            if($result_query)
+                                                {
+                                                    $user_exist= mysqli_num_rows($result_query);
+                                                    $result_s=mysqli_fetch_assoc($result_query);
+                                                    if($password_hash==$result_s['password'])
+                                                    {
+                                                        if(isset($_GET['id']))
+                                                        {
+                                                             $flag=0;
+                                                             confirm_logged($result_s['id'],$id,$flag);
+                                                        } 
+                                                        else
+                                                        {
+                                                            $flag=1;
+                                                            confirm_logged($result_s['id'],$qid,$flag);
+                                                        }
+                                                    } else { $loginerror= "Username and/or Password incorrect.Try again.";}   } } }  
+                 ?>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                     <meta charset="UTF-8">
@@ -255,7 +283,6 @@ echo "<script>alert('Please verify that you are not a Robot.');</script>";
                     </style>
                      <script src='https://www.google.com/recaptcha/api.js'></script>
                 </head>
-
                 <body>
                     <div class="form">
                         <ul class="tab-group">
@@ -323,35 +350,8 @@ echo "<script>alert('Please verify that you are not a Robot.');</script>";
                                             Password<span class="req">*</span>
                                         </label>
                                         <input type="password" required="" autocomplete="off" name="PASSWORD">
-                                    </div>  <?php 
-                                    if(isset($_POST['UNAME']) && isset($_POST['PASSWORD']) )
-                {
-                    $uname=  mysqli_real_escape_string($conn,htmlentities($_POST['UNAME']));
-                    $password=mysqli_real_escape_string($conn,htmlentities($_POST['PASSWORD']));
-                    $password_hash= md5($password);
-                    if(!empty($uname) && !empty($password) )        
-                    {        
-                        $query_run = "SELECT * FROM login WHERE username='{$uname}'" ;
-                        $result_query = @mysqli_query($conn,$query_run); 
-                            if($result_query)
-                                {
-                                    $user_exist= mysqli_num_rows($result_query);
-                                    $result_s=mysqli_fetch_assoc($result_query);
-                                    if($password_hash==$result_s['password'])
-                                    {
-                                        if(isset($_GET['id']))
-                                        {
-                                         $flag=0;
-                                         confirm_logged($result_s['id'],$id,$flag);
-                                        } 
-                                        else
-                                        {
-                                            $flag=1;
-                                            confirm_logged($result_s['id'],$qid,$flag);
-                                        }
-                                    } 
-                 ?>
-                                    <p class="forgot"><?php if($password_hash!=$result_s['password'])?>Username and/or Password incorrect.Try again.</p> <?php } } }?>
+                                    </div> 
+                                    <p class="forgot"><?php echo $loginerror; ?></p> 
                                     <button class="button button-block">Log In</button>
                                 </form>
                             </div>

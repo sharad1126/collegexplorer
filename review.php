@@ -594,11 +594,21 @@ if(isset($_GET['id']))
                 </div>
                 <div class="col-xs-10 col-md-3" style="background-color:#FBFCF7;">
                     <br>
-                    <h2>Contact Info:</h2>
-                    <p>Indian Institute of Technology Delhi</p>
-                    <p>Hauz Khas, New Delhi-110 016, INDIA</p>
-                    <p>Phone: 011 2659 7135</p>
-                    <p><a href="mailto:webmaster@admin.iitd.ac.in" style="text-decoration: none;">Email: webmaster@admin.iitd.ac.in</a></p>
+                    <?php 
+                                    if(isset($_GET['id']))
+                                        {
+                                            $id=$_GET['id'];
+                                            $query= "SELECT * FROM college_contact WHERE clg_id= ".$id." LIMIT 1";
+                                            $result= mysqli_query($conn,$query);
+                                            $row = mysqli_fetch_assoc($result);
+                                            $p=explode("-",$row['address']); 
+                                            $q= $row['number'];
+                                            $email = $row['email']; 
+                                        }  ?> 
+                    <h2>Contact Info:</h2> <?php for($i=0;$i<sizeof($p); $i++) { ?>
+                    <p><?php echo $p[$i]; ?></p> <?php } ?>  
+                    <p>Phone: <?php  echo $q; ?></p>
+                    <p><a href="mailto:<?php echo $email; ?>" style="text-decoration: none;">Email: <?php echo $email; ?></a></p>
                     <div id="map-canvas"></div>
                 </div>
             </div>
@@ -907,11 +917,11 @@ if(isset($_GET['id']))
                                 $time = date('dS F,Y | g:i:s A');
                             $question_ask = mysqli_real_escape_string($conn,htmlentities($_POST['ask'])); 
                             if(!empty($question_ask))
-                            {
+                            { 
                                 $question_query = "INSERT INTO question(questiondb,cid,user_name,time) VALUES ('{$question_ask}', '{$id}','{$user_name}','{$time}')";
                                 $result_question = mysqli_query($conn,$question_query);
-                                }
-                        }
+                                }   
+                         }
                     ?>
                          <div class="container">
                 <div class="row">
@@ -943,7 +953,7 @@ if(isset($_GET['id']))
             
                                  $question_query= "SELECT * FROM question WHERE cid='{$id}'";
                                     $result_question = mysqli_query($conn,$question_query);  
-                                    while($row = mysqli_fetch_assoc($result_question)) {  $qid =$row['qid']; ?> 
+                                    while($row = mysqli_fetch_assoc($result_question)) { $question=$row['questiondb']; $qid =$row['qid']; ?> 
                 <div class="here" id="data">
                     <hr>
                     <div style="display:inline-block; vertical-align:bottom;">
@@ -956,7 +966,7 @@ if(isset($_GET['id']))
                     <br>
                     <br>
                     <div class="ques" style="margin-left: 60px;">
-                        <a href="question.php?qid=<?php echo urlencode($qid);?>"><?php echo $row['questiondb']; ?></a>
+                        <a href="question.php?qid=<?php echo urlencode($qid);?>&<?php echo urlencode($question);?>"><?php echo $row['questiondb']; ?></a>
                     </div>
                 </div>
                 <?php } }  } ?>
