@@ -108,11 +108,11 @@ error_reporting(1);
             </div>
             <div class="col-md-3">
                 <h3 style="padding-left: 35px;">Dates</h3>
-                <img src="assets/images/importantdates.png" alt="Responsive image" style="height:150px; width:150px;padding-top: 10px;">
+                <img src="assets/images/Importantdates.png" alt="Responsive image" style="height:150px; width:150px;padding-top: 10px;">
             </div>
             <div class="col-md-3">
                 <h3 style="padding-left: 35px;">Reviews</h3>
-                <img src="assets/images/authenticreviews.png" alt="Responsive image" style="height:150px; width:150px;padding-top: 10px;">
+                <img src="assets/images/Authenticreviews.png" alt="Responsive image" style="height:150px; width:150px;padding-top: 10px;">
             </div>
         </div>
     </div>
