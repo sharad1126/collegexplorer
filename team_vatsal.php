@@ -74,7 +74,7 @@
                 </ul>
             </div>
         </div>
-        <div class="block-wrap" data-rowspan="2" data-colspan="2" style="position: absolute; width: 616.5px; height: 616.5px; top: 0px; left: 308.25px;">
+                <div class="block-wrap" data-rowspan="2" data-colspan="2" style="position: absolute; width: 616.5px; height: 616.5px; top: 0px; left: 308.25px;">
             <div class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
@@ -83,27 +83,19 @@
                 <br>
                 <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is engrossed by the departments of cyber security and wishes to pursue his future as a Penetration Tester or a Pen-Tester in some renowned firm.</p>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is also driven by issues related to Database Handling and Management and has a sound technical knowledge of PHP, SQL and MySQL.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is also driven by issues related to Database Handling and Management.</p>
+                <br>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He prefers to play Badminton during leisure hours.</p>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
             <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/favicon.png" style="opacity: 1;">
+                <img class="resize" src="assets/images/vs.jpg" style="opacity: 1;">
             </div>
         </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 308.25px; left: 0px;">
+        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 308.25px;">
             <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/vatsal_sm.jpg" style="opacity: 1;">
-            </div>
-        </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 308.25px; left: 924.75px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/sharad_sm.jpg" style="opacity: 1;">
-            </div>
-        </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 0px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/yash_sm.jpg" style="opacity: 1;">
+                <img class="resize" src="assets/images/badmin.jpg" style="opacity: 1;">
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 924.75px;">
@@ -112,19 +104,6 @@
                     <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
                 </blockquote>
                 <cite style="font-size: 20px; color: #FF6E49"> - Vatsal Shrivastav</cite>
-            </div>
-        </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 308.25px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/hari_sm.jpg" style="opacity: 1;">
-            </div>
-        </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 616.5px;">
-            <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <blockquote>
-                    <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
-                </blockquote>
-                <cite style="font-size: 20px; color: #FF6E49;"> - Vatsal Shrivastav</cite>
             </div>
         </div>
     </div>
