@@ -187,7 +187,7 @@
     </footer> -->
     
     <!-- FlexSlider -->
-    <script src="assets/js/jquery.flexslider.js"></script>
+    <script defer src="assets/js/jquery.flexslider.js"></script>
     <script type="text/javascript">
         console.log("First");
 
