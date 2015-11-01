@@ -198,12 +198,12 @@
                     console.log("Inside Window Load");
 
         $('.flexslider').flexslider({
-            animation: "slide",
-            start: function(slider) {
-            $('body').removeClass('loading');
-                                    console.log("Inside FlexSlider function");
+            animation: "slide"
+            // start: function(slider) {
+            // $('body').removeClass('loading');
+            //                         console.log("Inside FlexSlider function");
 
-            }
+            // }
         });
     });
     </script>
