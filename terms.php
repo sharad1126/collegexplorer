@@ -29,6 +29,44 @@
     }
 }
 </style>
+<style>
+    @media only screen and (max-width: 768px) {
+    .space {
+        display: none;
+    }
+    #navbar {
+        display: none;
+    }
+    #footer a {
+        height: 500px;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #navmob {
+        display: none;
+    }
+    #footer a {
+        color: white;
+        height: 250px;
+    }
+}
+
+#navmob li {
+    display: inline;
+    float: left;
+    margin-left: 20px;
+}
+
+#navmob a {
+    color: #FF746B;
+}
+
+#navmob a:hover {
+    color: white;
+}
+</style>
 <body>
     <section id="navbar">
         <nav class="navbar navbar-default" style="background-color: #3D3D3D; opacity: 1; text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">

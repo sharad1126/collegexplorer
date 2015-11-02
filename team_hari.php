@@ -15,7 +15,25 @@
         <link rel="stylesheet" type="text/css" href="assets/css/team.css">
         <script type="text/javascript" src="assets/js/ga.js"></script>
     </head>
+<style>
+    @media only screen and (max-width: 768px) {
+    
+    #footer a {
+        height: 500px;
+        color: white;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    
+    #footer a {
+        color: white;
+        height: 250px;
+    }
+}
+
+
+</style>
     <body class="loaded">
         <nav role="navigation">
             <nav class="subnav">

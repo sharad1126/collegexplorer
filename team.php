@@ -19,7 +19,44 @@
         <script type="text/javascript" src="assets/js/ga.js"></script>
         <script type="text/javascript" href="assets/js/modernizr.js"></script>
     </head>
+<style>
+    @media only screen and (max-width: 768px) {
+    .space {
+        display: none;
+    }
+    #navbar {
+        display: none;
+    }
+    #footer a {
+        height: 500px;
+        color: white;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    #navmob {
+        display: none;
+    }
+    #footer a {
+        color: white;
+        height: 250px;
+    }
+}
+
+#navmob li {
+    display: inline;
+    float: left;
+    margin-left: 20px;
+}
+
+#navmob a {
+    color: #FF746B;
+}
+
+#navmob a:hover {
+    color: white;
+}
+</style>
     <body>
         <!-- navbar   -->
         <section id="navbar">

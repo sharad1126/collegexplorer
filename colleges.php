@@ -65,7 +65,44 @@
     ga('send', 'pageview');
     </script>
         </head>
+<style>
+    @media only screen and (max-width: 768px) {
+    .space {
+        display: none;
+    }
+    #navbar {
+        display: none;
+    }
+    #footer a {
+        height: 500px;
+        color: white;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    #navmob {
+        display: none;
+    }
+    #footer a {
+        color: white;
+        height: 250px;
+    }
+}
+
+#navmob li {
+    display: inline;
+    float: left;
+    margin-left: 20px;
+}
+
+#navmob a {
+    color: #FF746B;
+}
+
+#navmob a:hover {
+    color: white;
+}
+</style>
         <body class="loading" style="max-width:100%; overflow-x:hidden;">
             <!--menu bar-->
             <section id="navbar" style="margin:0px; padding: 0px;">

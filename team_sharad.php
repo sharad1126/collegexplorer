@@ -20,6 +20,25 @@
 		padding-top: 5px;
 	} 
 </style>
+<style>
+    @media only screen and (max-width: 768px) {
+    
+    #footer a {
+        height: 500px;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #footer a {
+        color: white;
+        height: 250px;
+    }
+}
+
+
+</style>
 <body class="loaded">
     <nav role="navigation">
         <nav class="subnav">
