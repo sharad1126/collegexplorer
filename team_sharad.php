@@ -15,7 +15,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/team.css">
     <script type="text/javascript" src="assets/js/ga.js"></script>
 </head>
-
+<style>
+	.list-block li {
+		padding-top: 5px;
+	} 
+</style>
 <body class="loaded">
     <nav role="navigation">
         <nav class="subnav">
@@ -59,8 +63,6 @@
                     <li><a href="https://in.linkedin.com/in/sharadagarwal1126" target="_blank">LinkedIn</a></li>
                     <li><a href="https://plus.google.com/+SharadAgarwalsharadagarwal/about" target="_blank">Google Plus</a></li>
                     <li><a href="https://twitter.com/shad1126" target="_blank">Twitter</a></li>
-                    <li><a href="https://instagram.com/sharad1126/" target="_blank"></a>Follow me on Instagram</li>
-                    <li><a href="http://www.sharad-agarwal.branded.me/" target="_blank">About Me</a></li>
                 </ul>
             </div>
         </div>
@@ -81,9 +83,12 @@
                 <img class="resize" src="assets/images/favicon.png" style="opacity: 1;">
             </div>
         </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 308.25px; left: 0px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/vatsal_sm.jpg" style="opacity: 1;">
+       <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 924.75px;">
+            <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
+                <blockquote>
+                    <p style="color: white;">Everyone has ideas. They may be too busy or lack the confidence or technical ability to carry them out. But I want to carry them out. It is a matter of getting up and doing.</p>
+                </blockquote>
+                <cite style="font-size: 20px; color: #FF6E49"> - James Dyson</cite>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 308.25px; left: 924.75px;">
@@ -92,18 +97,10 @@
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 0px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/yash_sm.jpg" style="opacity: 1;">
+            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
             </div>
         </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 924.75px;">
-            <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <blockquote>
-                    <p style="color: white;">EVERYONE HAS IDEAS. THEY MAY BE TOO BUSY OR LACK THE CONFIDENCE OR TECHNICAL ABILITY TO CARRY THEM OUT. BUT I WANT TO CARRY THEM OUT. IT IS A MATTER OF GETTING UP AND DOING IT</p>
-                </blockquote>
-                <cite style="font-size: 20px; color: #FF6E49"> - James Dyson</cite>
-            </div>
-        </div>
+        
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 308.25px;">
             <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <blockquote>
@@ -122,53 +119,53 @@
         </div>
     </div>
 <!-- footer     -->
- <footer id="footer" style="background-color:#2E3444; height:250px; margin-top: 30px;">
-            <div class="container-fluid" style="height:250px;">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-md-3">
-                        <div id="footerlogo">
-                            <a href="index.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-left:20px; padding-bottom:20px;"></a>
-                            <ul style="padding-left:20px; color:white;">&copy; CollegExplorer 2015</ul>
-                        </div>
+ <footer id="footer" style="background-color:#2E3444; margin-top: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="footerlogo">
+                        <a href="index.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-top:20px;"></a>
+                        <ul style="padding-top: 10px; color: white;">&copy; CollegExplorer 2015</ul>
                     </div>
-                    <div class="col-md-3">
-                        <h3 class="footertitle" style="color:#FF6E49;">LEARN MORE</h3>
-                        <div class="learnmorelinks">
-                            <ul><a href="aboutus.php" style="color:white;text-decoration: none;">ABOUT US</a></ul>
-                            <ul><a href="privacy.php" style="color:white;text-decoration: none;">PRIVACY POLICY</a></ul>
-                            <ul><a href="terms.php" style="color:white;text-decoration: none;">TERMS & CONDITIONS</a></ul>
-                            <ul><a href="disclaimer.php" style="color:white;text-decoration: none;">DISCLAIMER</a></ul>
-                        </div>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="footertitle" style="color:#FF6E49;">LEARN MORE</h3>
+                    <div class="learnmorelinks">
+                        <ul><a href="aboutus.php" style="text-decoration: none;">ABOUT US</a></ul>
+                        <ul><a href="privacy.php" style="text-decoration: none;">PRIVACY POLICY</a></ul>
+                        <ul><a href="terms.php" style="text-decoration: none;">TERMS & CONDITIONS</a></ul>
+                        <ul><a href="disclaimer.php" style="text-decoration: none;">DISCLAIMER</a></ul>
                     </div>
-                    <div class="col-md-3">
-                        <h3 class="footerTitle" style="color:#FF6E49;">SUBSCRIBE</h3>
-                        <form id="footerSignupForm" method="POST" action="team.php" style="margin-top: 15px;">
-                            <div class="form-group">
-                                <label class="sr-only" for="footerEmailInput"></label>
-                                <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="" name="email">
-                            </div>
-                            <button type="submit" style="background-color: #EEE5E9; border-color:#EEE5E9;">Get all important updates</button>
-                        </form>
-                    </div>
-                    <div class="col-md-3">
-                        <div id="connectCol">
-                            <h3 class="footerTitle" style="color:#FF6E49; padding-left:30px; ">CONNECT</h3>
-                            <ul id="footerSocialBtns">
-                                <a id="headerTwBtn" class="headerSocialBtn" href="https://twitter.com/CollegExplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                                <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                                <a id="headerliBtn" class="headerSocialBtn" href="#"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                                <a id="headergpBtn" class="headerSocialBtn" href="https://plus.google.com/u/0/b/117050924670156821117/117050924670156821117/posts/p/pub" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                            </ul>
-                            <div id="footerAddress" style="color:white; padding-top:10px;padding-left:30px;">
-                                <br>
-                                <span id="addressTitle" style="color:white;">CollegExplorer</span>
-                            </div>
-                            <div id="footerEmail"><a href="collegexplorer@gmail.com" style="color:white;text-decoration: none;padding-left:30px;">collegexplorer@gmail.com</a></div>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="footerTitle" style="color:#FF6E49;">Subscribe </h3>
+                    <form id="footerSignupForm">
+                        <div class="form-group">
+                            <label class="sr-only" for="footerEmailInput"></label>
+                            <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
                         </div>
+                        <button type="submit" style="background-color: #EEE5E9; border-color:#EEE5E9;">Get all important updates</button>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <div id="connectCol">
+                        <h3 class="footerTitle" style="color:#FF6E49;">Connect</h3>
+                        <ul id="footerSocialBtns">
+                            <a id="headerTwBtn" class="headerSocialBtn" href="https://www.twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                            <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                            <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                            <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                        </ul>
+                        <div id="footerAddress" style=" padding-top:10px;">
+                            <br>
+                            <span id="addressTitle" style="">CollegExplorer</span>
+                        </div>
+                        <div id="footerEmail"><a href="collegexplorer@gmail.com" style="text-decoration: none;">collegexplorer@gmail.com</a></div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
             <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         
     <script src="assets/js/script-compiled.1394194762.js"></script>
