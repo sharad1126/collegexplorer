@@ -79,13 +79,11 @@
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Vatsal is a B.tech student who seeks his abyssal interest in Web Development and Designing.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Vatsal is an exuberant badminton player better known by the name of Jaddu, well the fact that most of his batchmates don't even know his real name :/ but just Jaddu.</p>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is engrossed by the departments of cyber security and wishes to pursue his future as a Penetration Tester or a Pen-Tester in some renowned firm.</p>
-                <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is also driven by issues related to Database Handling and Management.</p>
-                <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He prefers to play Badminton during leisure hours.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">One could easily lure him on the name of Poha, Sev or Tomato Ketchup as a bait.</p>
+            	<br>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">His amigos regard him to be the best singer while he strongly belives in his capability to change the religion of half of the people in a church if being given an opportunity to sing there ;)</p>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">

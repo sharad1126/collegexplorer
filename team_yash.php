@@ -66,27 +66,14 @@
             <div class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
-                <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Vatsal is a B.tech student who seeks his abyssal interest in Web Development and Designing.</p>
-                <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is engrossed by the departments of cyber security and wishes to pursue his future as a Penetration Tester or a Pen-Tester in some renowned firm.</p>
-                <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is also driven by issues related to Database Handling and Management and has a sound technical knowledge of PHP, SQL and MySQL.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">An aggressive football enthusiast and a true blue fan of Real Madrid with an undying zest for El – Classico.  He can easily be brought to your side by bribing him with a Large Double Cheese Burst Pizza grin emoticon (Preferably from Domino’s).</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is also part time Sherlock, Loves to cook soupy noodles and not wash the dishes afterwards (P.s: bring back Maggie).</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">When he is not stuffing his face with pizza’s he is usually found experimenting with php or programming online and watching tutorial videos from neso academy and mycodeschool. He is one of the torch bearers of Indori Swag.</p>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
             <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <img class="resize" src="assets/images/favicon.png" style="opacity: 1;">
-            </div>
-        </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 308.25px; left: 0px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/vatsal_sm.jpg" style="opacity: 1;">
-            </div>
-        </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 308.25px; left: 924.75px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/sharad_sm.jpg" style="opacity: 1;">
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 0px;">
@@ -99,23 +86,10 @@
                 <blockquote>
                     <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
                 </blockquote>
-                <cite style="font-size: 20px; color: #FF6E49"> - Vatsal Shrivastav</cite>
+                <cite style="font-size: 20px; color: #FF6E49"> - Who Cares</cite>
             </div>
         </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 308.25px;">
-            <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/hari_sm.jpg" style="opacity: 1;">
-            </div>
         </div>
-        <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 616.5px;">
-            <div class="block quote" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <blockquote>
-                    <p style="color: white;">Life is like an Ice-cream, Enjoy it before it melts.</p>
-                </blockquote>
-                <cite style="font-size: 20px; color: #FF6E49;"> - Vatsal Shrivastav</cite>
-            </div>
-        </div>
-    </div>
 <!-- footer     -->
     <footer id="footer" style="background-color:#2E3444; margin-top: 30px;">
         <div class="container-fluid">
