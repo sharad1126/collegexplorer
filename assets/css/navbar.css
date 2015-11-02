@@ -1,39 +1,4 @@
-@media only screen and (max-width: 768px) {
-    .space {
-        display: none;
-    }
-    #navbar {
-        display: none;
-    }
-    #footer a {
-        height: 500px;
-        color: white;
-    }
-}
 
-@media only screen and (min-width: 768px) {
-    #navmob {
-        display: none;
-    }
-    #footer a {
-        color: white;
-        height: 250px;
-    }
-}
-
-#navmob li {
-    display: inline;
-    float: left;
-    margin-left: 20px;
-}
-
-#navmob a {
-    color: #FF746B;
-}
-
-#navmob a:hover {
-    color: white;
-}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
   .svg .naviHead .logo {
