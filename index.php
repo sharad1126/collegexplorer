@@ -215,10 +215,10 @@ error_reporting(1);
                                     <input type="text" class="form-control" placeholder="Enter your name " id="name" required data-validation-required-message="Please enter your name" id="name" name="name" maxlength="25" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Enter your email id " id="email" required data-validation-required-message="Please enter your email-id" name="email" maxlength="25">
+                                    <input type="email" class="form-control" placeholder="Enter your email id " id="email" required data-validation-required-message="Please enter your email-id" name="email" maxlength="35">
                                 </div>
                                 <div class="form-group">
-                                    <input type="mobileno" class="form-control" placeholder="Enter your mobile number " id="mobileno" required data-validation-required-message="Please enter your mobile number" name="contactno" maxlength="13">
+                                    <input type="mobileno" class="form-control" placeholder="Enter your mobile number " id="mobileno" required data-validation-required-message="Please enter your mobile number" name="contactno" maxlength="10">
                                 </div>
                             </div>
                             <div class="col-md-6">
