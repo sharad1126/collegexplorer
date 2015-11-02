@@ -16,7 +16,19 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet' type='text/css'>
 </head>
+<style>
+@media only screen and (max-width: 768px) {
+    .img1 {
+        display: none;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    .img2 {
+        display: none;
+    }
+}
+</style>
 <body>
     <section id="navbar">
         <nav class="navbar navbar-default" style="background-color: #3D3D3D; opacity: 1; text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
@@ -65,9 +77,16 @@
     </section>
     <div class="container-fluid">
         <div class="row display-area">
+        <div class="img1">
             <div class="col-sm-4 display-ce" style="margin-top: 70px;">
                 <img src="favicon.png" height="400px" width="400px;" align="middle">
             </div>
+        </div>
+        <div class="img2">
+            <div class="col-sm-4 display-ce" style="margin-top: 70px;">
+                <img src="favicon.png" height="320px" width="320px;" align="middle">
+            </div>
+        </div>
             <div class="col-sm-8">
                 <div class="row">
                     <div class="col-sm-12" style="height: 550px; overflow: scroll; text-align: justify;">
