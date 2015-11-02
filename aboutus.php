@@ -74,7 +74,7 @@
                 <p style="font-family: 'Josefin Sans', sans-serif;font-size:18px;">CollegExplorer provides all facts about the colleges and their reviews with a facilty to ask questions about the colleges, answered by the respective college students</p>
             </div>
             <div class="col-md-4 text-center">
-                <img src="assets/images/food1.png" alt="Responsive image" style="width:350px;height:230px;">
+                <img src="assets/images/food1.jpg" alt="Responsive image" style="width:350px;height:230px;">
                 <h4 style="font-family: 'Josefin Sans', sans-serif;font-size:22px;">Facilities</h4>
                 <p style="font-family: 'Josefin Sans', sans-serif;font-size:18px;">CollegExplorer provides all facilities to students at no cost that no other player in the same segment offers today like food joints, atms and other needs near colleges</p>
             </div>
