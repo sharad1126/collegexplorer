@@ -2,7 +2,7 @@
 
 $dbhost="localhost";
 $dbuser="root";
-$dbpass="";
+$dbpass="CEsql@123";
 $dbname="college_explorer";
   $conn = mysqli_connect( $dbhost, $dbuser, $dbpass, $dbname );
   if( mysqli_connect_errno() )
