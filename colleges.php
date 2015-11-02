@@ -38,7 +38,7 @@
             <link rel="stylesheet" type="text/css" href="assets/css/component3.css" />
             <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="assets/css/flexslider.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
             <script src="assets/js/modernizr.custom1.js"></script>
@@ -47,6 +47,7 @@
             <!-- navbar -->
             <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
             <link rel="shortcut icon" href="favicon.png" />
+            <script type="text/javascript" href="assets/js/modernizr.js"></script>
              <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -67,7 +68,7 @@
 
         <body class="loading" style="max-width:100%; overflow-x:hidden;">
             <!--menu bar-->
-            <section id="navbar">
+            <section id="navbar" style="margin:0px; padding: 0px;">
         <nav class="navbar navbar-default" style="background-color: #3D3D3D; opacity: 1; text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -88,7 +89,7 @@
             </div>
         </nav>
     </section>
-    <section id="navmob">
+    <section id="navmob" style="margin:0px; padding: 0px;">
         <nav class="navbar navbar-inverse" style="background-color: #343833; text-align: center; width: 100%;">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -111,7 +112,51 @@
             </div>
         </nav>
     </section>
-            
+    <div id="container" class="cf">
+        <div id="main" role="main">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="assets/images/iitdel_slide.jpg" />
+                        </li>
+                        <li>
+                            <img src="assets/images/manipal_slide.jpg" />
+                        </li>
+                        <li>
+                            <img src="assets/images/iitguw_slide.jpg" />
+                        </li>
+                        <li>
+                            <img src="assets/images/nitrourkela_slide.jpg" />
+                        </li>
+                        <li>
+                            <img src="assets/images/bitspilani_slide.jpg" />
+                        </li>
+                        <li>
+                            <img src="assets/images/iitmad_slide.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script defer src="assets/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        SyntaxHighlighter.all();
+    });
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+    </script>
             <!-- Search Bar --> 
             <div id="sb-search" class="sb-search">
                 <form method="POST" action="colleges.php">
