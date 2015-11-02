@@ -76,7 +76,7 @@ error_reporting(1);
 <style>
     @media only screen and (max-width: 768px) {
     .space {
-        display: none;
+         padding-top: 0px;
     }
     #navbar {
         display: none;
