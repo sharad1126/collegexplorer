@@ -45,7 +45,7 @@
         </nav>
     </nav>
     <header class="hero-banner img_loaded" style="margin-top: 60px;">
-        <img class="resize" src="assets/images/sharad_lg.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
+        <img class="resize" src="assets/images/sharad_lg.png" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
         <hgroup>
             <h1>Sharad Agarwal</h1>
             <h2 class="text-hl">Front End Developer</h2>
@@ -59,7 +59,7 @@
                     <li><a href="https://in.linkedin.com/in/sharadagarwal1126" target="_blank">LinkedIn</a></li>
                     <li><a href="https://plus.google.com/+SharadAgarwalsharadagarwal/about" target="_blank">Google Plus</a></li>
                     <li><a href="https://twitter.com/shad1126" target="_blank">Twitter</a></li>
-                    <li><a href="https://instagram.com/sharad1126/" target="_blank"></a>Follow me on Insta</li>
+                    <li><a href="https://instagram.com/sharad1126/" target="_blank"></a>Follow me on Instagram</li>
                     <li><a href="http://www.sharad-agarwal.branded.me/" target="_blank">About Me</a></li>
                 </ul>
             </div>

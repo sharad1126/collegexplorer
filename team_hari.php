@@ -45,7 +45,7 @@
             </nav>
         </nav>
         <header class="hero-banner img_loaded" style="margin-top: 60px;">
-            <img class="resize" src="assets/images/hari.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
+            <img class="resize" src="assets/images/hari_lg.jpg" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
             <hgroup>
                 <h1>Hari Prakash</h1>
                 <h2 class="text-hl">Moderator</h2>
