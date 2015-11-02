@@ -200,7 +200,7 @@
                 <div class="col-md-3">
                     <div id="footerlogo">
                         <a href="index.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-top:20px;"></a>
-                        <ul style="padding-top: 10px; color: white;">&copy; CollegExplorer 2015</ul>
+                        <ul style="padding-left: 0px; padding-top: 10px; color: white;">&copy; CollegExplorer 2015</ul>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -231,9 +231,9 @@
                             <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
                             <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
                         </ul>
-                        <div id="footerAddress" style=" padding-top:10px;">
+                        <div id="footerAddress" style="padding-top:10px;">
                             <br>
-                            <span id="addressTitle" style="">CollegExplorer</span>
+                            <span id="addressTitle" style="color: white;">CollegExplorer</span>
                         </div>
                         <div id="footerEmail"><a href="collegexplorer@gmail.com" style="text-decoration: none;">collegexplorer@gmail.com</a></div>
                     </div>

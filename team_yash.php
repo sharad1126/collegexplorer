@@ -93,26 +93,26 @@
 <!-- footer     -->
     <footer id="footer" style="background-color:#2E3444; margin-top: 30px;">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" style="padding-top: 20px;">
                 <div class="col-md-3">
                     <div id="footerlogo">
                         <a href="index.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-top:20px;"></a>
-                        <ul style="padding-top: 10px; color: white;">&copy; CollegExplorer 2015</ul>
+                        <ul style="padding-left: 0px; padding-top: 10px; color: white;">&copy; CollegExplorer 2015</ul>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <h3 class="footertitle" style="color:#FF6E49;">LEARN MORE</h3>
                     <div class="learnmorelinks">
-                        <ul><a href="aboutus.php" style="text-decoration: none;">ABOUT US</a></ul>
-                        <ul><a href="privacy.php" style="text-decoration: none;">PRIVACY POLICY</a></ul>
-                        <ul><a href="terms.php" style="text-decoration: none;">TERMS & CONDITIONS</a></ul>
-                        <ul><a href="disclaimer.php" style="text-decoration: none;">DISCLAIMER</a></ul>
+                        <ul><a href="aboutus.php" style="color: white; text-decoration: none;">ABOUT US</a></ul>
+                        <ul><a href="privacy.php" style="color: white; text-decoration: none;">PRIVACY POLICY</a></ul>
+                        <ul><a href="terms.php" style="color: white; text-decoration: none;">TERMS & CONDITIONS</a></ul>
+                        <ul><a href="disclaimer.php" style="color: white; text-decoration: none;">DISCLAIMER</a></ul>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <h3 class="footerTitle" style="color:#FF6E49;">Subscribe </h3>
+                    <h3 class="footerTitle" style="color:#FF6E49;">SUBSCRIBE</h3>
                     <form id="footerSignupForm">
-                        <div class="form-group">
+                        <div class="form-group" style="padding-top: 10px;">
                             <label class="sr-only" for="footerEmailInput"></label>
                             <input id="footerEmailInput" class="form-control" type="email" placeholder="Email address" aria-required="true" required="">
                         </div>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-md-3">
                     <div id="connectCol">
-                        <h3 class="footerTitle" style="color:#FF6E49;">Connect</h3>
+                        <h3 class="footerTitle" style="color:#FF6E49;">CONNECT</h3>
                         <ul id="footerSocialBtns">
                             <a id="headerTwBtn" class="headerSocialBtn" href="https://www.twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
                             <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
@@ -130,9 +130,9 @@
                         </ul>
                         <div id="footerAddress" style=" padding-top:10px;">
                             <br>
-                            <span id="addressTitle" style="">CollegExplorer</span>
+                            <span id="addressTitle" style="color: white;">CollegExplorer</span>
                         </div>
-                        <div id="footerEmail"><a href="collegexplorer@gmail.com" style="text-decoration: none;">collegexplorer@gmail.com</a></div>
+                        <div id="footerEmail"><a href="collegexplorer@gmail.com" style="color: white; text-decoration: none;">collegexplorer@gmail.com</a></div>
                     </div>
                 </div>
             </div>

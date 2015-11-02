@@ -241,7 +241,7 @@
                         </ul>
                         <div id="footerAddress" style=" padding-top:10px;">
                             <br>
-                            <span id="addressTitle" style="">CollegExplorer</span>
+                            <span id="addressTitle" style="color: white;">CollegExplorer</span>
                         </div>
                         <div id="footerEmail"><a href="collegexplorer@gmail.com" style="text-decoration: none;">collegexplorer@gmail.com</a></div>
                     </div>
