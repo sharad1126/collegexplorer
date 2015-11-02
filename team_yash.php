@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Yash</title>
+    <title>CollegExplorer_Yash</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -66,7 +66,7 @@
             <div class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">An aggressive football enthusiast and a true blue fan of Real Madrid with an undying zest for El – Classico.  He can easily be brought to your side by bribing him with a Large Double Cheese Burst Pizza grin emoticon (Preferably from Domino’s).</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Yash is an aggressive football enthusiast and a true blue fan of Real Madrid with an undying zest for El – Classico.  He can easily be brought to your side by bribing him with a Large Double Cheese Burst Pizza grin emoticon (Preferably from Domino’s).</p>
                 <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is also part time Sherlock, Loves to cook soupy noodles and not wash the dishes afterwards (P.s: bring back Maggie).</p>
                 <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">When he is not stuffing his face with pizza’s he is usually found experimenting with php or programming online and watching tutorial videos from neso academy and mycodeschool. He is one of the torch bearers of Indori Swag.</p>
             </div>

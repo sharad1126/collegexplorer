@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Vatsal</title>
+    <title>CollegExplorer_Vatsal</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -78,16 +78,16 @@
             <div class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Vatsal is an exuberant badminton player better known by the name of Jaddu, well the fact that most of his batchmates don't even know his real name :/ but just Jaddu.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Vatsal is an exuberant UI designer and a badminton player better known by the name of Jaddu, well the fact that most of his batchmates don't even know his real name :/</p>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">One could easily lure him on the name of Poha, Sev or Tomato Ketchup & he bears the flair of being awake for entire night if you serve him the 3 in breakfast. One could always find a packet of sev being hidden in his almirah away from the sight of outside world #being_Indori 8-)</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">One could easily lure him on the name of Poha, Sev or Tomato Ketchup & he bears the flair of being a night's Owl if you serve him the 3 in breakfast. One could always find a packet of sev hidden in his almirah (Oops..secret revealed)</p>
             	<br>
                 <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">His amigos regard him to be the best singer though he strongly belives in his capability to change the religion of half of the people in a church if being given an opportunity to sing there ;)</p>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
             <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/vs.jpg" style="opacity: 1;">
+                <a href="http://www.vatsal-shrivastav.branded.me/" target="_blank"><img class="resize" src="assets/images/vs.jpg" style="opacity: 1;"></a>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 308.25px;">

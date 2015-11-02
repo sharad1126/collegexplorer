@@ -41,6 +41,7 @@ error_reporting(1);
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Welcome To CollegExplorer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="alexaVerifyID" content="7LESHyrS1lWMnsXWTssw59W72Qw"/>
     <link rel="shortcut icon" href="../favicon.ico">
     <!-- CSS and Js for slideshow on first page -->
     <link rel="stylesheet" type="text/css" href="assets/css/style1.css" />
@@ -53,15 +54,29 @@ error_reporting(1);
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="favicon.png" />
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-67982495-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
     <!--slideshow-->
-    <div class="disp">
     <section id="front-page">
         <ul class="cb-slideshow">
             <li><span>Image 01</span></li>
@@ -75,7 +90,6 @@ error_reporting(1);
             <li><span>Image 09</span></li>
         </ul>
     </section>
-    </div>
     <!--menu bar-->
     <section id="navbar">
         <nav class="navbar navbar-default" style="background-color: #3D3D3D; opacity: 1; text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
@@ -122,9 +136,6 @@ error_reporting(1);
             </div>
         </nav>
     </section>
-    <div class="try">
-        <img src="assets/images/iitmob.jpg">
-    </div>
      <div class="space" style="padding-top: 650px;">
     </div>
     <div class="container">
