@@ -193,20 +193,11 @@
         </div>
         <?php 
             if(isset($_SESSION['user_id'])) { ?>
-             <div class="logintoask">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-1">
-                                </div>
-                                <div class="col-md-9">
-                                    <a href="logout.php"><button type="submit" class="hitbtn" style="text-align: center;">Logout</button></a>
-                                </div>  
-                            </div>
-                        </div>
-        </div><?php
+             <?php
     }
     ?>
-        <div class="col-md-2">
+        <div class="col-md-2" style="margin-top: 60px;">
+            <a href="logout.php"><button type="submit" class="hitbtn" style="text-align: center;">Logout</button></a>
         </div>
     </div>
     <!-- image -->
