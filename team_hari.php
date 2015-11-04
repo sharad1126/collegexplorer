@@ -120,21 +120,21 @@
             <div class="row" style="padding-top: 20px;">
                 <div class="col-md-3">
                     <div id="footerlogo">
-                        <a href="index.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:169px; width=169px; align:center; padding-top:20px;"></a>
-                        <ul style="padding-left: 0px; padding-top: 10px; color: white;">&copy; CollegExplorer 2015</ul>
+                        <a href="index.php"><img src="assets/images/favicon.png" alt="responsive-image" style="height:150px; width=150px; align:center;"></a>
+                        <ul style="padding-left: 0px; padding-top: 10px; color: white; font-size: 15px;">&copy; CollegExplorer 2015</ul>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <h3 class="footertitle" style="color:#FF6E49;">LEARN MORE</h3>
-                    <div class="learnmorelinks">
-                        <ul><a href="aboutus.php" style="color: white; text-decoration: none;">ABOUT US</a></ul>
-                        <ul><a href="privacy.php" style="color: white; text-decoration: none;">PRIVACY POLICY</a></ul>
-                        <ul><a href="terms.php" style="color: white; text-decoration: none;">TERMS & CONDITIONS</a></ul>
-                        <ul><a href="disclaimer.php" style="color: white; text-decoration: none;">DISCLAIMER</a></ul>
+                    <div class="learnmorelinks" style="font-size: 15px; font-weight: 900px; margin-left: 30px;">
+                        <ul><a href="aboutus.php" style="text-decoration: none;">ABOUT US</a></ul>
+                        <ul><a href="privacy.php" style="text-decoration: none;">PRIVACY POLICY</a></ul>
+                        <ul><a href="terms.php" style="text-decoration: none;">TERMS & CONDITIONS</a></ul>
+                        <ul><a href="disclaimer.php" style="text-decoration: none;">DISCLAIMER</a></ul>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <h3 class="footerTitle" style="color:#FF6E49;">SUBSCRIBE</h3>
+                    <h3 class="footerTitle" style="color:#FF6E49;">Subscribe</h3>
                     <form id="footerSignupForm">
                         <div class="form-group" style="padding-top: 10px;">
                             <label class="sr-only" for="footerEmailInput"></label>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="col-md-3">
                     <div id="connectCol">
-                        <h3 class="footerTitle" style="color:#FF6E49;">CONNECT</h3>
+                        <h3 class="footerTitle" style="color:#FF6E49;">Connect</h3>
                         <ul id="footerSocialBtns">
                             <a id="headerTwBtn" class="headerSocialBtn" href="https://www.twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
                             <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
@@ -154,9 +154,9 @@
                         </ul>
                         <div id="footerAddress" style=" padding-top:10px;">
                             <br>
-                            <span id="addressTitle" style="color: white;">CollegExplorer</span>
+                            <span id="addressTitle" style="color: white; font-size: 15px;">CollegExplorer</span>
                         </div>
-                        <div id="footerEmail"><a href="collegexplorer@gmail.com" style="color: white; text-decoration: none;">collegexplorer@gmail.com</a></div>
+                        <div id="footerEmail" style="font-size: 15px;"><a href="collegexplorer@gmail.com" style="text-decoration: none;">collegexplorer@gmail.com</a></div>
                     </div>
                 </div>
             </div>
