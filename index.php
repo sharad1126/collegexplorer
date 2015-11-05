@@ -178,19 +178,19 @@ error_reporting(1);
         <div class="row">
             <div class="col-md-3">
                 <h3 style="padding-left: 35px;">Colleges</h3>
-                <img src="assets/images/colleges.png" alt="Responsive image" style="height:175px; width:175px;">
+                <a href="colleges.php" target="_blank"><img src="assets/images/colleges.png" alt="Responsive image" style="height:175px; width:175px;"></a>
             </div>
             <div class="col-md-3">
                 <h3 style="padding-left: 35px;">Facilities</h3>
-                <img src="assets/images/whatsclose.png" alt="Responsive image" style="height:150px; width:150px; padding-top: 10px;">
+                <a href="maps.php" target="_blank"><img src="assets/images/whatsclose.png" alt="Responsive image" style="height:150px; width:150px; padding-top: 10px;"></a>
             </div>
             <div class="col-md-3">
                 <h3 style="padding-left: 35px;">Dates</h3>
-                <img src="assets/images/Importantdates.png" alt="Responsive image" style="height:150px; width:150px;padding-top: 10px;">
+                <a href="aboutus.php" target="_blank"><img src="assets/images/Importantdates.png" alt="Responsive image" style="height:150px; width:150px;padding-top: 10px;"></a>
             </div>
             <div class="col-md-3">
                 <h3 style="padding-left: 35px;">Reviews</h3>
-                <img src="assets/images/Authenticreviews.png" alt="Responsive image" style="height:150px; width:150px;padding-top: 10px;">
+                <a href="colleges.php" target="_blank"><img src="assets/images/Authenticreviews.png" alt="Responsive image" style="height:150px; width:150px;padding-top: 10px;"></a>
             </div>
         </div>
     </div>
@@ -215,10 +215,10 @@ error_reporting(1);
                                     <input type="text" class="form-control" placeholder="Enter your name " id="name" required data-validation-required-message="Please enter your name" id="name" name="name" maxlength="25" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Enter your email id " id="email" required data-validation-required-message="Please enter your email-id" name="email" maxlength="35">
+                                    <input type="email" class="form-control" placeholder="Enter your email id " id="email" required data-validation-required-message="Please enter your email-id" name="email" maxlength="40">
                                 </div>
                                 <div class="form-group">
-                                    <input type="mobileno" class="form-control" placeholder="Enter your mobile number " id="mobileno" required data-validation-required-message="Please enter your mobile number" name="contactno" maxlength="10">
+                                    <input type="mobileno" class="form-control" placeholder="Enter your mobile number " id="mobileno" required data-validation-required-message="Please enter your mobile number" name="contactno" maxlength="13">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -228,7 +228,7 @@ error_reporting(1);
                             </div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl" style="background-color: #F28C8E;">Send Message</button>
+                                <button type="submit" class="btn btn-xl" style="background-color: #FC736A; color: white;">Send Message</button>
                             </div>
                         </div>
                     </form>
