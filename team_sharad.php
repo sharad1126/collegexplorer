@@ -90,11 +90,11 @@
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Sharad is a B.tech student who seeks his abyssal interest in Web Development and ethical hacking.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Sharad is an ardent front end developer better known as Anna, though no one can ever trace back the moment when someone entitled him with this name.</p>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is engrossed by the departments of cyber security and wishes to pursue his future as a Penetration Tester or a Pen-Tester in some renowned firm.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Being a contented user of macbook he keeps on defending Apple at several instances #mac_swag (though he fails to justify for the concept of having an LED behind it). One can always find him watching SplitsVilla or Prison Break at leisure time.</p>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is also driven by issues related to Database Handling and Management and has a sound technical knowledge of PHP, SQL and MySQL.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He has been an entrepreneur from the 1st day of the college and owns the smallest departmental store (in his alrirah :-p) the best part that he sells all his items at no cost (ty anna :-D)</p>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">

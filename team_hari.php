@@ -86,13 +86,11 @@
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Hari is a B.tech student who has a strong inclination towards website security issues.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Hari Prakash a.k.a Harish has an inquisitive mind to know about any thing that's cool and wicked. Tried his hands at building robots to running 10 km marathon, loves to play a match of soccer with his friends and go for a trip.</p>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He is captivated towards the field of cyber security and wishes to pursue his future as a Penetration Tester or a Pen-Tester in some renowned firm.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He has plans to travel all over the world and is quiet adventurous. At times he can bore you to death with his philosophical lectures or hallucinate you by playing guitar (P.S:which he is horrible at).</p>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He also has a strong desire to master in the field of back end development.</p>
-                <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He prefers to listen music when free.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Loves mystery and decrypting stuffs," The social network" ,"Jobs", "Spare parts " ,"Three idiots" are his all time favorite films.</p>
             </div>
         </div>
           <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
@@ -102,7 +100,7 @@
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
             <div class="block image img_loaded" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
-                <img class="resize" src="assets/images/favicon.png" style="opacity: 1;">
+                <img class="resize" src="assets/images/hari3.jpg" style="opacity: 1;">
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 616.5px; left: 616.5px;">
@@ -112,7 +110,7 @@
                 </blockquote>
                 <cite style="font-size: 20px; color: #FF6E49;"> - Francis of Assisi</cite>
             </div>
-        </div>
+        </div>     
     </div>
     <!-- footer     -->
     	<footer id="footer" style="background-color:#2E3444; margin-top: 30px;">
