@@ -185,7 +185,7 @@
                 else
                     { if(isset($_GET['qid'])) {
                         $qid= $_GET['qid'];
-                echo "<br>" .'<a href="login.php?qid='.urlencode($qid).'"><button type="submit" class="hitbtn" style="text-align: center;">Login to ask a Question</button></a><br>';
+                echo "<br>" .'<a href="login.php?qid='.urlencode($qid).'"><button type="submit" class="hitbtn" style="text-align: center;">Login to add a Comment</button></a><br>';
             }
         }
             ?>
@@ -193,12 +193,13 @@
         </div>
         <?php 
             if(isset($_SESSION['user_id'])) { ?>
+            <div class="col-md-2" style="margin-top: 60px;">
+            <a href="logout.php"><button type="submit" class="hitbtn" style="text-align: center;">Logout</button></a>
+        </div>
              <?php
     }
     ?>
-        <div class="col-md-2" style="margin-top: 60px;">
-            <a href="logout.php"><button type="submit" class="hitbtn" style="text-align: center;">Logout</button></a>
-        </div>
+        
     </div>
     <!-- image -->
     <div class="container-fluid" style="margin-top: 40px;">
