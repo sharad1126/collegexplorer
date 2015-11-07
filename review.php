@@ -1037,7 +1037,7 @@ if(isset($_GET['id']))
                         <img src="assets/images/user64x.png" class="img-circle" width="50px" height="50px">
                     </div>
                     <div style="display:inline-block; vertical-align: top;">
-                        <h3 style="color: #2D2D2D; padding-left: 10px;"><b><?php echo $row['user_name']; ?></b></h3>
+                        <h3 style="color: #2D2D2D; padding-left: 10px; text-transform: capitalize;"><b><?php echo $row['user_name']; ?></b></h3>
                         <i style="padding-left: 10px; color: black;"><?php echo $row['time']; ?></i>
                     </div>
                     <br>
