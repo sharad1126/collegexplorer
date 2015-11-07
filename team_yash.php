@@ -72,10 +72,10 @@
         <div class="block-wrap small-screen-double-wide" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 0px;">
             <div class="block list-block" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <ul>
-                    <li><a href="https://www.facebook.com/vatsal.shrivastav" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com/profile/view?id=AAIAABi9EpMBUu2HHnwqbpHWGkk9gS_ZQaHHLr8&trk=nav_responsive_tab_profile_pic" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://plus.google.com/u/0/103824242113703775527/posts" target="_blank">Google Plus</a></li>
-                    <li><a href="http://www.vatsal-shrivastav.branded.me/" target="_blank">About Me</a></li>
+                    <li><a href="https://www.facebook.com/Yash19970?fref=ts" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/profile/view?id=ADEAABiEJLoB5kJ1ZHQY8OGTO922GpFSDM6TFA8&authType=NAME_SEARCH&authToken=X5v2&locale=en_US&srchid=4150442431446913560465&srchindex=1&srchtotal=525&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A4150442431446913560465%2CVSRPtargetId%3A411313338%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue%2CauthType%3ANAME_SEARCH" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://plus.google.com/+YashJain19970/posts" target="_blank">Google Plus</a></li>
+                    <li><a href="#">About Me</a></li>
                 </ul>
             </div>
         </div>
