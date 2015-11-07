@@ -43,7 +43,9 @@
         height: 250px;
     }
 }
-
+.learnmorelinks ul {
+	margin-top: 10px;
+}
 
 </style>
 <body class="loaded">
