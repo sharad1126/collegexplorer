@@ -91,7 +91,6 @@
             <div class="block text-only" style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;">
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
-                <br>
                 <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Sharad is an ardent front end developer and enthusiast about cyber security better known as Anna, though no one can ever trace back the moment when someone entitled him with this name.</p>
                 <br>
                 <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Being a contented user of macbook he keeps on defending Apple at several instances #mac_swag (though he fails to justify for the concept of having an LED behind it). One can always find him watching SplitsVilla or Prison Break at leisure time.</p>
