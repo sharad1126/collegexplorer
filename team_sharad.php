@@ -90,11 +90,11 @@
                 <h1 style="text-align: center; color: #FE5F55; font-family: 'Josefin Sans', sans-serif; font-size: 35px;">Something about Me</h1>
                 <br>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Sharad is an ardent front end developer better known as Anna, though no one can ever trace back the moment when someone entitled him with this name.</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Sharad is an ardent front end developer and enthusiast about cyber security better known as Anna, though no one can ever trace back the moment when someone entitled him with this name.</p>
                 <br>
                 <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">Being a contented user of macbook he keeps on defending Apple at several instances #mac_swag (though he fails to justify for the concept of having an LED behind it). One can always find him watching SplitsVilla or Prison Break at leisure time.</p>
                 <br>
-                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He has been an entrepreneur from the 1st day of the college and owns the smallest departmental store (in his alrirah :-p) the best part that he sells all his items at no cost (ty anna :-D)</p>
+                <p style="font-size: 26px; color: white; font-family: 'Josefin Sans', sans-serif;">He has been an entrepreneur from the 1st day of the college and owns the smallest departmental store (in his almirah :-p) the best part that he sells all his items at no cost (ty anna :-D)</p>
             </div>
         </div>
         <div class="block-wrap" data-rowspan="1" data-colspan="1" style="position: absolute; width: 308.25px; height: 308.25px; top: 0px; left: 924.75px;">
@@ -172,8 +172,8 @@
                         <ul id="footerSocialBtns">
                             <a id="headerTwBtn" class="headerSocialBtn" href="https://www.twitter.com/collegexplorer" target="_blank"><img src="assets/images/twitter.png" style="height:44px; width:44px;padding-top:10px;"></a>
                             <a id="headerFbBtn" class="headerSocialBtn" href="https://www.facebook.com/collegeexplorer" target="_blank"><img src="assets/images/facebook.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                            <a id="headerliBtn" class="headerSocialBtn" href="https://www.linkedin.com/collegexplorer" target="_blank"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
-                            <a id="headergpBtn" class="headerSocialBtn" href="https://www.google.com/collegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                            <a id="headerliBtn" class="headerSocialBtn" href="#"><img src="assets/images/linkedin.png" style="height:44px; width:44px;padding-top:10px;"></a>
+                            <a id="headergpBtn" class="headerSocialBtn" href="https://plus.google.com/+CollegexplorerIncollegexplorer" target="_blank"><img src="assets/images/googleplus.png" style="height:44px; width:44px;padding-top:10px;"></a>
                         </ul>
                         <div id="footerAddress" style=" padding-top:10px;">
                             <br>
