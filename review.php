@@ -577,7 +577,6 @@ if(isset($_GET['id']))
                                 }
                             }
                          ?> 
-
                     <a href="logout.php"><button type="submit" class="hitbtn" style="text-align: center;">LOGOUT</button></a>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" style="border-radius: 2px;">Write a Review</button>
@@ -615,9 +614,7 @@ if(isset($_GET['id']))
                         else 
                         { ?>
                              
-                             <a href="login.php"><button type="submit" class="hitbtn" style="text-align: center;">LOGIN</button></a>
-                             <a href="logout.php"><button type="submit" class="hitbtn" style="text-align: center;">LOGOUT</button></a>
-                             <a href="login.php?id=<?php echo urlencode($id);?>" class="morph-button morph-button-overlay morph-button-fixed"><button type="button" style="border-radius: 2px;">Login To Write a Review</button></a> 
+                              <a href="login.php?id=<?php echo urlencode($id);?>" class="morph-button morph-button-overlay morph-button-fixed"><button type="button" style="border-radius: 2px;">Login To Write a Review</button></a> 
                          
                        <?php } 
                         ?>
