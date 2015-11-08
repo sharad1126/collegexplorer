@@ -6,6 +6,7 @@
         <title></title>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
+        <link rel="shortcut icon" href="favicon.png" />
         <style>
         html,
         body {
