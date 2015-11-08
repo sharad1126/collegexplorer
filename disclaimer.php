@@ -29,6 +29,44 @@
     }
 }
 </style>
+<style>
+    @media only screen and (max-width: 768px) {
+    .space {
+        display: none;
+    }
+    #navbar {
+        display: none;
+    }
+    #footer a {
+        height: 500px;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #navmob {
+        display: none;
+    }
+    #footer a {
+        color: white;
+        height: 250px;
+    }
+}
+
+#navmob li {
+    display: inline;
+    float: left;
+    margin-left: 20px;
+}
+
+#navmob a {
+    color: #FF746B;
+}
+
+#navmob a:hover {
+    color: white;
+}
+</style>
 <body>
     <section id="navbar">
         <nav class="navbar navbar-default" style="background-color: #3D3D3D; opacity: 1; text-align: center;border-radius:0px;height: 60px;top: 0;left: 0;width: 100%;z-index: 100;box-shadow: 2px 7px 7px rgba(100,100,100,0.49);border:none;">
@@ -42,7 +80,7 @@
                             <ul id="menu-menu-glowne-en" class="menu">
                                 <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="index.php"><span data-hover="HOME">HOME</span></a></li>
                                 <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="colleges.php"><span data-hover="COLLEGES">COLLEGES</span></a></li>
-                                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="map.php" target="_blank"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
+                                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="maps.php"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
                                 <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="team.php"><span data-hover="TEAM">TEAM</span></a></li>
                                 <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="aboutus.php"><span data-hover="ABOUT US">ABOUT US</span></a></li>
                             </ul>
