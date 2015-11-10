@@ -42,6 +42,7 @@ error_reporting(1);
     <title>Welcome To CollegExplorer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="alexaVerifyID" content="7LESHyrS1lWMnsXWTssw59W72Qw"/>
+    <meta name="google-site-verification" content="26YxG3oxu4JpQ14zZC_wzrXbAma-jIp_uS25a6cq0qY" />
     <!-- CSS and Js for slideshow on first page -->
     <link rel="stylesheet" type="text/css" href="assets/css/style1.css" />
     <script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script>
