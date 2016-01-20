@@ -115,11 +115,11 @@
     <!-- Objective -->
     
     <div class="container">
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=college08-21&marketplace=amazon&region=IN&placement=B0158IT7ES&asins=B0158IT7ES&linkId=&show_border=true&link_opens_in_new_window=true">
-</iframe>
         <h2 class="section-heading" style="color: #fd5f54; font-family: 'Dosis', sans-serif; font-size: 50px;text-align:center;">Our Objective</h2>
         <br>
         <br>
+        <a rel="nofollow" href="http://www.amazon.in/gp/product/B0158IT7ES/ref=as_li_tl?ie=UTF8&camp=3626&creative=24790&creativeASIN=B0158IT7ES&linkCode=as2&tag=college08-21"><img border="0" src="http://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0158IT7ES&Format=_SL110_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=college08-21" ></a><img src="http://ir-in.amazon-adsystem.com/e/ir?t=college08-21&l=as2&o=31&a=B0158IT7ES" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
         <p style="font-size:20px;font-family: 'Josefin Sans', sans-serif; ">CollegExplorer aims at providing students an authentic and raw information of the leading engineering colleges in India by the students of the college to our visitors directly. We also provide students the information regarding the facilities that are available to the students near their college. The students are also allowed to participate in a Question Answer forum to traverse even deeper into the college and get to know more about the college by the students of that college themselves.</p>
         <p style="font-size:20px;font-family: 'Josefin Sans', sans-serif;">The website focusses on college faculties, studies, opportunities, placements, cultural events, extracurricular activities, fests, competitions etc. We also provide them the names of the closest food joints, atms, cafes, medical stores, hospitals etc on a map which could help them navigate faster.</p>
         <br>
