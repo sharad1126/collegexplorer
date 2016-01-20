@@ -113,6 +113,8 @@
         </nav>
     </section>
     <!-- Objective -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=college08-21&marketplace=amazon&region=IN&placement=B0158IT7ES&asins=B0158IT7ES&linkId=&show_border=true&link_opens_in_new_window=true">
+</iframe>
     <div class="container">
         <h2 class="section-heading" style="color: #fd5f54; font-family: 'Dosis', sans-serif; font-size: 50px;text-align:center;">Our Objective</h2>
         <br>
