@@ -395,7 +395,7 @@ if(isset($_GET['id']))
     function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-            center: new google.maps.LatLng(<?php echo $latitude; ?>, <?php echo $longitude; ?>),
+            center: new google.maps.LatLng('<?php echo $latitude; ?>', '<?php echo $longitude; ?>'),
             zoom: 16,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
