@@ -73,6 +73,51 @@ error_reporting(1);
     ga('create', 'UA-67982495-1', 'auto');
     ga('send', 'pageview');
     </script>
+    <script>
+    function validateForm() {
+        var x = document.forms["sent-message"]["mobileno"].value;
+        var y = document.forms["sent-message"]["email"].value;
+        var c = 0;
+        var len;
+
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        } else if (isNaN(x)) {
+            alert("Please fill in numbers");
+            return false;
+        } else if (x.length != 10) {
+            alert("Enter 10 digits");
+            return false;
+        } else if (y[0] == "@") {
+            alert("1st letter can't be @");
+            return false;
+        } else if (y[y.length - 1] == ".") {
+            alert("Invalid");
+            return false;
+        } else {
+            for (var i = 0; i < y.length; i++) {
+                if (y[i] == "@" && (y[i + 1] == ".") || ((y[i] == "@") && (y[i - 1] == "_"))) {
+                    alert("Invalid");
+                    return false;
+                } else if (y[i] == "@" && y[i + 1] != ".") {
+                    c = 0;
+                    len = y.length - 1 - i;
+                    for (var j = i + 1; j < y.length; j++) {
+                        if (y[j] != ".") {
+                            c = c + 1;
+                        }
+                    }
+                    if (c == len) {
+                        alert('No dot used');
+                        return false;
+                    }
+                }
+            }
+        }
+
+    }
+    </script>
 </head>
 <style>
     @media only screen and (max-width: 768px) {
@@ -209,7 +254,7 @@ error_reporting(1);
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                   <form name="sent-message" id="contactForm" method="POST" action="index.php">
+                   <form name="sent-message" id="contactForm" onsubmit="return validateForm()" method="POST" action="index.php">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
