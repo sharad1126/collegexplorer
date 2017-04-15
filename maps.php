@@ -59,8 +59,8 @@ if(isset($_GET['id']))
 
     function initMap() {
         var pyrmont = {
-            lat: '<?php echo $latitude; ?>',
-            lng: '<?php echo $longitude; ?>'
+            lat: <?php echo $latitude; ?>,
+            lng: <?php echo $longitude; ?>
         };
 
         map = new google.maps.Map(document.getElementById('map'), {
