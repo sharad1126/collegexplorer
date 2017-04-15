@@ -417,7 +417,7 @@ if(isset($_GET['id']))
                             <ul id="menu-menu-glowne-en" class="menu">
                                 <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="index.php"><span data-hover="HOME">HOME</span></a></li>
                                 <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="colleges.php"><span data-hover="COLLEGES">COLLEGES</span></a></li>
-                                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="maps.php"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
+                                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="maps.php?id=<?php echo urlencode($id);?>"><span data-hover="FOOD JOINTS">FOOD JOINTS</span></a></li>
                                 <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="team.php"><span data-hover="TEAM">TEAM</span></a></li>
                                 <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="aboutus.php"><span data-hover="ABOUT US">ABOUT US</span></a></li>
                             </ul>
@@ -442,7 +442,7 @@ if(isset($_GET['id']))
                     <ul class="nav navbar-nav">
                         <li><a href="index.php">HOME</a></li>
                         <li><a href="colleges.php">COLLEGES</a></li>
-                        <li><a href="maps.php">FOOD JOINT</a></li>
+                        <li><a href="maps.php?id=<?php echo urlencode($id);?>">FOOD JOINT</a></li>
                         <li><a href="team.php">TEAM</a></li>
                         <li><a href="aboutus.php">ABOUT US</a></li>
                     </ul>
